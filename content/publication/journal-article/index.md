@@ -3,10 +3,8 @@ title: Efficacy of monetary policy in a currency union? Evidence from Southern
   Africa’s Common Monetary Area
 authors:
   - admin
-  - Robert Ford
 author_notes:
-  - Equal contribution
-  - Equal contribution
+  - Boise State University
 publication_short: ""
 abstract: The Common Monetary Area (CMA) agreement has effectively granted the
   South African government sole discretion over monetary policy and
