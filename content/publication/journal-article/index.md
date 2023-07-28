@@ -31,9 +31,7 @@ image:
   focal_point: ""
   preview_only: true
   filename: ""
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
-  tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
-  condimentum.
+summary: ""
 url_dataset: ""
 url_project: ""
 url_source: ""
@@ -44,6 +42,6 @@ date: 2022-01-19T20:45:00.000Z
 url_slides: ""
 publishDate: 2017-01-01T00:00:00.000Z
 url_poster: ""
-url_code: https://github.com/wowchemy/wowchemy-hugo-themes
+url_code: ""
 doi: 10.3934/QFE.2022002
 ---
