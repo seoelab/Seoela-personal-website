@@ -29,7 +29,7 @@ publication_types:
 image:
   caption: ""
   focal_point: ""
-  preview_only: false
+  preview_only: true
   filename: ""
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
   tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
