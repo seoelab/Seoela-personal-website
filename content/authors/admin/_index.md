@@ -40,7 +40,7 @@ education:
       year: ""
     - course: BSc in Mathematics and Physics
       institution: The College of Idaho
-      year: -67
+      year: ""
 superuser: true
 status:
   icon: ☕️
