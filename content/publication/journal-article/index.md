@@ -20,10 +20,9 @@ abstract: The Common Monetary Area (CMA) agreement has effectively granted the
   10 percent level for all countries in the CMA. The results also show that
   money supply, domestic credit, and lending rate spread respond asymmetrically
   across members countries.
-tags:
-  - Source Themes
+tags: []
 projects: []
-slides: example
+slides: ""
 url_pdf: http://arxiv.org/pdf/1512.04133v1
 publication_types:
   - "2"
