@@ -31,6 +31,7 @@ image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)"
   focal_point: ""
   preview_only: false
+  filename: https://www.aimspress.com/article/doi/10.3934/QFE.2022002
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
   tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
   condimentum.
@@ -45,6 +46,6 @@ url_slides: ""
 publishDate: 2017-01-01T00:00:00Z
 url_poster: ""
 url_code: https://github.com/wowchemy/wowchemy-hugo-themes
-doi: ""
+doi: 10.3934/QFE.2022002
 ---
 
