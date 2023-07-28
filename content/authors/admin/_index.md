@@ -29,13 +29,13 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Indiana University Bloomington
+    url: https://www.iu.edu/index.html
 education:
   courses:
-    - course: PhD in Artificial Intelligence
+    - course: PhD in Economics
       institution: Stanford University
-      year: 2012
+      year: 2010
     - course: MEng in Artificial Intelligence
       institution: Massachusetts Institute of Technology
       year: 2009
