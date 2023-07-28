@@ -1,6 +1,5 @@
 ---
-title: Bonang N Seoela
-role: PhD Student in Economics
+avatar_filename: 0.jpeg
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
 interests:
@@ -47,7 +46,9 @@ superuser: true
 status:
   icon: ☕️
 last_name: Wu
+role: PhD Student in Economics
 highlight_name: true
+title: Bonang N Seoela
 first_name: Alice
 email: ""
 ---
