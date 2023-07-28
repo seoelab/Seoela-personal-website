@@ -34,14 +34,14 @@ organizations:
 education:
   courses:
     - course: PhD in Economics
-      institution: Stanford University
-      year: 2010
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+      institution: Indiana University Bloomington
+      year: ""
+    - course: MSc in Economics
+      institution: Boise State University
+      year: ""
+    - course: BSc in Mathematics and Physics
+      institution: The College of Idaho
+      year: -67
 superuser: true
 status:
   icon: ☕️
@@ -54,9 +54,9 @@ email: ""
 ---
 Welcome to my webpage!
 
-I am a first-year Economics Ph.D. student at Indiana University, with a strong focus on applied macroeconomics and labor economics. Prior to pursuing my Ph.D., I had the opportunity to work as a labor economist for the Idaho Department of Labor, where I gained valuable insights into the real-world applications of economic principles.
+I am a second-year Economics Ph.D. student at Indiana University, with a focus on applied macroeconomics and labor economics. Prior to pursuing my Ph.D., I had the opportunity to work as a labor economist for the Idaho Department of Labor, where I gained valuable insights into the real-world applications of economic principles.
 
-My academic journey began with a Bachelor's degree in mathematics and physics from the esteemed College of Idaho, where I developed a solid foundation in quantitative analysis. Subsequently, I obtained a Master's degree in economics from Boise State University, further deepening my understanding of economic theory and its practical implications.
+My academic journey began with a Bachelor's degree from the College of Idaho. Subsequently, I obtained a Master's degree in economics from Boise State University.
 
 I am deeply passionate about researching and unraveling complex economic phenomena that impact society on a large scale. As a curious and driven individual, I continually seek to contribute to the advancement of economic knowledge, both in academia and beyond.
 
