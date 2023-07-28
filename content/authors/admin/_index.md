@@ -1,7 +1,6 @@
 ---
 avatar_filename: content/authors/admin/0.jpeg
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
+bio: ""
 interests:
   - Labor economics
   - International Trade
@@ -50,7 +49,7 @@ role: PhD Student in Economics
 highlight_name: true
 title: Bonang N Seoela
 first_name: Alice
-email: ""
+email: bseoela@iu.edu
 ---
 Welcome to my webpage!
 
