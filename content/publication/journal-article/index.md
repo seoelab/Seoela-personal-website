@@ -8,14 +8,20 @@ author_notes:
   - Equal contribution
   - Equal contribution
 publication_short: ""
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
-  tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
-  condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus
-  urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci,
-  mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in
-  dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum
-  arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla
-  eleifend gravida.
+abstract: The Common Monetary Area (CMA) agreement has effectively granted the
+  South African government sole discretion over monetary policy and
+  implementation in the region. The effectiveness of this arrangement has long
+  been under discussion given the heterogeneity of member countries. This paper
+  uses a structural vector autoregressive (SVAR) to examine the efficacy of the
+  interest rate channel in the CMA. Specifically, our analysis uses data from
+  2000M1-2018M12 to examine how economic output, inflation, money supply,
+  domestic credit, and lending rate spread for each member country respond to
+  shocks in the South African repo rate. The main findings indicate that a
+  positive shock to the South African repo rate has a statistically significant
+  negative impact on economic output and a positive effect on inflation at the
+  10 percent level for all countries in the CMA. The results also show that
+  money supply, domestic credit, and lending rate spread respond asymmetrically
+  across members countries.
 tags:
   - Source Themes
 projects: []
