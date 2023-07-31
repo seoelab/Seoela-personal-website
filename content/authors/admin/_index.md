@@ -2,9 +2,9 @@
 avatar_filename: avatar.jpg
 bio: ""
 interests:
-  - Labor economics
-  - International Trade
   - Applied Macroeconomics
+  - International Economics and Finance
+  - Econometrics
 social:
   - icon: envelope
     icon_pack: fas
@@ -53,7 +53,7 @@ email: bseoela@iu.edu
 ---
 Welcome to my webpage!
 
-I am a second-year Economics Ph.D. student at Indiana University, with research interests in applied macroeconomics and international trade. Prior to pursuing my Ph.D., I had the opportunity to work as a labor economist for the Idaho Department of Labor, where I gained valuable insights into the real-world applications of economic principles.
+I am a second-year Economics Ph.D. student at Indiana University, with research interests in applied macroeconomics, international Economics and econometrics. Prior to pursuing my Ph.D., I had the opportunity to work as a labor economist for the Idaho Department of Labor, where I gained valuable insights into the real-world applications of economic principles.
 
 My academic journey began with a Bachelor's degree from the College of Idaho. Subsequently, I obtained a Master's degree in economics from Boise State University.
 
