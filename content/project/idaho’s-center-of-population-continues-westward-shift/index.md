@@ -1,6 +1,7 @@
 ---
 title: Idaho’s Center of Population Continues Westward Shift
-date: 2021-03-31T17:10:53.448Z
+subtitle: Idaho Depetment of Labor
+date: 2022-01-04T18:10:53.448Z
 summary: ""
 draft: false
 featured: false
