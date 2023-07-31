@@ -44,7 +44,7 @@ education:
 superuser: true
 status:
   icon: ☕️
-last_name: Wu
+last_name: Seoela
 role: PhD Student in Economics
 highlight_name: true
 title: Bonang N Seoela
