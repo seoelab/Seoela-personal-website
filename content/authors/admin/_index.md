@@ -1,5 +1,5 @@
 ---
-avatar_filename: avatar.jpeg
+avatar_filename: avatar.jpg
 bio: ""
 interests:
   - Labor economics
