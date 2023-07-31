@@ -83,7 +83,7 @@ sections:
       title: Featured Publications
       filters:
         folders:
-          - publication
+          - project
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
       # To show all items, set `tag` to "*".
