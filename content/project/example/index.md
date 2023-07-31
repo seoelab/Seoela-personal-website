@@ -1,7 +1,7 @@
 ---
 slides: example
 url_pdf: ""
-date: 2022-08-13T00:00:00.000Z
+date: 2022-08-12T19:45:41.300Z
 summary: This study examines the influence of existing housing inventory on home
   prices in Idaho, considering other confounding factors. Idaho's housing market
   has experienced a significant price surge over the past three years, raising
@@ -21,10 +21,10 @@ url_slides: ""
 title: Why are home prices across Idaho Cities rising faster than the national
   average?
 links:
-  - icon: twitter
+  - icon: ""
     icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
+    name: PDF
+    url: https://www.labor.idaho.gov/wp-content/uploads/publications/Housing_Market_Analysis.pdf
 image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
