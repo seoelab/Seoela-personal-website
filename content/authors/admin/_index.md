@@ -58,7 +58,3 @@ I am a second-year Economics Ph.D. student at Indiana University, with a focus o
 My academic journey began with a Bachelor's degree from the College of Idaho. Subsequently, I obtained a Master's degree in economics from Boise State University.
 
 I am deeply passionate about researching and unraveling complex economic phenomena that impact society on a large scale. As a curious and driven individual, I continually seek to contribute to the advancement of economic knowledge, both in academia and beyond.
-
-This webpage serves as a platform for sharing my research findings, academic accomplishments, and insights into the world of economics. I invite you to explore the different sections to learn more about my research interests, publications, and professional experiences.
-
-Feel free to connect with me if you share similar research interests or have any inquiries. Thank you for visiting my webpage, and I look forward to engaging with you on various economic topics!
