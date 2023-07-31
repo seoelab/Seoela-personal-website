@@ -11,7 +11,7 @@ links:
     name: PDF
     icon_pack: fas
 image:
-  filename: featured.jpg
+  filename: ""
   focal_point: Smart
   preview_only: false
 ---
