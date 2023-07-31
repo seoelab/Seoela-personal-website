@@ -1,7 +1,7 @@
 ---
 slides: example
 url_pdf: ""
-date: 2016-04-27T00:00:00.000Z
+date: 2022-08-13T00:00:00.000Z
 summary: This study examines the influence of existing housing inventory on home
   prices in Idaho, considering other confounding factors. Idaho's housing market
   has experienced a significant price surge over the past three years, raising
