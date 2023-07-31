@@ -103,7 +103,7 @@ sections:
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
  
-     # featured_only: true
+      featured_only: true
     design:
       columns: '2'
       view: card
