@@ -1,7 +1,7 @@
 ---
 title: " Idaho beef industry showing marked recovery"
 subtitle: Idaho Department of Labor
-date: 2021-03-31T18:09:43.313Z
+date: 2021-03-31T19:44:47.702Z
 draft: false
 featured: false
 external_link: https://idahoatwork.com/2021/03/31/idaho-beef-industry-showing-marked-recovery/
