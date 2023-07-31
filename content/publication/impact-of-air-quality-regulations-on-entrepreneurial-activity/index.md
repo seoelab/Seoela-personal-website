@@ -1,7 +1,7 @@
 ---
 title: Impact of Air Quality Regulations on Entrepreneurial Activity
 publication_types:
-  - "0"
+  - "3"
 authors:
   - admin
   - Samia Islam
