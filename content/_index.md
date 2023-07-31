@@ -34,14 +34,14 @@ sections:
           tag: Demo
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
+      columns: '2'
       view: card
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
   - block: collection
     id: featured
     content:
-      title: Featured Publications
+      title: Research in Progress
       filters:
         folders:
           - publication
@@ -56,6 +56,19 @@ sections:
         folders:
           - publication
         exclude_featured: true
+    design:
+      columns: '2'
+      view: citation
+
+    
+  - block: collection
+    id: featured
+    content:
+      title: Media Coverage
+      filters:
+        folders:
+          - event
+        featured_only: true
     design:
       columns: '2'
       view: citation
