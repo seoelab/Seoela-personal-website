@@ -1,7 +1,7 @@
 ---
 slides: example
 url_pdf: ""
-date: 2016-04-27T00:00:00Z
+date: 2016-04-27T00:00:00.000Z
 summary: >-
   This study explores the relationship between existing housing inventory and
   home prices in Idaho, considering the implications for the state's economy.
@@ -18,8 +18,7 @@ summary: >-
 
   The report identifies reduced homeowner and renter mobility as the primary cause of declining housing inventory in Idaho. Consequently, addressing the state's housing market prices requires supply-side strategies, with a focus on increasing and diversifying housing supply, particularly in cities most affected, including the production of entry-level homes for the growing Millennial market.
 url_video: ""
-tags:
-  - Deep Learning
+tags: []
 external_link: https://www.labor.idaho.gov/wp-content/uploads/publications/Housing_Market_Analysis.pdf
 url_slides: ""
 title: Why are home prices across Idaho Cities rising faster than the national
@@ -32,5 +31,6 @@ links:
 image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
+  filename: featured.jpg
 url_code: ""
 ---
