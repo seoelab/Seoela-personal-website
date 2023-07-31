@@ -49,7 +49,7 @@ sections:
           title: 'Object-Oriented Programming in R'
           url: ''
     design:
-      columns: '2'
+      #columns: '2'
   - block: portfolio
     id: projects
     content:
