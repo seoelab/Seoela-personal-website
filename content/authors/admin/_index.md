@@ -1,5 +1,5 @@
 ---
-avatar_filename: 0.jpeg
+avatar_filename: seoela_bonang.jpg
 bio: ""
 interests:
   - Labor economics
