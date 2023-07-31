@@ -10,7 +10,7 @@ links:
     name: PDF
     icon_pack: fab
 image:
-  filename: featured.jpg
+  filename: https://idahoatwork.com/2021/03/31/idaho-beef-industry-showing-marked-recovery/
   focal_point: Smart
   preview_only: false
 ---
