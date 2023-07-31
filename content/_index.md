@@ -51,7 +51,7 @@ sections:
       view: card
   - block: collection
     content:
-      title: Recent Publications
+      title: Journal Publications
       filters:
         folders:
           - publication
