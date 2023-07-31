@@ -14,7 +14,7 @@ summary: The U.S. Census Bureau regularly calculates the center of population to
 draft: false
 featured: false
 image:
-  filename: featured
+  filename: featured.jpg
   focal_point: Smart
   preview_only: false
 ---
