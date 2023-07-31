@@ -5,7 +5,7 @@ publication_types:
 authors:
   - admin
   - Samia Islam
-draft: false
+draft: true
 featured: true
 image:
   filename: featured
