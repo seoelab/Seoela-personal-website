@@ -51,10 +51,10 @@ title: Bonang N Seoela
 first_name: Alice
 email: bseoela@iu.edu
 ---
-Welcome to my webpage!
+Greetings!
 
-I am a second-year Economics Ph.D. student at Indiana University, with research interests in applied macroeconomics, international Economics and econometrics. Prior to pursuing my Ph.D., I had the opportunity to work as a labor economist for the Idaho Department of Labor, where I gained valuable insights into the real-world applications of economic principles.
+I'm a second-year Economics Ph.D. student at Indiana University, focusing on applied macroeconomics, international economics, and econometrics. Prior to my Ph.D., I worked as a labor economist at the Idaho Department of Labor, gaining valuable real-world insights. My academic journey began with a Bachelor's degree from the College of Idaho, followed by a Master's degree in economics from Boise State University.
 
-My academic journey began with a Bachelor's degree from the College of Idaho. Subsequently, I obtained a Master's degree in economics from Boise State University.
+Passionate about researching and understanding impactful economic phenomena, I'm dedicated to advancing economic knowledge in academia and beyond. 
 
-I am deeply passionate about research and unraveling complex economic phenomena that impact society on a large scale. I am committed to contributing to the advancement of economic knowledge, both in academia and beyond.
+Thank you for visiting my page!
