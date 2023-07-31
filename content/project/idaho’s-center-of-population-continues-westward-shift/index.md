@@ -5,6 +5,8 @@ date: 2022-01-04T18:10:53.448Z
 summary: ""
 draft: false
 featured: false
+tags:
+  - Reports
 external_link: https://idahoatwork.com/2022/01/04/idaho-center-of-the-population-continues-westward-shift/
 links:
   - url: https://idahoatwork.com/2022/01/04/idaho-center-of-the-population-continues-westward-shift/
