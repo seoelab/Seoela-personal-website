@@ -8,7 +8,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: bseoela@gmail.com
+    link: mailto:bseoela@gmail.com
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/BSeoela
