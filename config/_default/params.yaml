@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: apogee
-  theme_night: apogee
+  theme_day: dark
+  theme_night: dark
   font: Classic
   font_size: L
 
