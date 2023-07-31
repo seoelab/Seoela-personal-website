@@ -13,6 +13,7 @@ summary: The U.S. Census Bureau regularly calculates the center of population to
   distribution.
 draft: false
 featured: false
+external_link: https://idahoatwork.com/2022/01/04/idaho-center-of-the-population-continues-westward-shift/
 image:
   filename: featured.jpg
   focal_point: Smart
