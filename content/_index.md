@@ -79,8 +79,13 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Download the latest version of my CV {{% staticref "uploads/resume.pdf" "newtab" %}}here{{% /staticref %}}
+        Download the latest version of my CV using the link below
+    # {{% staticref "uploads/resume.pdf" "newtab" %}}here{{% /staticref %}}
       # Contact (add or remove contact options as necessary)
+    contact_links:
+        - icon: cv
+          name: Resume
+          link: uploads/resume.pdf
       
       directions: Bloomington, Indiana 47405
       office_hours:
@@ -95,9 +100,7 @@ sections:
           icon_pack: fab
           name: Skype Me
           link: 'skype:echo123?call'
-        - icon: cv
-          name: Resume
-          link: uploads/resume.pdf
+
     design:
       columns: '2'
 ---
