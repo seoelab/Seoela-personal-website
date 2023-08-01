@@ -76,7 +76,7 @@ sections:
     block: contact
     id: contact
     content:
-      title: Contact
+      title: CV
       subtitle:
       text: |-
         Download the latest version of my CV using the link below
