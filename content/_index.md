@@ -84,7 +84,6 @@ sections:
       contact_links:
         - icon: cv
           name: Resume
-     icon_pack: ai
           link: uploads/resume.pdf
         - icon: twitter
           icon_pack: fab
