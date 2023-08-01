@@ -95,10 +95,9 @@ sections:
           icon_pack: fab
           name: Skype Me
           link: 'skype:echo123?call'
-        - icon: video
-          icon_pack: fas
-          name: Zoom Me
-          link: 'https://zoom.com'
+        - icon: cv
+          icon_pack: ai
+          link: uploads/resume.pdf
     design:
       columns: '2'
 ---
