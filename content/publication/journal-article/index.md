@@ -23,7 +23,7 @@ abstract: The Common Monetary Area (CMA) agreement has effectively granted the
 tags: []
 projects: []
 slides: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: 10.3934/QFE.2022002
 publication_types:
   - "2"
 image:
@@ -43,5 +43,5 @@ url_slides: ""
 publishDate: 2017-01-01T00:00:00.000Z
 url_poster: ""
 url_code: ""
-doi: 10.3934/QFE.2022002
+doi: ""
 ---
