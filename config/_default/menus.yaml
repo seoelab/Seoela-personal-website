@@ -10,8 +10,8 @@ main:
   - name: Publications
     url: '#featured'
     weight: 30
-
-  - icon: cv
+- name: Resume 
+    icon: cv
     link: uploads/resume.pdf
 
 # Link to a PDF of your resume/CV from the menu.
