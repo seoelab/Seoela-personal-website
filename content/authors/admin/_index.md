@@ -34,13 +34,13 @@ education:
   courses:
     - course: PhD in Economics
       institution: Indiana University Bloomington
-      year: 1
+      year: 2027
     - course: MSc in Economics
       institution: Boise State University
-      year: ""
+      year: 2018
     - course: BSc in Mathematics and Physics
       institution: The College of Idaho
-      year: ""
+      year: 2014
 superuser: true
 status:
   icon: ☕️
