@@ -30,8 +30,8 @@ sections:
           tag: '*'
         - name: Reports
           tag: Reports
-        - name: Other
-          tag: Other
+        - name: Others
+          tag: Others
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
@@ -59,8 +59,6 @@ sections:
     design:
       columns: '2'
       view: citation
-
-    
   - block: collection
     id: featured
     content:
@@ -72,5 +70,4 @@ sections:
     design:
       columns: '2'
       view: citation
-
 ---
