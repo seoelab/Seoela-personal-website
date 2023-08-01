@@ -84,20 +84,11 @@ sections:
       contact_links:
         - icon: cv
           name: Resume
+     icon_pack: ai
           link: uploads/resume.pdf
         - icon: twitter
           icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
-        - icon: skype
-          icon_pack: fab
-          name: Skype Me
-          link: 'skype:echo123?call'
-
-      directions: Bloomington, Indiana 47405
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+       
 
     design:
       columns: '2'
