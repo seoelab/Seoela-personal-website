@@ -97,7 +97,6 @@ sections:
           link: 'skype:echo123?call'
         - icon: cv
           name: Resume
-          icon_pack: ai
           link: uploads/resume.pdf
     design:
       columns: '2'
