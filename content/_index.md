@@ -82,7 +82,7 @@ sections:
         Follow the link below for the latest version of my CV
       # Contact (add or remove contact options as necessary)
       
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      directions: Bloomington, Indiana 47405
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
