@@ -80,9 +80,9 @@ sections:
       subtitle:
       text: |-
         Follow the link below for the latest version of my CV
-          icon: cv
+          {{icon: cv
           name: Resume
-          link: uploads/resume.pdf
+          link: uploads/resume.pdf}}
       # Contact (add or remove contact options as necessary)
       
       directions: Bloomington, Indiana 47405
