@@ -59,15 +59,4 @@ sections:
     design:
       columns: '2'
       view: citation
-  - block: collection
-    id: featured
-    content:
-      title: Media Coverage
-      filters:
-        folders:
-          - event
-       # featured_only: true
-    design:
-      columns: '2'
-      view: citation
 ---
