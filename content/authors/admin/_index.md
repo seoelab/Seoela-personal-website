@@ -34,7 +34,7 @@ education:
   courses:
     - course: PhD in Economics
       institution: Indiana University Bloomington
-      year: ""
+      year: 1
     - course: MSc in Economics
       institution: Boise State University
       year: ""
