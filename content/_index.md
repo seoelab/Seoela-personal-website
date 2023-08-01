@@ -81,7 +81,7 @@ sections:
       text: |-
         Download the latest version of my CV using the link below
     # {{% staticref "uploads/resume.pdf" "newtab" %}}here{{% /staticref %}}
- contact_links:
+
         - icon: cv
           name: Resume
           link: uploads/resume.pdf
