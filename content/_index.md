@@ -79,8 +79,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Follow the link below for the latest version of my CV
-          {{% staticref "uploads/cv.pdf" "newtab" %}}Download my CV{{% /staticref %}}
+        Download the latest version of my CV {{% staticref "uploads/resume.pdf" "newtab" %}}here{{% /staticref %}}
       # Contact (add or remove contact options as necessary)
       
       directions: Bloomington, Indiana 47405
