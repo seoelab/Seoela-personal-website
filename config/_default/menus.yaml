@@ -11,8 +11,7 @@ main:
     url: '#featured'
     weight: 30
 - name: Resume 
-    icon: cv
-    link: uploads/resume.pdf
+    url: uploads/resume.pdf
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
