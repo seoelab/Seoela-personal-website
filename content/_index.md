@@ -73,22 +73,4 @@ sections:
       columns: '2'
       view: citation
 
-    block: contact
-    id: contact
-    content:
-      title: CV
-      subtitle:
-      text: |-
-        Download the latest version of my CV using the link below
-    # {{% staticref "uploads/resume.pdf" "newtab" %}}here{{% /staticref %}}
-      contact_links:
-        - icon: cv
-          name: Resume
-          link: uploads/resume.pdf
-        - icon: twitter
-          icon_pack: fab
-       
-
-    design:
-      columns: '2'
 ---
