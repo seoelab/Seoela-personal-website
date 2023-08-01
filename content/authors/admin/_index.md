@@ -34,10 +34,10 @@ education:
   courses:
     - course: PhD in Economics
       institution: Indiana University Bloomington
-      year: 2003
+      year: 2027
     - course: MSc in Economics
       institution: Boise State University
-      year: 1973
+      year: 2020
     - course: BSc in Mathematics and Physics
       institution: The College of Idaho
       year: 2018
