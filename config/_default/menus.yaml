@@ -10,13 +10,9 @@ main:
   - name: Publications
     url: '#featured'
     weight: 30
-    
-  - icon: cv
-    link: uploads/resume.pdf
-    weight: 40
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
   - name: CV
-    link: uploads/resume.pdf
+    link: https://bonangseoela.netlify.app/uploads/resume.pdf
     weight: 70
