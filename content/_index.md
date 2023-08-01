@@ -80,9 +80,7 @@ sections:
       subtitle:
       text: |-
         Follow the link below for the latest version of my CV
-          {{icon: cv
-          name: Resume
-          link: uploads/resume.pdf}}
+          {{% staticref "uploads/cv.pdf" "newtab" %}}Download my CV{{% /staticref %}}
       # Contact (add or remove contact options as necessary)
       
       directions: Bloomington, Indiana 47405
