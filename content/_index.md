@@ -81,12 +81,10 @@ sections:
       text: |-
         Download the latest version of my CV using the link below
     # {{% staticref "uploads/resume.pdf" "newtab" %}}here{{% /staticref %}}
-
-      directions: Bloomington, Indiana 47405
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
       contact_links:
+        - icon: cv
+          name: Resume
+          link: uploads/resume.pdf
         - icon: twitter
           icon_pack: fab
           name: DM Me
@@ -95,6 +93,11 @@ sections:
           icon_pack: fab
           name: Skype Me
           link: 'skype:echo123?call'
+
+      directions: Bloomington, Indiana 47405
+      office_hours:
+        - 'Monday 10:00 to 13:00'
+        - 'Wednesday 09:00 to 10:00'
 
     design:
       columns: '2'
