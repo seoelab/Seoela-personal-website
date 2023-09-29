@@ -1,5 +1,7 @@
 ---
-avatar_filename: avatar.jpg
+title: Bonang N Seoela
+role: PhD Student in Economics
+avatar_filename: screenshot-2023-09-29-124322.png
 bio: ""
 interests:
   - Applied Macroeconomics
@@ -45,9 +47,7 @@ superuser: true
 status:
   icon: ☕️
 last_name: Seoela
-role: PhD Student in Economics
 highlight_name: true
-title: Bonang N Seoela
 first_name: Alice
 email: bseoela@iu.edu
 ---
