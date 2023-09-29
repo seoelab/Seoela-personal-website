@@ -53,9 +53,8 @@ email: bseoela@iu.edu
 ---
 Greetings!
 
-I am currently a second-year Economics Ph.D. candidate at Indiana University, specializing in applied macroeconomics, international economics, and econometrics. Prior to embarking on my doctoral studies, I held a position as a labor economist at the Idaho Department of Labor, where I had the opportunity to acquire valuable practical insights into labor market dynamics. My academic background includes a Bachelor's degree in physics from the College of Idaho and a Master's degree in economics from Boise State University.
+I am currently a second-year economics Ph.D. student at Indiana University, with research interests in macroeconomics, international economics, and econometrics. Prior to embarking on my doctoral studies, I held a position as a labor economist at the Idaho Department of Labor, where I had the opportunity to acquire valuable practical insights into labor market dynamics. My academic background includes a bachelor's degree in physics from the College of Idaho and a master's degree in economics from Boise State University.
 
  For more information, please see my{{% staticref "static/uploads/resume.pdf" "newtab" %}}CV{{% /staticref %}}.
-
 
 Thank you for visiting my page!
