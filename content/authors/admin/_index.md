@@ -55,6 +55,6 @@ Greetings!
 
 I am currently a second-year economics Ph.D. student at Indiana University, with research interests in macroeconomics, international economics, and econometrics. Prior to embarking on my doctoral studies, I held a position as a labor economist at the Idaho Department of Labor, where I had the opportunity to acquire valuable practical insights into labor market dynamics. My academic background includes a bachelor's degree in physics from the College of Idaho and a master's degree in economics from Boise State University.
 
-{{% staticref "https://bonangseoela.netlify.app/uploads/resume.pdf" "newtab" %}} For more information, please see my CV{{% /staticref %}}.
+{{% staticref "https://bonangseoela.netlify.app/uploads/resume.pdf" "newtab" %}} For more information, please see my CV.{{% /staticref %}}
 
 Thank you for visiting my page!
