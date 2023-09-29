@@ -1,7 +1,7 @@
 ---
 title: Bonang N Seoela
 role: PhD Student in Economics
-avatar_filename: screenshot-2023-09-29-124322.png
+avatar_filename: avatar.jpg
 bio: ""
 interests:
   - Applied Macroeconomics
