@@ -6,7 +6,7 @@ bio: ""
 interests:
   - Macroeconomics
   - International Trade
-  - and Econometrics
+  - Econometrics
 social:
   - icon: envelope
     icon_pack: fas
