@@ -25,7 +25,7 @@ social:
     link: https://github.com/seoelab
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/https://www.linkedin.com/in/bonang-seoela-2a207794/
+    link: linkedin.com/in/bonang-seoela-2a207794
   - icon: cv
     icon_pack: ai
     link: uploads/resume.pdf
