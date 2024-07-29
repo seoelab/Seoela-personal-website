@@ -17,7 +17,7 @@ sections:
       title: Teaching
       filters:
         folders:
-          - slides
+          - slides_teaching
   - block: portfolio
     id: projects
     content:
