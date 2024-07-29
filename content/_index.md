@@ -11,6 +11,14 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
+  - block: about.biography
+    id: slides
+    content:
+      title: Teaching
+        filters:
+          folders:
+            - slides
+          featured_only: true
   - block: portfolio
     id: projects
     content:
