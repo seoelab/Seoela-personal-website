@@ -11,13 +11,7 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-   # - block: slides
-   # id: slides_teaching
-   # content:
-   #   title: Teaching
-   #   filters:
-   #     folders:
-   #       - slides
+---
   - block: portfolio
     id: projects
     content:
@@ -49,6 +43,7 @@ sections:
       view: card
       # For Showcase, card, view, flip alternate rows?
       flip_alt_rows: false
+---
   - block: collection
     id: featured
     content:
@@ -60,6 +55,7 @@ sections:
     design:
       columns: '2'
       view: citation
+---
   - block: collection
     content:
       title: Journal Publications
