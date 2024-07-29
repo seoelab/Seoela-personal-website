@@ -1,10 +1,10 @@
 ---
 title: " A closer look at Idaho’s financial activities sector in the past
   decade: A shift-share analysis"
-subtitle: Idaho Depetment of Labor
+subtitle: Idaho Department of Labor
 date: 2020-12-19T19:39:30.342Z
 draft: false
-featured: false
+featured: True
 authors: []
 tags:
   - Reports
