@@ -8,10 +8,10 @@ main:
     url: 'project'
     weight: 20
   - name: Publications
-    url: '#featured'
+    url: 'featured'
     weight: 30
   - name: Teaching
-    url: '#slides_teaching'
+    url: 'slides_teaching'
     weight: 40
 
 # Link to a PDF of your resume/CV from the menu.
