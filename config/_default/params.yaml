@@ -7,7 +7,7 @@
 
 appearance:
   theme_day: light
-  theme_night: maroon
+  theme_night: red
   font: Roboto
   font_size: 20px
 
