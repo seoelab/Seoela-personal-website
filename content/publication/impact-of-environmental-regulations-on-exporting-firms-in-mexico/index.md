@@ -1,10 +1,10 @@
 ---
 title: Impact of Environmental Regulations on Exporting Firms in Mexico
 publication_types:
-  - "3"
+  - "0"
 authors:
   - admin
-draft: true
+draft: false
 featured: true
 image:
   filename: featured
