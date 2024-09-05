@@ -70,4 +70,42 @@ sections:
     design:
       columns: '2'
       view: citation
+  - block: shortcv
+    id: experience
+    content:
+      title: Short CV
+      items:
+        - title: "Teaching Assistant"
+          organization: "Dept. of Economics, Indiana University"
+          dates: "Fall 2023, Spring 2024"
+          responsibilities:
+            - "Fundamentals of Economics I"
+        - title: "Labor Economist"
+          organization: "Idaho Department of Labor - Twin Falls, ID"
+          dates: "Aug 2020 – Jul 2022"
+          responsibilities:
+            - "Conducted comprehensive research and analysis on labor market trends."
+            - "Utilized econometric models to assess policy impacts."
+            - "Collaborated on data collection efforts and generated detailed reports."
+            - "Offered expert guidance on labor market policies."
+        - title: "Data Science Intern"
+          organization: "Albertsons Companies - Boise, ID"
+          dates: "May 2019 – Nov 2019"
+          responsibilities:
+            - "Collaborated on data-driven projects, including predictive modeling and statistical analysis."
+            - "Delivered actionable insights to enhance operational efficiency."
+            - "Effectively communicated results to stakeholders."
+        - title: "Graduate Research Assistant"
+          organization: "Boise State University - Boise, ID"
+          dates: "Aug 2018 – May 2020"
+          responsibilities:
+            - "Assisted faculty in economic research, including data collection and analysis."
+            - "Conducted literature reviews and ensured the accuracy of research findings."
+        - title: "Financial Analyst Intern"
+          organization: "Second Wave Capital Management - Remote"
+          dates: "Aug 2017 – Dec 2017"
+          responsibilities:
+            - "Assisted acquisition team with due diligence, financial analysis, and market research."
+            - "Evaluated financial statements, performed valuation analyses, and conducted industry research."
+            - "Prepared presentations for senior management."
 ---
