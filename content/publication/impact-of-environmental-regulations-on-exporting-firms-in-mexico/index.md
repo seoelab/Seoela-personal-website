@@ -4,13 +4,7 @@ publication_types:
   - "0"
 authors:
   - admin
-draft: false
-featured: true
-image:
-  filename: featured
-  focal_point: Smart
-  preview_only: false
-summary: >-
+abstract: >-
   How do industry-specific environmental policies aimed at reducing emissions
   affect ex-
 
@@ -23,5 +17,13 @@ summary: >-
   ability concerns, have raised debates regarding their economic implications, particularly in
 
   international trade. 
-date: 2024-09-05T04:17:26.389Z
+draft: false
+featured: true
+image:
+  filename: featured
+  focal_point: Smart
+  preview_only: false
+  alt_text: ""
+summary: ""
+date: 2023-09-05T04:17:00.000Z
 ---
