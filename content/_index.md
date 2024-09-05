@@ -18,14 +18,6 @@ sections:
       filters:
         folders:
           - slides
-  - block: slides
-    id: experience
-    content:
-      title: Short CV
-      filters:
-        folders:
-          - slides
-  - block: portfolio
     id: projects
     content:
       title: Projects
