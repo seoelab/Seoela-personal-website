@@ -12,7 +12,7 @@ main:
     weight: 30
   - name: Teaching
     url: '#slides'
-    weight: 30
+    weight: 21
   - name: Short CV
     url: '#experience'
     weight: 45
