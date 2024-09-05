@@ -70,11 +70,11 @@ sections:
     design:
       columns: '2'
       view: citation
-  - block: shortcv
+  - block: slides
     id: experience
     content:
       title: Short CV
-        filters:
-          folders:
-            - publication    
+      filters:
+        folders:
+          - home  
 ---
