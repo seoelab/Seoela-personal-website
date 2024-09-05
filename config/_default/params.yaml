@@ -8,8 +8,8 @@
 appearance:
   theme_day: light
   theme_night: maroon
-  font: Classic
-  font_size: L
+  font: Roboto
+  font_size: 20px
 
 # SEO
 
