@@ -1,5 +1,8 @@
 ---
-title: Bonang N Seoela
+title: Bonang N. Seoela
+# Is this the primary user of the site?
+superuser: true
+
 role: PhD Student in Economics
 avatar_filename: avatar.jpg
 bio: ""
@@ -8,6 +11,63 @@ interests:
   - Computational Macroeconomics
   - Environmental Economics
   - Applied Econometrics
+work:
+  - position: Director of Cloud Infrastructure
+    company_name: GenCoin
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-01-01
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: Backend Software Engineer
+    company_name: X
+    company_url: ''
+    company_logo: ''
+    date_start: 2016-01-01
+    date_end: 2020-12-31
+    summary: |
+      Responsibilities include:
+      - Migrated infrastructure to a new data center
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ''
+        percent: 80
+        icon: code-bracket
+      - name: Data Science
+        description: ''
+        percent: 100
+        icon: chart-bar
+      - name: SQL
+        description: ''
+        percent: 40
+        icon: circle-stack
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Hiking
+        description: ''
+        percent: 60
+        icon: person-simple-walk
+      - name: Cats
+        description: ''
+        percent: 100
+        icon: cat
+      - name: Photography
+        description: ''
+        percent: 80
+        icon: camera
 social:
   - icon: envelope
     icon_pack: fas
@@ -52,7 +112,8 @@ highlight_name: true
 first_name: Alice
 email: bseoela@iu.edu
 ---
-Greetings!
+
+## About Me
 
 I am currently an economics Ph.D. student at Indiana University, with research interests in international trade, computational macroeconomics, environmental economics and applied econometrics. Prior to embarking on my doctoral studies, I held a position as a labor economist at the Idaho Department of Labor. My academic background includes a bachelor's degree in physics from the College of Idaho and a master's degree in economics from Boise State University. 
 
