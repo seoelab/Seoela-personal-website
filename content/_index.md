@@ -12,7 +12,7 @@ sections:
       username: admin
 
   - block: experience
-    id: short_cv
+    id: experience
     content:
       title: Short CV
       subtitle: ''
