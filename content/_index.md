@@ -8,7 +8,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      #title: Biography
       # Choose a user profile to display (a folder name within content/authors/)
       username: admin
   #- block: resume-experience
@@ -23,14 +23,14 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Projects
+      title: Policy Briefs
       filters:
         folders:
           - project
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
-      view: card
+      view: citation
       # Default filter index (e.g. 0 corresponds to the first filter_button instance below).
       default_button_index: 0
       # Filter toolbar (optional).
@@ -54,7 +54,7 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Research in Progress
+      title: Working Papers
       filters:
         folders:
           - publication
@@ -64,7 +64,7 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Journal Publications
+      title: Publications
       filters:
         folders:
           - publication
