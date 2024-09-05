@@ -76,5 +76,5 @@ sections:
       title: Short CV
         filters:
           folders:
-            - home    
+            - publication    
 ---
