@@ -49,6 +49,13 @@ sections:
       view: card
       # For Showcase, card, view, flip alternate rows?
       flip_alt_rows: false
+  - block: shortcv
+    id: experience
+    content:
+      title: Short CV
+      filters:
+        folders:
+          - home
   - block: collection
     id: featured
     content:
@@ -69,12 +76,5 @@ sections:
         exclude_featured: true
     design:
       columns: '2'
-      view: citation
-  - block: slides
-    id: experience
-    content:
-      title: Short CV
-      filters:
-        folders:
-          - home  
+      view: citation 
 ---
