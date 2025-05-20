@@ -25,7 +25,7 @@ abstract: In recent years, air pollution from industrial sources in Mexico has
   suggest that ProAire led to significant environmental improvements and
   restructured the export margin through the reallocation of export activity
   toward larger firms.
-draft: true
+draft: false
 featured: true
 image:
   filename: featured
