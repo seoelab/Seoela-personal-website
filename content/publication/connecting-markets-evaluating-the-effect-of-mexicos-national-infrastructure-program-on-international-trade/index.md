@@ -3,6 +3,8 @@ title: "Connecting Markets: Evaluating the effect of Mexico's National
   Infrastructure Program on International Trade"
 publication_types:
   - "0"
+authors:
+  - admin
 abstract: This study investigates the effects of large-scale road infrastructure
   investments on firm-level export behavior in Mexico. Between 2012 and 2020,
   the Mexican government implemented an ambitious National Infrastructure
