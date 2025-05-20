@@ -4,7 +4,7 @@ title: "The Effect of Homeownership on Unemployment Rate: A Nonlinear Panel ARDL
 publication_types:
   - "0"
 authors:
-  - Seoela B. N.
+  - admin
 draft: false
 featured: true
 image:
