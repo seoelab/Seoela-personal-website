@@ -1,5 +1,6 @@
 ---
-title: Impact of Environmental Regulations on Exporting Firms in Mexico
+title: "Environmental Regulations and Firm Export Dynamics: Theory and Evidence
+  from Mexico"
 publication_types:
   - "0"
 authors:
@@ -24,7 +25,7 @@ abstract: In recent years, air pollution from industrial sources in Mexico has
   suggest that ProAire led to significant environmental improvements and
   restructured the export margin through the reallocation of export activity
   toward larger firms.
-draft: false
+draft: true
 featured: true
 image:
   filename: featured
