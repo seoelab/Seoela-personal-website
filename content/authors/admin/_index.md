@@ -109,13 +109,13 @@ status:
   icon: ☕️
 last_name: Seoela
 highlight_name: true
-first_name: Alice
+first_name: Bonang
 email: bseoela@iu.edu
 ---
 
 ## About Me
 
-I am currently an economics Ph.D. student at Indiana University, with research interests in international trade, computational macroeconomics, environmental economics and applied econometrics. Prior to embarking on my doctoral studies, I held a position as a labor economist at the Idaho Department of Labor. My academic background includes a bachelor's degree in physics from the College of Idaho and a master's degree in economics from Boise State University. 
+I am a Ph.D. student in Economics at Indiana University. My research focuses on the intersection of international trade, energy, and environmental economics, with a secondary concentration in computational macroeconomics. I examine how globalization and environmental policy interact through channels such as trade and regulation, and I analyze their broader economic and societal implications. Prior to beginning my doctoral studies, I served as a labor economist at the Idaho Department of Labor. 
 
 {{% staticref "https://bonangseoela.netlify.app/uploads/resume.pdf" "newtab" %}} For more information, please see my CV.{{% /staticref %}}
 
