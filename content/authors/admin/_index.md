@@ -7,10 +7,11 @@ role: PhD Student in Economics
 avatar_filename: avatar.jpg
 bio: ""
 interests:
-  - International Economics
-  - Computational Macroeconomics
+  - International Trade
   - Environmental Economics
-  - Applied Econometrics
+  - Energy Economics
+  - Computational Macroeconomics
+  - Housing Markets
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
