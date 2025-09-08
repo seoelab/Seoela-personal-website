@@ -115,7 +115,7 @@ email: bseoela@iu.edu
 
 ## About Me
 
-I am a Ph.D. student in Economics at Indiana University. My research focuses on the intersection of international trade, energy, and environmental economics, with a secondary concentration in computational macroeconomics. I examine how globalization and environmental policy interact through channels such as trade and regulation, and I analyze their broader economic and societal implications. Prior to beginning my doctoral studies, I served as a labor economist at the Idaho Department of Labor. 
+I am a Ph.D. student in Economics at Indiana University. My research focuses on the intersection of international trade, energy economics, and environmental economics, with a secondary concentration in computational macroeconomics. I study how globalization and the environment interact through trade, infrastructure, and energy and environmental regulation, and I evaluate their broader economic and societal consequences. I also maintain an interest in housing markets, particularly the determinants of spatial variation in home prices. Prior to beginning my doctoral studies, I served as a labor economist at the Idaho Department of Labor. 
 
 {{% staticref "https://bonangseoela.netlify.app/uploads/resume.pdf" "newtab" %}} For more information, please see my CV.{{% /staticref %}}
 
