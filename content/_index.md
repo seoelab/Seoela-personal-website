@@ -20,7 +20,29 @@ sections:
   #    date_format: 'January 2006'
   #    # Education or Experience section first?
   #    is_education_first: false
-  - block: portfolio
+  
+  - block: collection
+    id: featured
+    content:
+      title: Working Papers
+      filters:
+        folders:
+          - publication
+        featured_only: true
+    design:
+      columns: '2'
+      view: citation
+  - block: collection
+    content:
+      title: Publications
+      filters:
+        folders:
+          - publication
+        exclude_featured: true
+    design:
+      columns: '2'
+      view: citation
+- block: portfolio
     id: projects
     content:
       title: Policy Briefs
@@ -51,25 +73,4 @@ sections:
       view: citation
       # For Showcase, card, view, flip alternate rows?
       flip_alt_rows: false
-  - block: collection
-    id: featured
-    content:
-      title: Working Papers
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: citation
-  - block: collection
-    content:
-      title: Publications
-      filters:
-        folders:
-          - publication
-        exclude_featured: true
-    design:
-      columns: '2'
-      view: citation 
 ---
