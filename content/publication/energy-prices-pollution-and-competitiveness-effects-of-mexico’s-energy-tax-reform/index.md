@@ -2,9 +2,9 @@
 title: "Energy Prices, Pollution, and Competitiveness: Effects of Mexico’s
   Energy Tax Reform"
 publication_types:
-  - "3"
+  - "0"
 draft: false
-featured: false
+featured: true
 image:
   filename: featured
   focal_point: Smart
