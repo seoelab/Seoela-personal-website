@@ -81,7 +81,7 @@ social:
       header: true
   - icon: graduation-cap
     icon_pack: fas
-    link: https://scholar.google.com/citations?hl=en&user=NMkzvMoAAAAJ
+    link: https://scholar.google.com/citations?hl=en&user=TcYX2aAAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/seoelab
