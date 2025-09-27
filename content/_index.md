@@ -23,7 +23,7 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Working Papers
+      title: Work in Progress
       filters:
         folders:
           - publication
@@ -44,7 +44,7 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Policy Briefs
+      title: Reports/Briefs
       filters:
         folders:
           - project
