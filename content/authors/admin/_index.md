@@ -99,13 +99,16 @@ education:
     - course: PhD in Economics
       institution: Indiana University Bloomington
       year: 2022 - Present
-    - course: MSc. in Economics
+    - course: M.Sc. in Economics
       institution: Boise State University
       year: 2020
     - course: BSc in Mathematics and Physics
       institution: The College of Idaho
       url: https://www.collegeofidaho.edu
       year: 2018
+    - course: International Baccalaureate (IB) Diploma
+      institution: Waterford Kamhlaba UWCSA
+      year: 2013
 superuser: true
 status:
   icon: ☕️
