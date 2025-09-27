@@ -98,7 +98,7 @@ education:
   courses:
     - course: PhD in Economics
       institution: Indiana University Bloomington
-      year: 2027
+      year: 2027+ε
     - course: MSc in Economics
       institution: Boise State University
       year: 2020
