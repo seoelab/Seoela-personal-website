@@ -3,7 +3,7 @@ title: Bonang N. Seoela
 # Is this the primary user of the site?
 superuser: true
 
-role: PhD Student in Economics
+role: Ph.D. Student in Economics
 avatar_filename: avatar.jpg
 bio: ""
 interests:
@@ -96,17 +96,17 @@ organizations:
     url: https://economics.indiana.edu/index.html
 education:
   courses:
-    - course: PhD in Economics
+    - course: Ph.D. in Economics
       institution: Indiana University Bloomington
       year: 2022 - Present
     - course: M.Sc. in Economics
       institution: Boise State University
       year: 2020
-    - course: BSc in Mathematics and Physics
+    - course: B.Sc. in Mathematics and Physics
       institution: The College of Idaho
       url: https://www.collegeofidaho.edu
       year: 2018
-    - course: International Baccalaureate (IB) Diploma
+    - course: International Baccalaureate (I.B.) Diploma
       institution: Waterford Kamhlaba UWCSA
       year: 2013
 superuser: true
