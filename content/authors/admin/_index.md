@@ -8,10 +8,10 @@ avatar_filename: avatar.jpg
 bio: ""
 interests:
   - International Trade
-  - Environmental Economics
-  - Energy Economics
+  - Environmental/Energy
+  - Firm Dynamics
+  - Spatial Housing Markets
   - Computational Macroeconomics
-  - Housing Markets
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
