@@ -93,17 +93,18 @@ social:
     link: uploads/resume.pdf
 organizations:
   - name: Indiana University Bloomington
-    url: https://www.iu.edu/index.html
+    url: https://economics.indiana.edu/index.html
 education:
   courses:
     - course: PhD in Economics
       institution: Indiana University Bloomington
-      year: 2027+ε
-    - course: MSc in Economics
+      year: 2022 - Present
+    - course: MSc. in Economics
       institution: Boise State University
       year: 2020
     - course: BSc in Mathematics and Physics
       institution: The College of Idaho
+      url: https://www.collegeofidaho.edu
       year: 2018
 superuser: true
 status:
