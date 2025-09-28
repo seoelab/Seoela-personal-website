@@ -8,7 +8,7 @@ avatar_filename: avatar.jpg
 bio: ""
 interests:
   - International Trade
-  - Environmental and Energy Economics
+  - Environment/Energy
   - Firm Dynamics
   - Spatial Housing Markets
   - Computational Macroeconomics
