@@ -5,23 +5,22 @@ publication_types:
   - "0"
 authors:
   - admin
-abstract: In recent years, air pollution from industrial sources in Mexico has
-  declined significantly despite rising output. This paper investigates the role
-  of environmental regulations in driving these trends and examines their
-  effects on firm-level export performance. A decomposition of the decline in
-  emissions reveals that the technique effect played a significant role,
-  indicating substantial improvements in pollution abatement practices within
-  industries. Reduced-form estimates show that environmental regulations lowered
-  pollution emissions by 15\%. Stricter regulations also reduce export entry by
-  0.3\%, increase export exit by 2\%, and reduce export sales by 13\% on
-  average. The impacts are heterogeneous across firms. Smaller firms face
-  disproportionate compliance costs, leading to higher exit rates and larger
-  revenue declines, whereas larger firms exhibit resilience, with export growth
-  reflecting scale advantages and resource reallocation. Using data from 2005 to
-  2014, counterfactual analysis within a quantitative model confirms that
-  environmental regulations were the primary driver of the observed emission
-  reductions and that the implicit price of pollution faced by firms increased
-  substantially over the period.
+abstract: "Can environmental regulation reduce emissions without weakening
+  export performance? This paper examines firm-level responses to sub-national
+  air quality policies in Mexico. Between 2005 and 2014, manufacturing output
+  rose while emissions declined sharply. A decomposition of these
+  trends  indicates that the majority of this decline stems from the technique
+  effect, reflecting improved pollution abatement. Using detailed panel data and
+  variation in policy implementation across municipalities, I show that
+  regulations reduced firm-level emissions by 15% on average. However, these
+  gains came with tradeoffs. Stricter regulations reduced export entry by 0.3%,
+  increased exit by 2%, and lowered export sales by 13%. Effects are
+  heterogeneous: smaller firms faced larger compliance burdens and higher exit
+  rates, while larger firms exhibited relative resilience. To interpret these
+  findings, I use a multi-sector general equilibrium model with endogenous
+  abatement and technology choice. Counterfactual simulations show that
+  environmental regulation was the primary driver of emission reductions, with a
+  substantial increase in firms’ implicit pollution price over the period."
 draft: false
 featured: true
 image:
