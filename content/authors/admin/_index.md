@@ -3,7 +3,7 @@ title: Bonang N. Seoela
 # Is this the primary user of the site?
 superuser: true
 
-role: Ph.D. Student in Economics
+role: Ph.D. Candidate in Economics
 avatar_filename: avatar.jpg
 bio: ""
 interests:
