@@ -6,11 +6,9 @@ superuser: true
 role: Ph.D. Candidate in Economics
 avatar_filename: avatar.jpg
 bio: ""
-Primary interests:
-  Primary:
+interests:
   - International Trade
   - Environment and Energy
-  Secondary:
   - Labor Economics
   - Spatial Housing Markets
   - Computational Macroeconomics
