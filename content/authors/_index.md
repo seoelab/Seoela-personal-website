@@ -1,5 +1,5 @@
 ---
-cms_exclude: true
+cms_exclude: false
 
 # Author profile pages are currently disabled.
 # To enable them, remove the `_build` and `cascade` sections below.
