@@ -7,16 +7,11 @@ role: Ph.D. Candidate in Economics
 avatar_filename: avatar.jpg
 bio: ""
 interests:
-  - name: International Trade
-    level: primary
-  - name: Environment and Energy
-    level: primary
-  - name: Labor Economics
-    level: secondary
-  - name: Spatial Housing Markets
-    level: secondary
-  - name: Computational Macroeconomics
-    level: secondary
+  - International Trade
+  -  Environment and Energy
+  -  Labor Economics
+  -  Spatial Housing Markets
+  -  Computational Macroeconomics
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
