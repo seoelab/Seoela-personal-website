@@ -6,7 +6,7 @@ superuser: true
 role: Ph.D. Candidate in Economics
 avatar_filename: avatar.jpg
 bio: ""
-interests:
+Primary interests:
   Primary:
   - International Trade
   - Environment and Energy
