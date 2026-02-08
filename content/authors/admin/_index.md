@@ -9,7 +9,7 @@ bio: ""
 interests:
   - International Trade
   - Environment and Energy
-  - Firm Dynamics
+  - Labor Economics
   - Spatial Housing Markets
   - Computational Macroeconomics
 work:
