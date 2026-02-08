@@ -14,12 +14,6 @@ interests:
   - Labor Economics
   - Spatial Housing Markets
   - Computational Macroeconomics
-Secondary Interests:
-  - International Trade
-  - Environment and Energy
-  - Labor Economics
-  - Spatial Housing Markets
-  - Computational Macroeconomics
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
