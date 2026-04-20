@@ -9,7 +9,7 @@ abstract: ""
 draft: false
 featured: true
 image:
-  filename: featured
+  filename: national_road_infrastructure.png
   focal_point: Smart
   preview_only: false
 date: 2025-04-20T23:27:00.000Z
