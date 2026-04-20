@@ -1,6 +1,6 @@
 ---
-title: "Energy Prices, Pollution, and Competitiveness: Effects of Mexico’s
-  Energy Tax Reform"
+title: "Energy Price Shocks along the Global Supply Chain: The Effects of Fossil
+  Fuel Reforms in Mexico"
 publication_types:
   - "0"
 authors:
