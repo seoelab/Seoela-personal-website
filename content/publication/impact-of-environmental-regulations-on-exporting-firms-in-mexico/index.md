@@ -5,22 +5,25 @@ publication_types:
   - "0"
 authors:
   - admin
-abstract: "Can environmental regulation reduce emissions without weakening
-  export performance? This paper examines firm-level responses to sub-national
-  air quality policies in Mexico. Between 2005 and 2014, manufacturing output
-  rose while emissions declined sharply. A decomposition of these
-  trends  indicates that the majority of this decline stems from the technique
-  effect, reflecting improved pollution abatement. Using detailed panel data and
-  variation in policy implementation across municipalities, I show that
-  regulations reduced firm-level emissions by 15% on average. However, these
-  gains came with tradeoffs. Stricter regulations reduced export entry by 0.3%,
-  increased exit by 2%, and lowered export sales by 13%. Effects are
-  heterogeneous: smaller firms faced larger compliance burdens and higher exit
-  rates, while larger firms exhibited relative resilience. To interpret these
-  findings, I use a multi-sector general equilibrium model with endogenous
-  abatement and technology choice. Counterfactual simulations show that
-  environmental regulation was the primary driver of emission reductions, with a
-  substantial increase in firms’ implicit pollution price over the period."
+abstract: "This paper studies how spatially targeted air quality regulation
+  affects firms, trade, and welfare in an open economy. I examine Mexico's
+  ProAire programs, a set of place-based regulations implemented between 2011
+  and 2020, when manufacturing emissions fell sharply while output continued to
+  grow. Combining firm-level panel data with a staggered
+  difference-in-differences design, I find that regulation explains about 20
+  percent of the emissions decline at regulated plants. These environmental
+  gains come with heterogeneous effects on trade: export revenues fall by
+  roughly 12 percent among continuing exporters. To quantify the aggregate
+  implications, I implement a quantitative spatial general equilibrium model
+  with heterogeneous firms, endogenous abatement, international trade, and
+  worker sorting. The model implies that ProAire reduces national emissions by
+  3.4 percent and raises welfare by 0.85 percent. Welfare gains extend beyond
+  regulated municipalities as workers reallocate toward cleaner places, changing
+  wages and market access across space. Emissions decomposition shows that
+  abatement comes almost entirely from the variable-cost channel, while fixed
+  compliance costs yield little abatement on their own. A uniform national
+  policy achieving the same aggregate abatement delivers lower welfare,
+  revealing gains from aligning regulation with economic geography."
 draft: false
 featured: true
 image:
