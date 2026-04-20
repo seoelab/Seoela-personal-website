@@ -1,6 +1,6 @@
 ---
-title: "Environmental Regulations and Export Dynamics: Firm-Level Evidence from
-  Mexican Manufacturing"
+title: "The Economic Geography of Air Quality Regulation: Heterogeneous Firms,
+  Trade, and Welfare in an Open Economy"
 publication_types:
   - "0"
 authors:
