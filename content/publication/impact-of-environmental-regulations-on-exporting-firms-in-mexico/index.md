@@ -25,7 +25,7 @@ abstract: "This paper studies how spatially targeted air-quality regulation
 draft: false
 featured: true
 image:
-  filename: fig02_emissions.png
+  filename: fig10_welfare_agg.png
   focal_point: Smart
   preview_only: false
   alt_text: ""
