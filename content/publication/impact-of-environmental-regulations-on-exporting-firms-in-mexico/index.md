@@ -5,13 +5,11 @@ publication_types:
   - "0"
 authors:
   - admin
-abstract: "This paper studies whether spatially targeted air-quality management
-  can reduce emissions
-
-  without erasing the gains from trade in a middle-income open economy. I
-  examine Mexico’s ProAire programs using the 2011–2020 municipal rollout and
-  linked firm–municipality data. A 2005–2018 decomposition shows that the
-  decline in manufacturing emissions intensity was driven mainly by
+abstract: "This paper studies how spatially targeted air-quality management
+  affects firm emissions, export dynamics, and welfare in a middle-income open
+  economy. I examine Mexico’s ProAire programs using the 2011–2020 municipal
+  rollout and linked firm–municipality data. A 2005–2018 decomposition shows
+  that the decline in manufacturing emissions intensity was driven mainly by
   within-industry technique changes rather than output reallocation. In
   difference-in\x02differences estimates, ProAire lowers reported CO2 emissions
   among RETC reporting firms by about 11 percent. Export entry changes little,
