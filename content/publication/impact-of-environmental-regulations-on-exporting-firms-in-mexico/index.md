@@ -29,5 +29,6 @@ image:
   preview_only: false
   alt_text: ""
 summary: ""
+url_pdf: "https://www.aimspress.com/article/doi/10.3934/QFE.2022002"
 date: 2026-04-20T05:26:59.005Z
 ---
