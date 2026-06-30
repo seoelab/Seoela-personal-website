@@ -5,7 +5,7 @@ publication_types:
   - "0"
 authors:
   - admin
-draft: false
+draft: true
 featured: true
 image:
   filename: featured
