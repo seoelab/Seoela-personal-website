@@ -6,7 +6,7 @@ publication_types:
 authors:
   - admin
 abstract: ""
-draft: false
+draft: true
 featured: true
 image:
   filename: national_road_infrastructure.png
