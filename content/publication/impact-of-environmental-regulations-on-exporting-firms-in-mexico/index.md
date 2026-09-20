@@ -22,9 +22,8 @@ abstract: Air quality regulations often target pollution where exposure is
   trade, atmospheric transport, and worker sorting. I find that ProAire lowers
   output by 0.08 percent, while welfare rises by 0.106 percent.
 draft: false
-url_pdf: https://1drv.ms/b/c/c0ca09bf4c792ab8/IQAx3i3LXuC9TL502t9nTjnpAWn5MYgtgKtb0cKNVMDDG_0?e=OC2Okc
-title: "Environmental Regulation, Firm Export Dynamics, and Welfare: Evidence
-  from Mexico’s Air-Quality Programs"
+url_pdf: https://drive.google.com/file/d/1UnbYGiueFsIQ1bRk3kIVLbcW7b8K1XZf/view?usp=drive_link
+title: "Environmental Regulation, Firms, and Trade:: Evidence from Mexico’s Air-Quality Programs"
 featured: true
 image:
   filename: fig10_~1.png
