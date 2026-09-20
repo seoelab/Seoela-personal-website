@@ -27,7 +27,7 @@ title: "Environmental Regulation, Firm Export Dynamics, and Welfare: Evidence
   from Mexico’s Air-Quality Programs"
 featured: true
 image:
-  filename: fig10_welfare_agg.png
+  filename: fig10_~1.png
   focal_point: Smart
   preview_only: false
   alt_text: ""
