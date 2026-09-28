@@ -88,8 +88,11 @@ This route requires you to travel to an approved facility in Mexico and work the
 #### Patriotismo location
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:8px;">
-  <iframe src="https://maps.google.com/maps?q=INEGI%20Patriotismo%2C%20Av.%20Patriotismo%20711%2C%20San%20Juan%2C%20Benito%20Ju%C3%A1rez%2C%2003730%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20Mexico&t=p&z=15&ie=UTF8&iwloc=B&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://maps.google.com/maps?q=Av.%20Patriotismo%20711%2C%20San%20Juan%2C%20Benito%20Ju%C3%A1rez%2C%2003730%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20Mexico&t=m&z=15&ie=UTF8&iwloc=B&output=embed"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
+
 
 [Open location in Google Maps](https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico)
 
