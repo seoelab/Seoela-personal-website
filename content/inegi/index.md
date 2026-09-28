@@ -97,7 +97,7 @@ Confirm your appointment and the location for your approved project with INEGI b
 
 ### Planning your stay in Mexico City
 
-If you are traveling to the Patriotismo laboratory, I recommend looking for an Airbnb nearby. You may find affordable accommodation close to restaurants and public transport. Mexico City also has a really awesom bike-sharing system, **[ECOBICI](https://ecobici.cdmx.gob.mx/)**, which can be a convenient option for getting around. Check its [station and cycling-route map](https://ecobici.cdmx.gob.mx/mapa/) when choosing where to stay.
+If you are traveling to the Patriotismo laboratory, I recommend looking for an Airbnb nearby. You may find affordable accommodation close to restaurants and public transport. Mexico City also has a really awesome bike-sharing system, **[ECOBICI](https://ecobici.cdmx.gob.mx/)**, which can be a convenient option for getting around. Check its [station and cycling-route map](https://ecobici.cdmx.gob.mx/mapa/) when choosing where to stay.
 
 ## Questions or help
 
