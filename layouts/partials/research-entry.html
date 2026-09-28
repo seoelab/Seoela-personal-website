@@ -1,0 +1,7 @@
+<article class="research-entry">
+<h3>{{ .Title }}</h3>
+{{ if eq .Params.research_category "publication" }}<p class="note"><em>{{ .Params.publication }}</em> · {{ .Date.Format "2006" }}</p>{{ else if eq .Params.research_category "working-paper" }}<p class="eyebrow">Job market paper</p>{{ else }}{{ with .Params.summary }}<p class="note">{{ . }}</p>{{ end }}{{ end }}
+{{ if in .Params.authors "Samia Islam" }}<p class="note">With Samia Islam</p>{{ end }}
+{{ with .Params.url_pdf }}<a class="paper-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">Read paper ↗</a>{{ end }}
+{{ with .Params.abstract }}<details><summary>Read abstract</summary><p>{{ . }}</p></details>{{ end }}
+</article>

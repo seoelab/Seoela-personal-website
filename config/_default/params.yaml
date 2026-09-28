@@ -1,66 +1,46 @@
-# SITE SETUP
-# Guide: https://wowchemy.com/docs/getting-started/
-# Documentation: https://wowchemy.com/docs/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
-
 appearance:
-  theme_day: light
-  theme_night: red
+  theme_day: job-market
+  theme_night: minimal
   font: Roboto
-  font_size: 20px
-
-# SEO
-
+  font_size: m
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: Bonang N. Seoela, Economics Ph.D. candidate at Indiana University
+      Bloomington. Research in international trade, environmental policy, and energy
+      economics.
+    twitter: BSeoela
   analytics:
     google_analytics: ''
     baidu_tongji: ''
     google_tag_manager: ''
-    microsoft_clarity: ''  
+    microsoft_clarity: ''
   verification:
-    google: 'google-site-verification=dLr2DgddgF6-AX93syrDKvdttFVx9EBM0chw3bYUU_o'
+    google: google-site-verification=dLr2DgddgF6-AX93syrDKvdttFVx9EBM0chw3bYUU_o
     baidu: ''
-
-# Site header
-
 header:
   navbar:
     enable: true
     align: l
     show_logo: true
     show_language: false
-    show_day_night: true
-    show_search: true
+    show_day_night: false
+    show_search: false
     highlight_active_link: true
-
-# Site footer
-
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: "\xA9 {year} Bonang N. Seoela"
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
-
-# Localization
-
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: Jan 2, 2006
+  time_format: 3:04 PM
   address_format: en-us
-
-# Site features
-
 features:
   syntax_highlighter:
     theme_light: github-light
@@ -70,7 +50,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: https://github.com/<username>/<repository>
     content_dir: content
     branch: main
   avatar:
@@ -99,18 +79,11 @@ features:
     provider: ''
     api_key: ''
     zoom: 15
-
-# Extensions
-
 extensions:
   cms:
     branch: main
     local_backend: false
   academicons:
     enable: true
-
-# Security
-
 security:
-  # Allow frame for embedding speaker notes in slides
   allow_frame: true

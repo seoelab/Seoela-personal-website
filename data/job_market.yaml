@@ -1,0 +1,50 @@
+cycling_cities:
+- Washington, DC
+- Boise, ID
+- Sacramento, CA
+- Minneapolis, MN
+- Bemidji, MN
+- Holland, MI
+- Springfield, IL
+- Indianapolis, IN
+- Owensboro, KY
+- Mexico City, Mexico
+- College Park, MD
+- Buffalo, NY
+- Morgantown, WV
+morabaraba_rules:
+- title: The board
+  text: 'The board has 25 spots where the lines cross: three squares sitting inside
+    each other, joined at the corners and through the middle of each side. The middle
+    lines meet at the centre. Your pieces live on the spots and walk along the lines.'
+- title: Setup
+  text: You each get 12 pieces with your own token so you can tell them apart. Someone
+    is picked at random to go first.
+- title: First, you place
+  text: Take turns dropping one piece at a time onto any empty spot you like. Keep
+    going until you've both placed all 12.
+- title: Then, you move
+  text: Now the pieces start walking. On your turn, slide one of your pieces along
+    a line to an empty spot right next to it. Tap your piece, then tap where you want
+    it to go.
+- title: Mills and capturing
+  text: Get three of your pieces in a straight line and that’s a **mill**. You immediately
+    take one of your opponent’s pieces, any one you like, from anywhere on the board.
+    Nobody is safe. This works while placing *and* while moving. During placement,
+    even if one move completes two lines at once, you take **one** piece. In the movement
+    phase, completing two lines lets you take **two** pieces.
+- title: Attacking is compulsory
+  text: 'If you can close a mill on your turn, you must close it. Playing somewhere
+    else while an attack is on the table loses the game. Everyone carries **one save**
+    per game: the first time you walk past a mill, a notice hands the turn back so
+    you can play it. There is no second one.'
+- title: Stuck with nowhere to go?
+  text: 'If all your pieces are boxed in, you sit out your turns until a gap opens
+    up. Fair is fair though: once your opponent has made three moves in a row while
+    you’re stuck, their next move has to let you back into the game, if there’s any
+    way to do it.'
+- title: Winning
+  text: Grind your opponent down to **two pieces** and the game is yours. With two
+    they can never fill a line again, so they can never capture and can never come
+    back, and the game ends right there instead of dragging on. Every piece counts
+    the same. No kings, no queens, no favourites.
