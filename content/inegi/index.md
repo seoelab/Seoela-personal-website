@@ -2,8 +2,7 @@
 title: 'Accessing INEGI Microdata: A Guide for Graduate Students & Researchers'
 type: page
 url: /inegi/
-summary: 'A practical guide for IU researchers: public microdata, remote code processing,
-  and in-person laboratory access.'
+summary: 'A practical guide for IU researchers: public microdata, remote code processing, and in-person laboratory access.'
 ---
 
 [← Home](/#inegi)
@@ -12,17 +11,18 @@ I put together this guide to help IU graduate students and IU-affiliated researc
 
 ## Institutional access & overview
 
-The **Instituto Nacional de Estadística y Geografía (INEGI)**—Mexico’s National Institute of Statistics and Geography—produces economic, social, demographic, and geographic data for research on Mexico.
+The **Instituto Nacional de Estadística y Geografía (INEGI)**, Mexico’s National Institute of Statistics and Geography, produces economic, social, demographic, and geographic data for research on Mexico.
 
-**Indiana University and INEGI maintain an agreement** that allows IU graduate students and affiliated researchers to request access to restricted microdata for academic research. The agreement provides an institutional route to apply; each project, researcher, and data request remains subject to INEGI approval.
+**Indiana University Bloomington and INEGI maintain an agreement** that allows IU graduate students and affiliated researchers to request access to restricted microdata for academic research. The agreement provides an institutional route to apply. However, each project, researcher, and data request remains subject to INEGI approval.
 
-### Choose the right access route
+### Options to access data
+
+Before requesting restricted data access, I encourage you to download and review INEGI’s publicly available anonymized files. These may already provide the data at the unit of observation you need to answer your research questions.
 
 | Access route | How it works |
 | --- | --- |
-| **Public microdata** | Download publicly available anonymized files and analyze them on your computer. |
 | **Remote Processing (*Procesamiento Remoto*)** | Send your code to INEGI. INEGI staff run it on the restricted microdata and return approved statistical output after review. This does not provide remote access to the data or a secure desktop. |
-| **Microdata Laboratory (*Laboratorio de Microdatos*)** | Work with approved microdata on secure equipment **in person at an authorized laboratory** after accreditation, registration, and training. See the Mexico City locations below. |
+| **Microdata Laboratory (*Laboratorio de Microdatos*)** | Work with approved microdata on secure equipment **in person at an authorized laboratory** following registration and training. See the Mexico City location below. |
 
 Remote processing and physical laboratory access are governed by the [INEGI operating rules (Spanish PDF)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), including Articles 19 and 31.
 
@@ -51,12 +51,11 @@ Identify the programs, years, variables, geographic detail, and outputs your pro
 Download the [INEGI access application form (PDF)](https://www.inegi.org.mx/contenidos/app/microdatos/laboratoriodatos/doc/Solicitud_Uso.pdf). Complete and save it in PDF format using Adobe Acrobat Reader. Prepare the following together for submission to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx):
 
 - **Completed application**, including your project objectives, requested data, intended outputs, and chosen access modality.
-- **Institutional affiliation documents** for you and, for graduate students, your thesis advisor or supervisor. **Request the IU endorsement from the Economics Department** and include its approval with your application.
+- **Institutional affiliation documents** for you and, if you are a graduate student, your thesis advisor or supervisor. You can request this endorsement from the **Department of Economics** and include the letter with your application.
 - **Official photo identification** for you and your advisor or supervisor, as applicable; a passport is an appropriate option for international applicants.
 - **Updated CVs** for you and your advisor or supervisor, as applicable.
-- **Evidence of an eligible scholarship or research-system affiliation**, if relevant to your application, such as SECIHTI or SNII documentation. Ask INEGI which current documentation it accepts.
 
-Send the application materials together in a single email and follow any additional instructions INEGI provides. Requirements for researchers and their supervisors can vary by applicant category; consult the current form and the [operating rules, Articles 7–14](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf).
+Send the application materials together in a single email and follow any additional instructions INEGI provides. Requirements for researchers and their supervisors can vary by applicant category. Consult the current form and the [operating rules, Articles 7–14](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf).
 
 ### 3A. Remote Processing (*Procesamiento Remoto*)
 
@@ -80,11 +79,12 @@ This route requires you to travel to an approved facility in Mexico and work the
 5. Work on the approved data using the secure laboratory equipment. Confirm required software and versions in advance. Tools may include R, Stata, SPSS, Excel, Mapa Digital, and ArcGIS; availability should be checked for your project and chosen facility.
 6. Request review and release of your statistical outputs through INEGI. Confidential microdata remain within the secure environment.
 
-**Direct access is available only while physically present inside an authorized Microdata Laboratory.** For the Mexico City route, confirm a place at Patriotismo or El Colegio de México. All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), the signed terms of use, and the facility’s scheduling arrangements.
+**Direct access is available only while physically present inside an authorized Microdata Laboratory.** All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), the signed terms of use, and the facility’s scheduling arrangements.
 
-### Laboratory locations in Mexico City
+### Laboratory location in Mexico City
 
-- **Patriotismo:** Av. Patriotismo 711, Torre A, Col. San Juan Mixcoac, Benito Juárez, Ciudad de México.
+**Patriotismo:** Av. Patriotismo 711, Torre A, Col. San Juan Mixcoac, Benito Juárez, Ciudad de México.
+
 Confirm your appointment and the location for your approved project with INEGI before traveling.
 
 #### Patriotismo location
@@ -93,7 +93,11 @@ Confirm your appointment and the location for your approved project with INEGI b
   <iframe title="INEGI Microdata Laboratory — Patriotismo, Mexico City" src="https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico&amp;t=m&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;min-height:0;border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
-[Open the Patriotismo location in Google Maps](https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico)
+[Open location in Google Maps](https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico)
+
+### Planning your stay in Mexico City
+
+If you are traveling to the Patriotismo laboratory, I recommend looking for an Airbnb nearby. You may find affordable accommodation close to restaurants and public transport. Mexico City also has a really awesom bike-sharing system, **[ECOBICI](https://ecobici.cdmx.gob.mx/)**, which can be a convenient option for getting around. Check its [station and cycling-route map](https://ecobici.cdmx.gob.mx/mapa/) when choosing where to stay.
 
 ## Questions or help
 
@@ -106,5 +110,11 @@ If you are an IU student or affiliated researcher, I am happy to help you naviga
 - [INEGI website and data products](https://www.inegi.org.mx/)
 - [Microdata access application (PDF)](https://www.inegi.org.mx/contenidos/app/microdatos/laboratoriodatos/doc/Solicitud_Uso.pdf)
 - [Reglas de Operación del Laboratorio de Microdatos del INEGI (Spanish PDF)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf)
+
+## Disclaimer and researcher responsibility
+
+I provide this guide for informational purposes to help researchers navigate the application process and use INEGI data responsibly. It is not legal advice or an official statement from Indiana University or INEGI, and it does not replace the IU–INEGI agreement, INEGI’s operating rules, or the terms governing your approved project.
+
+Each researcher is responsible for complying with the requirements that apply to their access and use of the data. Misconduct, unauthorized disclosure, or misuse may result in sanctions under the applicable rules and agreements. Nothing in this guide changes the responsibilities of researchers, IU, or INEGI under those documents.
 
 *Guide updated September 28, 2026. Confirm current forms, software, appointments, and requirements with INEGI.*
