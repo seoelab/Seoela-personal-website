@@ -1,0 +1,19 @@
+iu_instructor:
+- code: ECON E-303
+  title: Survey of International Economics
+  terms: Fall 2024; Spring 2026
+  url: /teaching/econ-e303/
+iu_ta:
+- code: ECON-B 251
+  title: Principles of Microeconomics
+  terms: Fall 2023; Spring 2024; Fall 2025
+boise_ta:
+- code: ECON 303
+  title: Intermediate Microeconomics
+  terms: Spring 2020
+- code: ECON 511
+  title: Advanced Microeconomic Theory I
+  terms: Fall 2019
+- code: ECON 455
+  title: Behavioral Economics
+  terms: Fall 2019

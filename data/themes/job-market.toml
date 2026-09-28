@@ -1,0 +1,12 @@
+name = "Job Market"
+[light]
+primary = "#833d3a"
+background = "#faf8f4"
+link = "#833d3a"
+link_hover = "#4e2523"
+menu_primary = "#faf8f4"
+menu_text = "#242824"
+menu_text_active = "#833d3a"
+menu_title = "#242824"
+home_section_odd = "#faf8f4"
+home_section_even = "#faf8f4"

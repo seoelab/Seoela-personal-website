@@ -1,29 +1,22 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-
 main:
-  - name: Research
-    url: '#featured'
-    weight: 10
-  - name: Projects
-    url: '#projects'
-    weight: 20
-  #- name: Teaching
-  #  url: '#slides'
-  #  weight: 21
-  #- name: Short CV
-  #  url: '#experience'
-  #  weight: 45
-  #- name: Teaching
-   # url: '#slides'
-   # weight: 21
-  #- name: Short CV
-   # url: '#experience'
-    #weight: 45
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-  - name: CV
-    url: https://bonangseoela.netlify.app/uploads/resume.pdf
-    weight: 70
+- name: Research
+  url: /research/
+  weight: 10
+- name: Education
+  url: /#education
+  weight: 20
+- name: Teaching
+  url: /teaching/
+  weight: 30
+- name: INEGI data
+  url: /inegi/
+  weight: 35
+- name: Beyond economics
+  url: /#beyond
+  weight: 40
+- name: Contact
+  url: /#contact
+  weight: 50
+- name: CV
+  url: /uploads/resume.pdf
+  weight: 60
