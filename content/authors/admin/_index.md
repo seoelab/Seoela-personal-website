@@ -57,4 +57,4 @@ first_name: Bonang
 email: bseoela@iu.edu
 ---
 
-I am a Ph.D. candidate in Economics at Indiana University Bloomington. I study how trade, energy prices, and environmental regulation shape the decisions of firms and workers, and what these responses mean for welfare. Before my doctoral studies, I worked as a labor economist at the Idaho Department of Labor.
+I am a Ph.D. candidate in Economics at Indiana University Bloomington. My research studies how government policies, including environmental regulation, fossil fuel price reforms, and labor market policies, affect the decisions of firms and workers. I use quantitative and spatial methods to study these questions. Before beginning my doctoral studies, I worked as a labor economist at the Idaho Department of Labor.
