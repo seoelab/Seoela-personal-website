@@ -8,7 +8,7 @@ summary: 'A practical guide for IU researchers: public microdata, remote code pr
 
 [← Home](/#inegi)
 
-A guide for IU graduate students and IU-affiliated researchers working on Mexico.
+I put together this guide to help IU graduate students and IU-affiliated researchers request INEGI data for research on Mexico.
 
 ## Institutional access & overview
 
@@ -18,29 +18,27 @@ The **Instituto Nacional de Estadística y Geografía (INEGI)**—Mexico’s Nat
 
 ### Choose the right access route
 
-| Access route | How it works | Where you work |
-| --- | --- | --- |
-| Public microdata | Download the anonymized files made publicly available for a program. | Your own computer. |
-| **Remote Processing (*Procesamiento Remoto*)** | **Send code or processing specifications to INEGI. INEGI staff execute them on the restricted data and return approved statistical output after confidentiality review.** | You prepare and submit scripts remotely. You do **not** log into the confidential data or an INEGI desktop from home or IU. |
-| **Microdata Laboratory (*Laboratorio de Microdatos*)** | You analyze approved microdata using INEGI’s secure equipment after accreditation, registration, and training. | **Physical attendance at an authorized laboratory**, including the Mexico City facilities described below. Direct access to the secure desktop is permitted only inside the laboratory. |
+| Access route | How it works |
+| --- | --- |
+| **Public microdata** | Download publicly available anonymized files and analyze them on your computer. |
+| **Remote Processing (*Procesamiento Remoto*)** | Send your code to INEGI. INEGI staff run it on the restricted microdata and return approved statistical output after review. This does not provide remote access to the data or a secure desktop. |
+| **Microdata Laboratory (*Laboratorio de Microdatos*)** | Work with approved microdata on secure equipment **in person at an authorized laboratory** after accreditation, registration, and training. See the Mexico City locations below. |
 
-The distinction between remote processing and on-site access is set out in Articles 19 and 31 of the [INEGI operating rules (Spanish PDF)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf). Access through an institutional agreement does not create off-site access to the secure desktop.
+Remote processing and physical laboratory access are governed by the [INEGI operating rules (Spanish PDF)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), including Articles 19 and 31.
 
 ## INEGI data products
 
-INEGI’s programs cover a wide range of research topics. Availability, geographic detail, years, and access conditions vary by program; inclusion here does not guarantee that a particular variable or confidential file can be released or accessed.
+INEGI offers the following data products. Available years, variables, geographic detail, and access requirements vary by program.
 
-| Program or data family | Research uses |
-| --- | --- |
-| **Economic Censuses (*Censos Económicos*)** | Establishment activity, revenue, input costs, employment, capital, and industry. |
-| **Population and Housing Censuses (*Censos de Población y Vivienda*)** | Demographics, housing, labor, and socioeconomic characteristics. |
-| **Agricultural and forestry censuses (*Censos Agropecuarios y Forestales*)** | Agricultural production, land use, machinery, and the rural economy. Consult the relevant census edition for coverage. |
-| **National Survey of Household Income and Expenditure (*Encuesta Nacional de Ingresos y Gastos de los Hogares*, ENIGH)** | Household income, consumption, and expenditure. |
-| **National Survey of Occupation and Employment (*Encuesta Nacional de Ocupación y Empleo*, ENOE)** | Employment, informality, earnings, and working conditions. |
-| **Environmental and sectoral statistics** | Environmental management and industry-specific activity. Check the program’s questionnaire and metadata for environmental variables; regulatory compliance and emissions records may require a different agency or a separate request. |
-| **Geospatial and cartographic data** | Geographic boundaries, digital maps, and spatial layers for GIS analysis. |
+- **Economic Censuses (*Censos Económicos*):** Establishment activity, revenue, input costs, employment, capital, and industry.
+- **Population and Housing Censuses (*Censos de Población y Vivienda*):** Demographics, housing, labor, and socioeconomic characteristics.
+- **Agricultural and forestry censuses (*Censos Agropecuarios y Forestales*):** Agricultural production, land use, machinery, and the rural economy.
+- **National Survey of Household Income and Expenditure (*Encuesta Nacional de Ingresos y Gastos de los Hogares*, ENIGH):** Household income, consumption, and expenditure.
+- **National Survey of Occupation and Employment (*Encuesta Nacional de Ocupación y Empleo*, ENOE):** Employment, informality, earnings, and working conditions.
+- **Environmental and sectoral statistics:** Environmental management and industry-specific activity. Check each program’s coverage; some compliance and emissions records may require a separate request or another agency.
+- **Geospatial and cartographic data:** Geographic boundaries, digital maps, and spatial layers for GIS analysis.
 
-Start with the [INEGI website](https://www.inegi.org.mx/) and [program catalogue](https://www.inegi.org.mx/programas/). Public microdata, documentation, and file structures (*Estructura de archivos*, FD) can often be downloaded from the relevant program page. Restricted files require an approved access request. Restricted access does not mean unrestricted access to direct identifiers.
+Start with the [INEGI program catalogue](https://www.inegi.org.mx/programas/). Program pages provide public microdata, documentation, and file structures (*Estructura de archivos*, FD). Restricted microdata require an approved request.
 
 ## How to request access
 
@@ -53,7 +51,7 @@ Identify the programs, years, variables, geographic detail, and outputs your pro
 Download the [INEGI access application form (PDF)](https://www.inegi.org.mx/contenidos/app/microdatos/laboratoriodatos/doc/Solicitud_Uso.pdf). Complete and save it in PDF format using Adobe Acrobat Reader. Prepare the following together for submission to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx):
 
 - **Completed application**, including your project objectives, requested data, intended outputs, and chosen access modality.
-- **Institutional affiliation documents** for you and, for graduate students, your thesis advisor or supervisor. Coordinate the IU endorsement with your department’s administrative or research contact and include the applicable approval with your application.
+- **Institutional affiliation documents** for you and, for graduate students, your thesis advisor or supervisor. **Request the IU endorsement from the Economics Department** and include its approval with your application.
 - **Official photo identification** for you and your advisor or supervisor, as applicable; a passport is an appropriate option for international applicants.
 - **Updated CVs** for you and your advisor or supervisor, as applicable.
 - **Evidence of an eligible scholarship or research-system affiliation**, if relevant to your application, such as SECIHTI or SNII documentation. Ask INEGI which current documentation it accepts.
@@ -76,7 +74,7 @@ Remote processing is a code-submission service, not a remote-desktop connection.
 This route requires you to travel to an approved facility in Mexico and work there in person.
 
 1. Select your preferred laboratory in the application and confirm availability with INEGI before making travel arrangements.
-2. Coordinate institutional accreditation through the IU–INEGI agreement, or another applicable accreditation route identified by INEGI.
+2. Request the institutional endorsement from the IU Economics Department and coordinate accreditation through the IU–INEGI agreement.
 3. Submit signed originals of the application and the terms of use (*Términos y Condiciones de Uso*) when instructed. Obtain your advisor’s or supervisor’s signature where required.
 4. Complete the required confidentiality and laboratory-orientation training, then reserve your working sessions according to the facility’s procedures.
 5. Work on the approved data using the secure laboratory equipment. Confirm required software and versions in advance. Tools may include R, Stata, SPSS, Excel, Mapa Digital, and ArcGIS; availability should be checked for your project and chosen facility.
@@ -84,29 +82,24 @@ This route requires you to travel to an approved facility in Mexico and work the
 
 **Direct access is available only while physically present inside an authorized Microdata Laboratory.** For the Mexico City route, confirm a place at Patriotismo or El Colegio de México. All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), the signed terms of use, and the facility’s scheduling arrangements.
 
-### Laboratory locations
+### Laboratory locations in Mexico City
 
-| Location | Address |
-| --- | --- |
-| **Mexico City — Patriotismo** | Av. Patriotismo 711, Torre A, Col. San Juan Mixcoac, Benito Juárez, Ciudad de México. |
-| **Mexico City — El Colegio de México** | Carretera Picacho Ajusco 20, Tlalpan, Ciudad de México. |
-| **Aguascalientes** | Av. Héroe de Nacozari Sur 2301, Jardines del Parque, Aguascalientes. |
+- **Patriotismo:** Av. Patriotismo 711, Torre A, Col. San Juan Mixcoac, Benito Juárez, Ciudad de México.
+Confirm your appointment and the location for your approved project with INEGI before traveling.
 
-INEGI also operates a facility in Aguascalientes. Ask INEGI which locations can accommodate your approved project and confirm the address and appointment before traveling. See the official announcements for [Aguascalientes](https://intranet.inegi.org.mx/pages/nota_85_23.html) and [El Colegio de México](https://intranet.inegi.org.mx/pages/nota_14_25.html).
+#### Patriotismo location
 
-## Fees, confidentiality, and project completion
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:8px;">
+  <iframe title="INEGI Microdata Laboratory — Patriotismo, Mexico City" src="https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico&amp;t=m&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;min-height:0;border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
-The laboratory service is free under the operating rules. Confirm any charges for separate custom tabulations or special data preparation; those are distinct from the standard access service.
-
-All requested outputs undergo statistical disclosure review before release. Follow INEGI’s current confidentiality guidance and disclosure-control procedures when preparing tables, figures, estimates, and other results.
-
-When the project ends, notify INEGI so it can close the workspace or release resources. Send your thesis, paper, or public URL with the requested metadata to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx). **Confirm any six-month submission deadline in your approval documents or directly with INEGI**; the linked 2022 operating rules require delivery of research outputs but do not specify that as a universal publication deadline.
+[Open the Patriotismo location in Google Maps](https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico)
 
 ## Questions or help
 
 **Official applications and access questions:** [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx).
 
-If you are an IU student or affiliated researcher and would like to discuss the application process, feel free to [contact me at bseoela@iu.edu](mailto:bseoela@iu.edu). I am happy to share my experience navigating the process. INEGI makes all access and disclosure decisions.
+If you are an IU student or affiliated researcher, I am happy to help you navigate the application process. [Email me at bseoela@iu.edu](mailto:bseoela@iu.edu). INEGI handles official applications and access decisions.
 
 ## Official resources
 
