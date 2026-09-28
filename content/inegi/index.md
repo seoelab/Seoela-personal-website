@@ -79,25 +79,23 @@ This route requires you to travel to an approved facility in Mexico and work the
 5. Work on the approved data using the secure laboratory equipment. Confirm required software and versions in advance. Tools may include R, Stata, SPSS, Excel, Mapa Digital, and ArcGIS; availability should be checked for your project and chosen facility.
 6. Request review and release of your statistical outputs through INEGI. Confidential microdata remain within the secure environment.
 
-**Direct access is available only while physically present inside an authorized Microdata Laboratory.** All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), the signed terms of use, and the facility’s scheduling arrangements.
+**Direct access is available only while physically present inside an authorized Microdata Laboratory.** All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), the signed terms of use, and the facility’s scheduling arrangements. Confirm your appointment and the location for your approved project with INEGI before traveling.
 
 ### Laboratory location in Mexico City
 
 **Patriotismo:** Av. Patriotismo 711, Torre A, Col. San Juan Mixcoac, Benito Juárez, Ciudad de México.
 
-Confirm your appointment and the location for your approved project with INEGI before traveling.
-
 #### Patriotismo location
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:8px;">
-  <iframe title="INEGI Microdata Laboratory — Patriotismo, Mexico City" src="https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico&amp;t=m&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;min-height:0;border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://maps.google.com/maps?q=INEGI%20Patriotismo%2C%20Av.%20Patriotismo%20711%2C%20San%20Juan%2C%20Benito%20Ju%C3%A1rez%2C%2003730%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20Mexico&t=p&z=15&ie=UTF8&iwloc=B&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 [Open location in Google Maps](https://maps.google.com/maps?q=Av.+Patriotismo+711,+Torre+A,+Col.+San+Juan+Mixcoac,+Benito+Ju%C3%A1rez,+Ciudad+de+M%C3%A9xico)
 
 ### Planning your stay in Mexico City
 
-If you are traveling to the Patriotismo laboratory, I recommend looking for an Airbnb nearby. You may find affordable accommodation close to restaurants and public transport. Mexico City also has a really awesome bike-sharing system, **[ECOBICI](https://ecobici.cdmx.gob.mx/)**, which can be a convenient option for getting around. Check its [station and cycling-route map](https://ecobici.cdmx.gob.mx/mapa/) when choosing where to stay.
+If you are traveling to the Patriotismo laboratory, I recommend looking for Airbnb options in the Benito Juárez area, preferably close to the INEGI office. You can often find affordable accommodation within walking distance of restaurants, cafés, and public transportation. Mexico City also has an excellent bike-sharing system, **[ECOBICI](https://ecobici.cdmx.gob.mx/)**, which can be a convenient way to get around. When deciding where to stay, it may be helpful to check the [ECOBICI station and cycling-route map](https://ecobici.cdmx.gob.mx/mapa/) to see whether there are stations near your accommodation and the INEGI office.
 
 ## Questions or help
 
