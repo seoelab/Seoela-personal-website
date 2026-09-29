@@ -1,6 +1,7 @@
 appearance:
   theme_day: job-market
   theme_night: minimal
+   day_night: false
   font: Roboto
   font_size: m
 marketing:
