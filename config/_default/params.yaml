@@ -1,6 +1,6 @@
 appearance:
   theme_day: job-market
-  theme_night: job-market
+  theme_night: ""
   font: Roboto
   font_size: m
 marketing:
