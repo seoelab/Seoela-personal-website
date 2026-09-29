@@ -1,18 +1,19 @@
 cycling_cities:
-- Washington, DC
-- Boise, ID
-- Sacramento, CA
-- Minneapolis, MN
 - Bemidji, MN
-- Holland, MI
-- Springfield, IL
-- Indianapolis, IN
 - Bloomington, IN
-- Owensboro, KY
-- Mexico City, Mexico
-- College Park, MD
+- Boise, ID
 - Buffalo, NY
+- College Park, MD
+- Holland, MI
+- Indianapolis, IN
+- Long Beach, WA
+- Mexico City, Mexico
+- Minneapolis, MN
 - Morgantown, WV
+- Owensboro, KY
+- Sacramento, CA
+- Springfield, IL
+- Washington, DC
 morabaraba_rules:
 - title: The board
   text: 'The board has 25 spots where the lines cross: three squares sitting inside
