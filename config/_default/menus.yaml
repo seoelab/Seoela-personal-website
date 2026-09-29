@@ -8,9 +8,6 @@ main:
 - name: INEGI data
   url: /inegi/
   weight: 35
-- name: Beyond economics
-  url: /#beyond
-  weight: 40
 - name: Contact
   url: /#contact
   weight: 50
