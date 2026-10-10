@@ -18,8 +18,7 @@ summary: Course description, syllabus excerpt, and Spring 2026 schedule.
 | Teaching Effectiveness | 3.1/5 F 24' and 3.8/5 S 26' |
 | Schedule below | Spring 2026 |
 
-[**Open printable syllabus excerpt →**](/uploads/ECON_E_303_Syllabus_SP26.pdf)%(/teaching/econ-e303/syllabus/)
-
+[**[Download Syllabus PDF] ↓**](/uploads/ECON_E_303_Syllabus_SP26.pdf)
 ## Course description
 
 {{< course-description >}}
