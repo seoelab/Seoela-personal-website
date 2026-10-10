@@ -11,9 +11,7 @@ summary: Teaching appointments at Indiana University Bloomington and Boise State
 
 Department of Economics
 
-### Graduate Instructor — full teaching responsibility
-
-**University appointment title: Associate Instructor.**
+### Associate Instructor — full teaching responsibility
 
 {{< teaching-table group="iu_instructor" caption="Courses taught with full teaching responsibility" >}}
 
