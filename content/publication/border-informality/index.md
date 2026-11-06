@@ -5,7 +5,7 @@ authors:
 - admin
 featured: true
 title: "Insourcing the Workforce: Labor-Market Adjustment to Mexico's Subcontracting Reform"
-  bstract: "Mexico’s April 2021 reform prohibited the supply of workers by one company to another
+abstract: "Mexico’s April 2021 reform prohibited the supply of workers by one company to another
 and forced firms to move agency workers onto their own payrolls. I study how employ
 ment, hours, and pay adjusted using monthly industry panels covering manufacturing as
 a whole (EMIM, 2017–2023) and the export-oriented manufacturing program (IMMEX,
