@@ -21,7 +21,7 @@ per worker did not rise in industries more exposed to the reform, and the longer
 series suggests a modest decline that is sensitive to industry-specific trends. Evidence
 on production and exports is imprecise. The reform therefore moved workers across
 employment statuses on a large scale without creating or destroying jobs in net terms, a
-pattern that employment counts alone would misread as job creation.'
+pattern that employment counts alone would misread as job creation."
 draft: false
 summary: Draft in progress
 publication: Draft in progress
