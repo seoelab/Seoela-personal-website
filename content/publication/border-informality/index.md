@@ -4,7 +4,7 @@ publication_types:
 authors:
 - admin
 featured: true
-title: Insourcing the Workforce: Labor-Market Adjustment to Mexico's Subcontracting Reform
+title: "Insourcing the Workforce: Labor-Market Adjustment to Mexico's Subcontracting Reform"
 draft: false
 summary: Draft in progress
 publication: Draft in progress
