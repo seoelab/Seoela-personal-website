@@ -5,7 +5,7 @@ publication_types:
 - '0'
 authors:
 - admin
-abstract: Governments spend heavily on roads to connect firms to foreign markets, but the resulting
+abstract: "Governments spend heavily on roads to connect firms to foreign markets, but the resulting
 gains depend on how firms re-route shipments and on how economic activity relocates across
 places. I study Mexico’s 2012–2018 National Infrastructure Program, whose road projects added
 roughly 3,500 km of highways by 2020, using shipment-level data on exporting and importing
@@ -14,7 +14,7 @@ an event-study design around the staggered completion of highway projects to mea
 the intensive and extensive margins of trade, on imports, and on the choice of gateway and mode.
 I then build a quantitative spatial model with industries, a road network of Mexican locations, mo
 bile workers, imported intermediate inputs, and a consolidated foreign market reached through
-gateway-mode routes with nested route choice. 
+gateway-mode routes with nested route choice."
 draft: false
 featured: true
 image:
