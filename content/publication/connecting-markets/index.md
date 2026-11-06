@@ -1,6 +1,5 @@
 ---
-title: 'Connecting Markets: Evaluating the effect of Mexico''s National Infrastructure
-  Program on International Trade'
+title: 'Connecting Markets: Road Infrastructure, Shipment Modes, and International Trade in Mexico'
 publication_types:
 - '0'
 authors:
