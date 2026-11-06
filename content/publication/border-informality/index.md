@@ -4,8 +4,7 @@ publication_types:
 authors:
 - admin
 featured: true
-title: Does Minimum Wage Increase Formal Employment? Tax Incentives and Informality
-  at Mexico’s Northern Border
+title: Insourcing the Workforce: Labor-Market Adjustment to Mexico's Subcontracting Reform
 draft: false
 summary: Draft in progress
 publication: Draft in progress
