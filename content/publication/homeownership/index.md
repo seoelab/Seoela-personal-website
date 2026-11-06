@@ -1,5 +1,5 @@
 ---
-title: 'The Effect of Homeownership on Unemployment Rate: A Nonlinear Panel ARDL Analysis'
+title: 'Withdrawing AGOA: General-Equilibrium Effects of South Africa's Exit and Implications for SADC Economies'
 publication_types:
 - '0'
 authors:
