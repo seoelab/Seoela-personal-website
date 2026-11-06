@@ -1,6 +1,5 @@
 ---
-title: 'Energy Price Shocks along the Global Supply Chain: The Effects of Fossil Fuel
-  Reforms in Mexico'
+title: 'Consequences of Fossil-Fuel Reforms: Firm Adjustment and the Cost of an Exempt Substitute'
 publication_types:
 - '0'
 authors:
