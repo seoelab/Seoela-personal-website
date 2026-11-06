@@ -1,5 +1,5 @@
 ---
-title: 'Withdrawing AGOA: General-Equilibrium Effects of South Africa's Exit and Implications for SADC Economies'
+title: "Withdrawing AGOA: General-Equilibrium Effects of South Africa's Exit and Implications for SADC Economies"
 publication_types:
 - '0'
 authors:
