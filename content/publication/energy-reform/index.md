@@ -5,7 +5,7 @@ publication_types:
 authors:
 - admin
 draft: false
-abstract: "How does the choice of which fuels to tax affect the cost of reducing emissions? I study Mexico's transition from fuel subsidies to excise and carbon taxation. The carbon levy exempted natural gas as access to imported gas expanded in the power sector."
+abstract: "This paper analyzes how the instrument choice affects the cost of abatement in the context of the reform of fuel subsidies into fuel excise and carbon taxes in Mexico. Natural gas is exempted from the carbon tax, which expands to the electricity sector with the availability of imported gas."
 featured: true
 image:
   filename: featured
