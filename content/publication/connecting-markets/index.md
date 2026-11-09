@@ -4,16 +4,7 @@ publication_types:
 - '0'
 authors:
 - admin
-abstract: "Governments spend heavily on roads to connect firms to foreign markets, but the resulting
-gains depend on how firms re-route shipments and on how economic activity relocates across
-places. I study Mexico’s 2012–2018 National Infrastructure Program, whose road projects added
-roughly 3,500 km of highways by 2020, using shipment-level data on exporting and importing
-firms, their locations, foreign counterparts, and modes of transport for 2011–2020. I first lay out
-an event-study design around the staggered completion of highway projects to measure effects on
-the intensive and extensive margins of trade, on imports, and on the choice of gateway and mode.
-I then build a quantitative spatial model with industries, a road network of Mexican locations, mo
-bile workers, imported intermediate inputs, and a consolidated foreign market reached through
-gateway-mode routes with nested route choice."
+abstract: "Governments invest significantly to build road networks linking businesses with international markets, and the associated gains depend on how logistics networks and economic activities respond to road investments. I use information on export and import flows, firm locations, trade partners, and transportation options from 2011 to 2020 to evaluate the 2012–2018 National Infrastructure Program of Mexico, which by 2020 will deliver approximately 3,500 km of new highways. I first implement an event-study approach based on the phasing of new highways to evaluate the impacts on trade intensive and extensive margins, import levels, and gateway and transportation mode selections. Then, I construct a quantitative spatial model featuring industry, highway networks in Mexican regions, mobile labor, imported inputs, and an agglomerated international market accessed via routes that combine gateways and transportation options with nested route choice."
 draft: false
 featured: true
 image:
