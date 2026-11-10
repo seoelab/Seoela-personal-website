@@ -122,8 +122,153 @@
       border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
 </style>
-{{ with site.GetPage "/publication/journal-article" }}<div class="research-row"><div class="kind">Publication</div><div>{{ partial "research-entry" . }}</div></div>{{ end }}
-{{ range (where (where site.RegularPages "Params.research_category" "work-in-progress") "Params.homepage_research" true).ByWeight }}<div class="research-row"><div class="kind">Work in progress</div><div><h3>{{ .Title }}</h3><p>{{ .Params.summary }}</p></div></div>{{ end }}
+{{ with site.GetPage "/publication/journal-article" }}
+<div class="research-row">
+    <div class="kind">Publication</div>
+    <div>{{ partial "research-entry" . }}</div>
+</div>
+{{ end }}
+
+{{ range (where (where site.RegularPages "Params.research_category" "work-in-progress") "Params.homepage_research" true).ByWeight }}
+<div class="research-row">
+    <div class="kind">Work in progress</div>
+    <div class="research-content">
+        <h3 class="research-title">{{ .Title }}</h3>
+        <p class="research-summary">{{ .Params.summary }}</p>
+        
+        {{ if .Params.url_pdf }}
+        <div class="research-links">
+            <a class="button" href="{{ .Params.url_pdf }}" download>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Read full paper
+            </a>
+        </div>
+        {{ end }}
+
+        {{ if .Params.abstract }}
+        <details class="paper-abstract-dropdown">
+            <summary class="abstract-toggle">
+                <span class="summary-text">Abstract</span>
+                <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="abstract-content">
+                <p>{{ .Params.abstract }}</p>
+            </div>
+        </details>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+<style>
+  .research-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+  }
+
+  .research-row .kind {
+      flex: 0 0 140px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.7;
+      padding-top: 0.2rem;
+  }
+
+  .research-content {
+      flex: 1;
+      min-width: 0;
+  }
+
+  .research-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+  }
+
+  .research-summary {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      opacity: 0.85;
+      margin-bottom: 0.75rem;
+  }
+
+  .research-links {
+      margin-bottom: 0.75rem;
+  }
+
+  /* Consistent styling for action buttons/badges */
+  .research-row .button, 
+  .button {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 6px;
+      background-color: transparent;
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+  }
+
+  .research-row .button:hover,
+  .button:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+      border-color: rgba(0, 0, 0, 0.25);
+  }
+
+  /* Abstract dropdown styling */
+  .paper-abstract-dropdown {
+      margin-top: 0.75rem;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.015);
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .paper-abstract-dropdown:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .abstract-toggle {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+  }
+
+  .abstract-toggle::-webkit-details-marker {
+      display: none;
+  }
+
+  .chevron-icon {
+      transition: transform 0.25s ease;
+      opacity: 0.7;
+  }
+
+  details[open] .chevron-icon {
+      transform: rotate(180deg);
+  }
+
+  .abstract-content {
+      padding: 0.75rem 0.75rem 1rem 0.75rem;
+      font-size: 0.925rem;
+      line-height: 1.6;
+      opacity: 0.85;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+</style>
 <div class="actions" style="margin-top:28px"><a class="button" href="{{ "/research/" | relURL }}">All research →</a></div></section>
 <section class="section" id="teaching"><div class="section-head"><h2>Teaching</h2><span>Indiana University Bloomington · Boise State University</span></div><p>I have served as the primary instructor for an international economics course as well as a teaching assistant in microeconomics, advanced microeconomic theory, and behavioral economics. I strive to teach students how to think like economists by introducing a basic process to analyze public policy questions. In particular, I guide students to a) articulate the economic question, b) understand the mechanisms, c) examine the evidence, and d) discuss policy implications.</p><div class="actions"><a class="button" href="{{ "/teaching/" | relURL }}">Teaching experience →</a><a href="{{ "/teaching/econ-e303/" | relURL }}">ECON E-303 (visit course site) →</a></div></section>
 <section class="section" id="inegi"><div class="section-head"><h2>INEGI data access</h2><span>A resource for IU researchers</span></div><p>Graduate students and researchers with IU affiliation who are conducting research in Mexico can apply to gain access to data provided by Mexico's national statistical office, the <strong>Instituto Nacional de Estadística y Geografía (INEGI)</strong> using the IU–INEGI agreement, pending approval.</p><div class="actions"><a class="button" href="{{ "/inegi/" | relURL }}">INEGI data access guide →</a><a href="https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf" target="_blank" rel="noopener noreferrer">Operating rules (Spanish PDF) ↗</a></div></section>
