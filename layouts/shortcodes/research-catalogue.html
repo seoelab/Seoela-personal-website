@@ -1,7 +1,286 @@
-<nav class="research-jumps" aria-label="Research categories"><a href="#publications">Publications</a><a href="#working-papers">Working Papers</a><a href="#work-in-progress">Work in Progress</a><a href="#policy-reports">Policy Reports</a><a href="#in-the-media">In the Media</a><a href="#research-grants">Research Grants</a></nav>
-{{ range slice (dict "id" "publications" "title" "Publications" "category" "publication") (dict "id" "working-papers" "title" "Working Papers" "category" "working-paper") (dict "id" "work-in-progress" "title" "Work in Progress" "category" "work-in-progress") }}
-<section class="research-category" id="{{ .id }}"><h2>{{ .title }}</h2>{{ range (where site.RegularPages "Params.research_category" .category).ByWeight }}{{ partial "research-entry" . }}{{ end }}</section>
-{{ end }}
-<section class="research-category" id="policy-reports"><h2>Policy Reports</h2>{{ range (where site.RegularPages "Section" "project").ByDate.Reverse }}<article class="research-entry"><h3>{{ trim .Title " " }}</h3><p class="note">Idaho Department of Labor · {{ .Date.Format "2006" }}</p>{{ with .Params.external_link }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Read report ↗</a>{{ end }}</article>{{ end }}</section>
-<section class="research-category" id="in-the-media"><h2>In the Media</h2>{{ range site.Data.research_extras.media }}<article class="research-entry"><h3>{{ .title }}</h3><p class="note">{{ .outlet }} · {{ .date }}</p><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">Read coverage ↗</a></article>{{ end }}</section>
-<section class="research-category" id="research-grants"><h2>Research Grants</h2>{{ range site.Data.research_extras.grants }}<article class="research-entry"><h3>{{ .title }}</h3><p class="note">{{ .institution }} · {{ .date }} · {{ .support_type }}</p></article>{{ end }}</section>
+{{ $pubs := (where site.RegularPages "Params.research_category" "publication").ByWeight }}
+{{ $wps := (where site.RegularPages "Params.research_category" "working-paper").ByWeight }}
+{{ $wip := (where site.RegularPages "Params.research_category" "work-in-progress").ByWeight }}
+{{ $reports := (where site.RegularPages "Section" "project").ByDate.Reverse }}
+{{ $media := site.Data.research_extras.media }}
+{{ $grants := site.Data.research_extras.grants }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+
+<style>
+/* Same design tokens as the front page. Scoped under .jm.
+   If your theme has a fixed top navbar, set --jm-sticky-top to its height. */
+.jm {
+  --ink: #171a21;
+  --ink-2: #3a404c;
+  --muted: #656c79;
+  --line: #e5e2da;
+  --paper: #faf9f6;
+  --card: #ffffff;
+  --accent: #8a1c2b;
+  --accent-ink: #6e1421;
+  --accent-soft: #f7ecee;
+  --serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --jm-sticky-top: 0px;
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.jm *, .jm *::before, .jm *::after { box-sizing: border-box; }
+.jm .wrap { max-width: 1060px; margin: 0 auto; padding: 0 28px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+.jm h1, .jm h2, .jm h3, .jm h4 { font-family: var(--serif); color: var(--ink); line-height: 1.2; margin: 0; }
+.jm p { margin: 0 0 1em; }
+.jm a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(138, 28, 43, .3);
+  text-underline-offset: 3px;
+  transition: color .15s ease, text-decoration-color .15s ease;
+}
+.jm a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
+.jm a:focus-visible, .jm summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.jm .eyebrow { margin: 0 0 10px; font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.jm .eyebrow a { text-decoration: none; }
+
+/* ---------- Buttons (also used by links inside entries) ---------- */
+.jm a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid #d3cfc5;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color .15s ease, background-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.jm a.button:hover { color: var(--ink); border-color: var(--ink); box-shadow: 0 2px 8px rgba(23, 26, 33, .08); transform: translateY(-1px); }
+.jm a.button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.jm a.button.primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
+
+/* ---------- Page header ---------- */
+.jm .page-head { padding: 56px 0 40px; }
+.jm .page-head h1 { font-size: clamp(2.2rem, 4.6vw, 3rem); font-weight: 600; letter-spacing: -.02em; margin-bottom: 10px; }
+.jm .page-head .lead { max-width: 62ch; margin: 0; font-size: 1.05rem; color: var(--ink-2); }
+
+/* ---------- Sticky category nav ---------- */
+.jm .jm-nav {
+  position: sticky;
+  top: var(--jm-sticky-top);
+  z-index: 20;
+  background: rgba(250, 249, 246, .92);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  backdrop-filter: saturate(1.4) blur(10px);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.jm .jm-nav .wrap { display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.jm .jm-nav .wrap::-webkit-scrollbar { display: none; }
+.jm .jm-nav a {
+  flex: none;
+  padding: 14px 12px;
+  font-size: .9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.jm .jm-nav a:hover { color: var(--ink); }
+.jm .jm-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---------- Category sections ---------- */
+.jm .research-category {
+  padding: 52px 0 40px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: calc(var(--jm-sticky-top) + 56px);
+}
+.jm .jm-nav + .wrap .research-category:first-child { border-top: 0; }
+.jm .section-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 26px; }
+.jm .section-head h2 { font-size: 1.7rem; font-weight: 600; letter-spacing: -.01em; }
+.jm .section-head .count {
+  padding: 1px 10px;
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
+
+/* ---------- Entries (works for the research-entry partial too) ---------- */
+.jm .research-entry {
+  margin: 0 0 14px;
+  padding: 22px 26px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.jm .research-entry:hover { border-color: #d3cfc5; box-shadow: 0 6px 20px rgba(23, 26, 33, .06); }
+.jm .research-entry h3 { margin-bottom: 6px; font-size: 1.15rem; font-weight: 600; letter-spacing: -.005em; }
+.jm .research-entry h3 a { color: inherit; text-decoration: none; }
+.jm .research-entry h3 a:hover { color: var(--accent); }
+.jm .research-entry p { max-width: 70ch; margin: 0 0 8px; font-size: .95rem; color: var(--ink-2); }
+.jm .research-entry .note { font-size: .88rem; color: var(--muted); }
+.jm .research-entry > a:not(.button) { display: inline-block; margin-top: 4px; font-size: .92rem; font-weight: 500; }
+.jm .research-entry .research-links, .jm .research-entry .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+/* Abstract disclosure (same as front page) */
+.jm .research-entry details, .jm .paper-abstract-dropdown {
+  margin-top: 14px;
+  background: #faf9f6;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.jm .research-entry details[open], .jm .paper-abstract-dropdown[open] { background: var(--card); }
+.jm .research-entry summary, .jm .abstract-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 14px;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.jm .research-entry summary::-webkit-details-marker, .jm .abstract-toggle::-webkit-details-marker { display: none; }
+.jm .chevron-icon { opacity: .65; transition: transform .2s ease; }
+.jm details[open] > summary .chevron-icon { transform: rotate(180deg); }
+.jm .abstract-content { padding: 14px 16px 6px; border-top: 1px solid var(--line); font-size: .93rem; line-height: 1.7; color: var(--ink-2); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .jm .wrap { padding: 0 20px; }
+  .jm .page-head { padding: 36px 0 28px; }
+  .jm .research-category { padding: 40px 0 28px; }
+  .jm .research-entry { padding: 18px 18px; }
+}
+@media print { .jm .jm-nav { display: none; } }
+</style>
+
+<div class="jm">
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow"><a href="{{ "/" | relURL }}">← Home</a></p>
+      <!-- If your theme already prints the page title above this block, delete this h1. -->
+      <h1>Research</h1>
+      <p class="lead">Trade, policy, and the spatial economy: how government policies shape the behavior of firms and workers.</p>
+    </header>
+  </div>
+
+  <nav class="jm-nav research-jumps" aria-label="Research categories">
+    <div class="wrap">
+      {{ if $pubs }}<a href="#publications">Publications</a>{{ end }}
+      {{ if $wps }}<a href="#working-papers">Working Papers</a>{{ end }}
+      {{ if $wip }}<a href="#work-in-progress">Work in Progress</a>{{ end }}
+      {{ if $reports }}<a href="#policy-reports">Policy Reports</a>{{ end }}
+      {{ if $media }}<a href="#in-the-media">In the Media</a>{{ end }}
+      {{ if $grants }}<a href="#research-grants">Research Grants</a>{{ end }}
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    {{ with $pubs }}
+    <section class="research-category" id="publications">
+      <div class="section-head"><h2>Publications</h2><span class="count">{{ len . }}</span></div>
+      {{ range . }}{{ partial "research-entry" . }}{{ end }}
+    </section>
+    {{ end }}
+
+    {{ with $wps }}
+    <section class="research-category" id="working-papers">
+      <div class="section-head"><h2>Working Papers</h2><span class="count">{{ len . }}</span></div>
+      {{ range . }}{{ partial "research-entry" . }}{{ end }}
+    </section>
+    {{ end }}
+
+    {{ with $wip }}
+    <section class="research-category" id="work-in-progress">
+      <div class="section-head"><h2>Work in Progress</h2><span class="count">{{ len . }}</span></div>
+      {{ range . }}{{ partial "research-entry" . }}{{ end }}
+    </section>
+    {{ end }}
+
+    {{ with $reports }}
+    <section class="research-category" id="policy-reports">
+      <div class="section-head"><h2>Policy Reports</h2><span class="count">{{ len . }}</span></div>
+      {{ range . }}
+      <article class="research-entry">
+        <h3>{{ trim .Title " " }}</h3>
+        <p class="note">Idaho Department of Labor · {{ .Date.Format "2006" }}</p>
+        {{ with .Params.external_link }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Read report ↗</a>{{ end }}
+      </article>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with $media }}
+    <section class="research-category" id="in-the-media">
+      <div class="section-head"><h2>In the Media</h2><span class="count">{{ len . }}</span></div>
+      {{ range . }}
+      <article class="research-entry">
+        <h3>{{ .title }}</h3>
+        <p class="note">{{ .outlet }} · {{ .date }}</p>
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">Read coverage ↗</a>
+      </article>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with $grants }}
+    <section class="research-category" id="research-grants">
+      <div class="section-head"><h2>Research Grants</h2><span class="count">{{ len . }}</span></div>
+      {{ range . }}
+      <article class="research-entry">
+        <h3>{{ .title }}</h3>
+        <p class="note">{{ .institution }} · {{ .date }} · {{ .support_type }}</p>
+      </article>
+      {{ end }}
+    </section>
+    {{ end }}
+
+  </div>
+</div>
+
+<script>
+  /* Highlight the current category in the sticky nav */
+  (function () {
+    var links = [].slice.call(document.querySelectorAll(".jm-nav a[href^='#']"));
+    if (!("IntersectionObserver" in window) || !links.length) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (l) { l.classList.remove("active"); l.removeAttribute("aria-current"); });
+        var a = byId[e.target.id];
+        if (a) { a.classList.add("active"); a.setAttribute("aria-current", "true"); }
+      });
+    }, { rootMargin: "-30% 0px -60% 0px" });
+    Object.keys(byId).forEach(function (id) {
+      var s = document.getElementById(id);
+      if (s) io.observe(s);
+    });
+  })();
+</script>
