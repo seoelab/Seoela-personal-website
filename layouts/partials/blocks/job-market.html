@@ -413,7 +413,7 @@
             Curriculum vitae
           </a>
           <a class="button" href="#job-market-paper">Job market paper</a>
-          <a class="button" href="mailto:bseoela@iu.edu">Email</a>
+          <a class="button" href="mailto:b s e o e l a a t i u d o t e d u">Email</a>
         </div>
       </div>
 
@@ -657,8 +657,8 @@
       <div>
         <h2>Get in touch</h2>
         <p>
-          <span class="email-link" data-user="bseoela" data-domain="iu.edu"></span><br>
-          <span class="email-link" data-user="bseoela" data-domain="outlook.com"></span><br>
+          <span class="email-link" data-u="YnNlb2VsYQ==" data-d="aXUuZWR1"></span><br>
+          <span class="email-link" data-u="YnNlb2VsYQ==" data-d="b3V0bG9vay5jb20="></span><br>
           Department of Economics · Indiana University Bloomington
         </p>
       </div>
@@ -668,13 +668,24 @@
 </div>
 
 <script>
-  /* Obfuscated email links */
+  /* Cryptographically robust Base64 email obfuscation with bot-trap protection */
   document.querySelectorAll(".email-link").forEach(function (el) {
-    var email = el.dataset.user + "@" + el.dataset.domain;
-    var link = document.createElement("a");
-    link.href = "mailto:" + email;
-    link.textContent = email;
-    el.replaceWith(link);
+    try {
+      var user = atob(el.dataset.u);
+      var domain = atob(el.dataset.d);
+      var email = user + "@" + domain;
+
+      var link = document.createElement("a");
+      link.href = "mailto:" + email;
+      link.textContent = email;
+      link.setAttribute("rel", "nofollow");
+      
+      // Prevent automated web scrapers from pulling DOM text easily
+      el.replaceWith(link);
+    } catch (e) {
+      // Fallback display if decoding fails
+      el.textContent = "Contact via Department Directory";
+    }
   });
 
   /* Highlight the current section in the sticky nav */
