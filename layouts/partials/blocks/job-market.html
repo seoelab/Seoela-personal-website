@@ -30,9 +30,9 @@
         </p>
 
         <div class="actions">
-          `<a class="button" href="/uploads/resume.pdf"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Curriculum vitae</a>`
-         `<a href="#job-market-paper">Job market paper <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 2px; vertical-align: middle;"><polyline points="6 9 12 15 18 9"/></svg></a> 
-          <a href="mailto:bseoela@iu.edu">Email <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 2px; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>`
+          <a class="button" href="/uploads/resume.pdf"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Curriculum vitae</a>
+          <a href="#job-market-paper">Job market paper </a>
+          <a href="mailto:bseoela@iu.edu">Email </a>
         </div>
       </div>
 
@@ -59,7 +59,69 @@
           {{ end }}
         </div>
       </figure>
-    </section><section class="section" id="education"><div class="section-head"><h2>Education</h2></div><div class="education-grid">{{ range $person.Params.education.courses }}<article class="education-item"><h3>{{ .course }}</h3><p>{{ .institution }}<br>{{ .year }}</p></article>{{ end }}</div></section><section class="section" id="research"><div class="section-head"><h2>Research</h2><span>Trade, policy, and the spatial economy</span></div><article class="featured" id="job-market-paper"><p class="eyebrow">Job market paper</p><h3>Environmental Regulation, Firms, and Trade:<br>Evidence from Mexico’s Air-Quality Programs</h3><p>How does local environmental regulation affect firms and welfare? I study Mexico’s ProAire programs using linked firm-level data and a quantitative spatial model that accounts for trade, pollution transport, and worker sorting.</p><div class="paper-links"><a href="{{ $paper.Params.url_pdf }}">[PDF] ↗</a></div><details><summary> [Abstract]</summary><p>{{ $paper.Params.abstract }}</p></details></article>
+    </section><section class="section" id="education"><div class="section-head"><h2>Education</h2></div><div class="education-grid">{{ range $person.Params.education.courses }}<article class="education-item"><h3>{{ .course }}</h3><p>{{ .institution }}<br>{{ .year }}</p></article>{{ end }}</div></section><section class="section" id="research"><div class="section-head"><h2>Research</h2><span>Trade, policy, and the spatial economy</span></div><article class="featured" id="job-market-paper"><p class="eyebrow">Job market paper</p><h3>Environmental Regulation, Firms, and Trade:<br>Evidence from Mexico’s Air-Quality Programs</h3><p>How does local environmental regulation affect firms and welfare? I study Mexico’s ProAire programs using linked firm-level data and a quantitative spatial model that accounts for trade, pollution transport, and worker sorting.</p><div class="paper-links">
+      `<a class="button" href="{{ $paper.Params.url_pdf }}" download><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Read full paper</a>`
+    </div>
+    <details class="paper-abstract-dropdown">
+        <summary class="abstract-toggle">
+            <span class="summary-text">Abstract</span>
+            <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="abstract-content">
+            <p>{{ $paper.Params.abstract }}</p>
+        </div>
+    </details>
+</article>
+
+<style>
+  .paper-abstract-dropdown {
+      margin-top: 0.75rem;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.015);
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .paper-abstract-dropdown:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .abstract-toggle {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+  }
+
+  /* Hide default browser summary marker */
+  .abstract-toggle::-webkit-details-marker {
+      display: none;
+  }
+
+  .chevron-icon {
+      transition: transform 0.25s ease;
+      opacity: 0.7;
+  }
+
+  details[open] .chevron-icon {
+      transform: rotate(180deg);
+  }
+
+  .abstract-content {
+      padding: 0.75rem 0.75rem 1rem 0.75rem;
+      font-size: 0.925rem;
+      line-align: 1.6;
+      opacity: 0.85;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+</style>
 {{ with site.GetPage "/publication/journal-article" }}<div class="research-row"><div class="kind">Publication</div><div>{{ partial "research-entry" . }}</div></div>{{ end }}
 {{ range (where (where site.RegularPages "Params.research_category" "work-in-progress") "Params.homepage_research" true).ByWeight }}<div class="research-row"><div class="kind">Work in progress</div><div><h3>{{ .Title }}</h3><p>{{ .Params.summary }}</p></div></div>{{ end }}
 <div class="actions" style="margin-top:28px"><a class="button" href="{{ "/research/" | relURL }}">All research →</a></div></section>
