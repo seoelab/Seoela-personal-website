@@ -2,84 +2,82 @@
 title: 'Accessing INEGI Microdata: A Guide for Graduate Students & Researchers'
 type: page
 url: /inegi/
-summary: 'A practical guide for IU researchers: public microdata, remote code processing, and in-person laboratory access.'
+summary: 'This is a how-to for any IU graduate students and affiliated researchers interested in getting access to INEGI microdata to conduct research on Mexico.'
 ---
 
 [← Home](/#inegi)
 
-I put together this guide to help IU graduate students and IU-affiliated researchers request INEGI data for research on Mexico.
 
 ## Institutional access & overview
 
-The **Instituto Nacional de Estadística y Geografía (INEGI)**, Mexico’s National Institute of Statistics and Geography, produces economic, social, demographic, and geographic data for research on Mexico.
+The **Instituto Nacional de Estadística y Geografía (INEGI)** is Mexico's National Institute of Statistics and Geography that collects and produces economic, social, population, and spatial data for use in research on Mexico.
 
-**Indiana University Bloomington and INEGI maintain an agreement** that allows IU graduate students and affiliated researchers to request access to restricted microdata for academic research. The agreement provides an institutional route to apply. However, each project, researcher, and data request remains subject to INEGI approval.
+**Indiana University Bloomington and INEGI have an agreement** for Indiana University graduate students and researchers affiliated with IU to apply for access to restricted microdata for their academic research. It is a way for an institution to apply for access to microdata but each request is subject to INEGI approval.
 
-### Options to access data
+### Data access options 
 
-Before requesting restricted data access, I encourage you to download and review INEGI’s publicly available anonymized files. These may already provide the data at the unit of observation you need to answer your research questions.
+I recommend that you download and familiarize yourself with the open anonymized data that are publicly available on INEGI before requesting access to the restricted data. These may have the data you need at your desired level of aggregation to answer your research questions.
 
-| Access route | How it works |
+| Access | Description |
 | --- | --- |
-| **Remote Processing (*Procesamiento Remoto*)** | Send your code to INEGI. INEGI staff run it on the restricted microdata and return approved statistical output after review. This does not provide remote access to the data or a secure desktop. |
-| **Microdata Laboratory (*Laboratorio de Microdatos*)** | Work with approved microdata on secure equipment **in person at an authorized laboratory** following registration and training. See the Mexico City location below. |
+| **Remote Processing (*Procesamiento Remoto*)** | Send the code you wrote to INEGI, which runs the code on the restricted microdata and sends you back the approved statistics. This option does not allow direct data access. |
+| **Microdata Laboratory (*Laboratorio de Microdatos*)** | Use the approved microdata on secure computer equipment **in person at an authorized laboratory**. You have to register and be trained. [Location in Mexico City](#mexico-city) |
 
-Remote processing and physical laboratory access are governed by the [INEGI operating rules (Spanish PDF)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), including Articles 19 and 31.
+The [INEGI operating rules (Spanish PDF)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), Articles 19 and 31, governs both remote and in person microlab access.
 
 ## INEGI data products
 
-INEGI offers the following data products. Available years, variables, geographic detail, and access requirements vary by program.
+INEGI offers the following data products and many others. Available years, variables, geographic detail, and access requirements vary by program.
 
 - **Economic Censuses (*Censos Económicos*):** Establishment activity, revenue, input costs, employment, capital, and industry.
 - **Population and Housing Censuses (*Censos de Población y Vivienda*):** Demographics, housing, labor, and socioeconomic characteristics.
 - **Agricultural and forestry censuses (*Censos Agropecuarios y Forestales*):** Agricultural production, land use, machinery, and the rural economy.
 - **National Survey of Household Income and Expenditure (*Encuesta Nacional de Ingresos y Gastos de los Hogares*, ENIGH):** Household income, consumption, and expenditure.
 - **National Survey of Occupation and Employment (*Encuesta Nacional de Ocupación y Empleo*, ENOE):** Employment, informality, earnings, and working conditions.
-- **Environmental and sectoral statistics:** Environmental management and industry-specific activity. Check each program’s coverage; some compliance and emissions records may require a separate request or another agency.
 - **Geospatial and cartographic data:** Geographic boundaries, digital maps, and spatial layers for GIS analysis.
 
-Start with the [INEGI program catalogue](https://www.inegi.org.mx/programas/). Program pages provide public microdata, documentation, and file structures (*Estructura de archivos*, FD). Restricted microdata require an approved request.
+Start with the [INEGI program catalogue](https://www.inegi.org.mx/programas/). Each product page provides public microdata, documentation, and file structures (*Estructura de archivos*, FD).
 
-## How to request access
+## Process of Requesting Access
 
-### 1. Define your research and data needs
+### 1. Formulate Research Question and Determine Data Requirements
 
-Identify the programs, years, variables, geographic detail, and outputs your project requires. Explain why publicly available files are insufficient. Discuss the project with your thesis advisor or research supervisor before applying.
+You need to determine what data and variables are needed to answer your research question. You have to specify: programs to be used; years; variables; geographic level; and expected results. You also need to explain what information is not available for public use and why. Consult with your thesis adviser/research mentor before filling out the application.
 
-### 2. Prepare the documentation package
+### 2. Fill out the Application Document
 
-Download the [INEGI access application form (PDF)](https://www.inegi.org.mx/contenidos/app/microdatos/laboratoriodatos/doc/Solicitud_Uso.pdf). Complete and save it in PDF format using Adobe Acrobat Reader. Prepare the following together for submission to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx):
+Fill out the application document by downloading the [INEGI access application form (PDF)](https://www.inegi.org.mx/contenidos/app/microdatos/laboratoriodatos/doc/Solicitud_Uso.pdf). Compile the following documents to be submitted to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx):
 
-- **Completed application**, including your project objectives, requested data, intended outputs, and chosen access modality.
-- **Institutional affiliation documents** for you and, if you are a graduate student, your thesis advisor or supervisor. You can request this endorsement from the **Department of Economics** and include the letter with your application.
-- **Official photo identification** for you and your advisor or supervisor, as applicable; a passport is an appropriate option for international applicants.
-- **Updated CVs** for you and your advisor or supervisor, as applicable.
+- Completed application form with stated objectives of your research, data to be used, expected results, and the type of access you will be using.
+- Institution of affiliation letters for you and, if applicable, your thesis adviser or mentor.
+- Valid photo identification for you and, if applicable, your thesis adviser or mentor (Passport is a good option for international applicants).
+- Updated CVs for you and, if applicable, your thesis adviser or mentor.
 
-Send the application materials together in a single email and follow any additional instructions INEGI provides. Requirements for researchers and their supervisors can vary by applicant category. Consult the current form and the [operating rules, Articles 7–14](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf).
+Submit the application package in one email. Follow any further instructions provided by INEGI. Different types of researchers and research mentors will have different requirements. Review the current form and the [operating rules, Articles 7–14](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf) for more details.
 
 ### 3A. Remote Processing (*Procesamiento Remoto*)
 
-This route is suitable when you cannot travel to a laboratory and can specify the analysis in code.
+The remote processing option is recommended if you are not able to travel to microlab.
 
-1. Send the signed, scanned application PDF to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx), with your advisor’s or supervisor’s signature where required.
-2. After INEGI acknowledges the request, provide your variable selection using the relevant program’s file-structure document (*Estructura de archivos*, FD), together with your scripts or processing specifications.
-3. Agree on accepted software, file formats, and naming conventions with INEGI. These may include Stata `.do` files or R scripts, depending on the project and available tools.
-4. **INEGI staff run the code on the confidential microdata.** Outputs are reviewed for disclosure risk before approved results are returned to you.
+1. Send a signed, scanned PDF copy of the application form to [microdatos@inegi.org.mx](mailto:microdatos@inegi.org.mx).
+2. After INEGI acknowledges receipt of your application, send your variable selection based on the file-structure document (*Estructura de archivos*, FD) of the program you wish to use and the script/code to be run.
+3. Coordinate with INEGI on what software, file format, and naming convention will be accepted.
+4. **INEGI staff will run your code on the confidential microdata**, review the results for disclosure risk, and send you the approved results.
 
-Remote processing is a code-submission service, not a remote-desktop connection. Under Article 19 of the linked rules, this modality does not require the laboratory accreditation or signed laboratory terms of use applicable to on-site access.
+Remote processing is a way of submitting code to be run by INEGI staff, not a remote access to a computer. Remote processing does not require laboratory accreditation or laboratory terms of use, as outlined in Article 19 of the [operating rules](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf).
 
 ### 3B. Microdata Laboratory (*Laboratorio de Microdatos*)
 
-This route requires you to travel to an approved facility in Mexico and work there in person.
+The microlab option is recommended if you are able to travel to an accredited laboratory in Mexico to conduct your analysis.
 
-1. Select your preferred laboratory in the application and confirm availability with INEGI before making travel arrangements.
-2. Request the institutional endorsement from the IU Economics Department and coordinate accreditation through the IU–INEGI agreement.
-3. Submit signed originals of the application and the terms of use (*Términos y Condiciones de Uso*) when instructed. Obtain your advisor’s or supervisor’s signature where required.
-4. Complete the required confidentiality and laboratory-orientation training, then reserve your working sessions according to the facility’s procedures.
-5. Work on the approved data using the secure laboratory equipment. Confirm required software and versions in advance. Tools may include R, Stata, SPSS, Excel, Mapa Digital, and ArcGIS; availability should be checked for your project and chosen facility.
-6. Request review and release of your statistical outputs through INEGI. Confidential microdata remain within the secure environment.
+1. Specify the lab of your choice in the application form and check with INEGI regarding availability before making any travel plans.
+2. Request institutional endorsement from IU Economics Department.
+3. Prepare the original, signed copies of the application form and the terms of use (*Términos y Condiciones de Uso*), as requested. Get the necessary signature from your thesis adviser or mentor.
+4. Complete the required confidentiality and microlab orientation training, then [reserve your spot at microlab](https://www.inegi.org.mx/app/microdatos/solicitud/login.aspx). Training is required only once; subsequent visits require only a reservation.
+5. Congratulation, you can now conduct your analysis on approved data using lab equipment. Check with the microlab beforehand if you will need software packages installed for you analysis eg. ee, e,e, in R.
+6. Request a review and release of your statistical outputs. The confidential microdata will not leave the secure microlab environment.
 
-**Direct access is available only while physically present inside an authorized Microdata Laboratory.** All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), the signed terms of use, and the facility’s scheduling arrangements. Confirm your appointment and the location for your approved project with INEGI before traveling.
+Direct access is available only while physically present inside an authorized Microdata Laboratory. All work is subject to the [operating rules (in Spanish)](https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf), he signed terms of use, and the facility’s scheduling arrangements. Confirm your appointment and the location for your approved project with INEGI before traveling.
 
 ### Laboratory location in Mexico City
 
@@ -114,8 +112,6 @@ If you are an IU student or affiliated researcher, I am happy to help you naviga
 
 ## Disclaimer and researcher responsibility
 
-I provide this guide for informational purposes to help researchers navigate the application process and use INEGI data responsibly. It is not legal advice or an official statement from Indiana University or INEGI, and it does not replace the IU–INEGI agreement, INEGI’s operating rules, or the terms governing your approved project.
+This guide is meant as a resource for researchers to help them through the process of applying for data and working with INEGI data responsibly. It is not intended to be a legal document or official document of either Indiana University or INEGI. It does not supersede the IU–INEGI agreement, INEGI policy, or terms of any approved project. Individual researchers are responsible for ensuring compliance with all applicable policy and agreement requirements for access and use of data. Violations may lead to penalties for researchers involved in misconduct, unauthorized release, or misuse, according to those requirements.
 
-Each researcher is responsible for complying with the requirements that apply to their access and use of the data. Misconduct, unauthorized disclosure, or misuse may result in sanctions under the applicable rules and agreements. Nothing in this guide changes the responsibilities of researchers, IU, or INEGI under those documents.
-
-*Guide updated September 28, 2026. Confirm current forms, software, appointments, and requirements with INEGI.*
+*Guide updated November 11, 2026. Always verify the current state of forms, tools, scheduling, and requirements with INEGI microlab staff.*
