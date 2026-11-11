@@ -10,6 +10,7 @@
   </div>
   <h3 class="jm-entry-title" data-jm-hl>{{ .title }}</h3>
   {{- if and .meta (not .featured) }}<p class="jm-entry-meta" data-jm-hl>{{ .meta }}</p>{{ end }}
+  {{ partial "jm/awards.html" .awards }}
   {{ partial "jm/presentations.html" .presentations }}
   {{- if or .links .abstract }}
   <div class="jm-entry-actions">
