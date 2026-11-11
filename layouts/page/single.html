@@ -1,1 +1,29 @@
-{{ define "main" }}<article class="article">{{ partial "page_header" . }}<div class="article-container"><div class="article-style jm"><div class="course-body">{{ .Content }}</div></div>{{ partial "page_footer" . }}</div></article>{{ end }}
+{{- /* Generic content page (type: page): shared banner, back link, lead text, and optional "On this page" navigation.
+       The lead comes from `summary:` in front matter. A manual "← Home" link at the top of the content is replaced by the banner's back link. */ -}}
+{{ define "main" }}
+{{- $url := .RelPermalink -}}
+{{- $crumbLabel := "Home" -}}{{- $crumbURL := "/" -}}
+{{- if and (hasPrefix $url "/teaching/") (ne $url "/teaching/") -}}{{- $crumbLabel = "Teaching experience" -}}{{- $crumbURL = "/teaching/" -}}{{- end -}}
+{{- $content := .Content | replaceRE `^\s*<p><a href="[^"]*">←[^<]*</a></p>` "" | safeHTML -}}
+{{- $showToc := ge (len (findRE `<h2` .Content)) 4 -}}
+<div class="jm jm-page">
+  <header class="jm-page-head">
+    <div class="jm-wrap">
+      <a class="jm-crumb" href="{{ $crumbURL | relURL }}"><svg class="jm-ic"><use href="#jm-i-left"/></svg>{{ $crumbLabel }}</a>
+      <h1 tabindex="-1">{{ .Title }}</h1>
+      {{ with .Params.summary }}<p class="jm-lead">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+  <div class="jm-wrap jm-page-body">
+    {{ if $showToc }}
+    <div class="jm-guide">
+      <nav class="jm-toc" aria-label="On this page"><span class="jm-label">On this page</span><ul id="jm-toc"></ul></nav>
+      <article class="jm-prose jm-content">{{ $content }}</article>
+    </div>
+    {{ else }}
+    <article class="jm-prose jm-content">{{ $content }}</article>
+    {{ end }}
+    {{ partial "page_footer" . }}
+  </div>
+</div>
+{{ end }}

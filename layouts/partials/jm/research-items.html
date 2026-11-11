@@ -1,0 +1,34 @@
+{{- /* Builds the list of research items (in display order) from content + data files, returned as a slice of dicts. */ -}}
+{{- $items := slice -}}
+
+{{- range (where site.RegularPages "Params.research_category" "publication").ByWeight }}
+  {{- $links := slice -}}{{- with .Params.url_pdf }}{{ $links = $links | append (dict "label" "Read paper ↗" "url" .) }}{{ end -}}
+  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "pub" "title" (partial "jm/clean.html" .Title) "meta" (partial "jm/clean.html" (.Params.publication | default "")) "status" (.Date.Format "2006") "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "presentations" .Params.presentations "featured" false "home" (.Params.homepage_research | default false)) -}}
+{{- end }}
+
+{{- range (where site.RegularPages "Params.research_category" "working-paper").ByWeight }}
+  {{- $links := slice -}}{{- with .Params.url_pdf }}{{ $links = $links | append (dict "label" "Read full paper" "url" .) }}{{ end -}}
+  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "wp" "title" (partial "jm/clean.html" .Title) "meta" "" "status" (.Date.Format "2006") "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "presentations" .Params.presentations "featured" true "home" false) -}}
+{{- end }}
+
+{{- range (where site.RegularPages "Params.research_category" "work-in-progress").ByWeight }}
+  {{- $links := slice -}}{{- with .Params.url_pdf }}{{ $links = $links | append (dict "label" "Read paper ↗" "url" .) }}{{ end -}}
+  {{- $meta := cond (in (.Params.authors | default slice) "Samia Islam") "With Samia Islam" "" -}}
+  {{- $status := cond (eq .Params.summary "Draft in progress") "Draft in progress" "Work in progress" -}}
+  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "wip" "title" (partial "jm/clean.html" .Title) "meta" $meta "status" $status "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "presentations" .Params.presentations "featured" false "home" (.Params.homepage_research | default false)) -}}
+{{- end }}
+
+{{- range (where site.RegularPages "Section" "project").ByDate.Reverse }}
+  {{- $links := slice -}}{{- with .Params.external_link }}{{ $links = $links | append (dict "label" "Read report ↗" "url" .) }}{{ end -}}
+  {{- $items = $items | append (dict "uid" (printf "report-%s" .File.ContentBaseName) "type" "report" "title" (partial "jm/clean.html" .Title) "meta" "Idaho Department of Labor" "status" (.Date.Format "2006") "abstract" "" "links" $links "presentations" slice "featured" false "home" false) -}}
+{{- end }}
+
+{{- range $i, $m := site.Data.research_extras.media }}
+  {{- $items = $items | append (dict "uid" (printf "media-%d" $i) "type" "media" "title" (partial "jm/clean.html" $m.title) "meta" $m.outlet "status" $m.date "abstract" "" "links" (slice (dict "label" "Read coverage ↗" "url" $m.url)) "presentations" slice "featured" false "home" false) -}}
+{{- end }}
+
+{{- range $i, $g := site.Data.research_extras.grants }}
+  {{- $items = $items | append (dict "uid" (printf "grant-%d" $i) "type" "grant" "title" (partial "jm/clean.html" $g.title) "meta" (printf "%s · %s" $g.institution $g.support_type) "status" $g.date "abstract" "" "links" slice "presentations" slice "featured" false "home" false) -}}
+{{- end }}
+
+{{- return $items -}}

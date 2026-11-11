@@ -1,0 +1,49 @@
+# Cycling cities shown on the home page (chips + map pins).
+# lon/lat are decimal degrees. `ride: true` marks the ride shown in the Strava embed (pulsing pin).
+cities:
+  - name: Bemidji, MN
+    lon: -94.88
+    lat: 47.47
+  - name: Bloomington, IN
+    lon: -86.53
+    lat: 39.17
+  - name: Boise, ID
+    lon: -116.2
+    lat: 43.62
+  - name: Buffalo, NY
+    lon: -78.88
+    lat: 42.89
+  - name: College Park, MD
+    lon: -76.94
+    lat: 38.99
+  - name: Holland, MI
+    lon: -86.11
+    lat: 42.79
+  - name: Indianapolis, IN
+    lon: -86.16
+    lat: 39.77
+  - name: Long Beach, WA
+    lon: -124.06
+    lat: 46.35
+  - name: Mexico City, Mexico
+    lon: -99.13
+    lat: 19.43
+  - name: Minneapolis, MN
+    lon: -93.27
+    lat: 44.98
+    ride: true
+  - name: Morgantown, WV
+    lon: -79.96
+    lat: 39.63
+  - name: Owensboro, KY
+    lon: -87.11
+    lat: 37.77
+  - name: Sacramento, CA
+    lon: -121.49
+    lat: 38.58
+  - name: Springfield, IL
+    lon: -89.65
+    lat: 39.8
+  - name: Washington, DC
+    lon: -77.04
+    lat: 38.91

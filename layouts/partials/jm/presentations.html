@@ -1,0 +1,7 @@
+{{- /* Presentations list for a paper. Renders nothing unless the paper's front matter has `presentations:`.
+       Input: the list itself (.Params.presentations). Each item: venue (required), year (optional), scheduled (true for upcoming). */ -}}
+{{- with . -}}
+<div class="jm-presented"><span class="jm-presented-label">Presentations</span>
+{{- range . }}<span class="jm-pres{{ if .scheduled }} jm-soon{{ end }}">{{ .venue }}{{ if .scheduled }}<em>Scheduled</em>{{ else }}{{ with .year }}<em>{{ . }}</em>{{ end }}{{ end }}</span>{{ end -}}
+</div>
+{{- end -}}

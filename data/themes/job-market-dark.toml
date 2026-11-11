@@ -1,0 +1,13 @@
+# Night variant used by Wowchemy's built-in day/night switch (params.yaml: theme_night).
+name = "Job Market Dark"
+[dark]
+primary = "#e8909c"
+background = "#13151a"
+link = "#e8909c"
+link_hover = "#f4b4bc"
+menu_primary = "#13151a"
+menu_text = "#c6c9d1"
+menu_text_active = "#e8909c"
+menu_title = "#eceae4"
+home_section_odd = "#13151a"
+home_section_even = "#13151a"
