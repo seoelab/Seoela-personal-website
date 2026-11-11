@@ -1,0 +1,8 @@
+{{- /* Awards list for a paper. Renders nothing unless the paper's front matter has `awards:`.
+       Input: the list itself (.Params.awards). Each item: title (required), institution (optional), date (optional free text, e.g. "Spring 2025"). */ -}}
+{{- with . -}}
+<div class="jm-presented jm-awarded"><span class="jm-presented-label">Awards</span>
+{{- range . }}{{ $sub := slice }}{{ with .institution }}{{ $sub = $sub | append . }}{{ end }}{{ with .date }}{{ $sub = $sub | append . }}{{ end -}}
+<span class="jm-pres jm-award">{{ .title }}{{ with $sub }}<em>{{ delimit . ", " }}</em>{{ end }}</span>{{ end -}}
+</div>
+{{- end -}}
