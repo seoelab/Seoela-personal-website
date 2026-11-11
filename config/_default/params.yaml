@@ -1,6 +1,6 @@
 appearance:
   theme_day: job-market
-  theme_night: ""
+  theme_night: job-market-dark
   font: Roboto
   font_size: m
 marketing:
@@ -26,7 +26,7 @@ header:
     align: l
     show_logo: true
     show_language: false
-    show_day_night: false
+    show_day_night: true
     show_search: false
     highlight_active_link: true
 footer:

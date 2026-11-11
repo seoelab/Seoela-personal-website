@@ -1,0 +1,21 @@
+{{- /* Teaching experience: tabs for Indiana University / Boise State. Data: data/teaching.yaml */ -}}
+{{ $d := site.Data.teaching }}
+<div class="jm-tablist" role="tablist" aria-label="Institution" id="jm-teach-tabs">
+  <button role="tab" id="jm-tab-iu" aria-selected="true" aria-controls="jm-panel-iu" type="button">Indiana University</button>
+  <button role="tab" id="jm-tab-boise" aria-selected="false" aria-controls="jm-panel-boise" tabindex="-1" type="button">Boise State</button>
+</div>
+
+<div class="jm-panel" id="jm-panel-iu" role="tabpanel" aria-labelledby="jm-tab-iu">
+  <div class="jm-group"><h4>Associate Instructor · full teaching responsibility</h4>
+    {{ range $d.iu_instructor }}{{ partial "jm/course.html" . }}{{ end }}
+    <p class="jm-score-note">Student teaching effectiveness scores are out of 5.</p>
+  </div>
+  <div class="jm-group"><h4>Teaching Assistant</h4>
+    {{ range $d.iu_ta }}{{ partial "jm/course.html" . }}{{ end }}
+  </div>
+</div>
+<div class="jm-panel" id="jm-panel-boise" role="tabpanel" aria-labelledby="jm-tab-boise" hidden>
+  <div class="jm-group"><h4>Teaching Assistant</h4>
+    {{ range $d.boise_ta }}{{ partial "jm/course.html" . }}{{ end }}
+  </div>
+</div>

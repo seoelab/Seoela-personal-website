@@ -1,16 +1,25 @@
+# Left menu: pages and home-page sections. `/#id` links scroll to a section on the home page.
 main:
 - name: Research
-  url: /#research
+  url: /research/
   weight: 10
 - name: Teaching
-  url: /#teaching
+  url: /teaching/
+  weight: 20
+- name: Background
+  url: /#education
   weight: 30
 - name: INEGI data
-  url: /#inegi
-  weight: 35
+  url: /inegi/
+  weight: 40
+- name: Beyond economics
+  url: /#beyond
+  weight: 50
 - name: Contact
   url: /#contact
-  weight: 50
+  weight: 60
+# Right side of the navbar (styled as the CV button).
+main_right:
 - name: CV
   url: /uploads/resume.pdf
-  weight: 60
+  weight: 10

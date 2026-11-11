@@ -1,710 +1,192 @@
+{{- /*
+  Home page block (content/_index.md -> sections: - block: job-market).
+  Wowchemy supplies the navbar, footer and page shell; this block renders the page content.
+  Styles: assets/scss/custom.scss (all classes are prefixed jm-).  Behaviour: assets/js/job-market.js.
+*/ -}}
 {{ $person := site.GetPage "/authors/admin" }}
 {{ $paper := site.GetPage "/publication/proaire" }}
+{{ $items := partial "jm/research-items.html" . }}
+{{ $cities := site.Data.cycling_map.cities }}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<div class="jm jm-home">
 
-<style>
-/* ==========================================================
-   Job-market front page. Everything is scoped under .jm so it
-   will not leak into the rest of the theme.
-   If your theme has a fixed top navbar, set --jm-sticky-top to
-   its height (e.g. 64px) so the section nav sits below it.
-   ========================================================== */
-.jm {
-  --ink: #171a21;
-  --ink-2: #3a404c;
-  --muted: #656c79;
-  --line: #e5e2da;
-  --paper: #faf9f6;
-  --card: #ffffff;
-  --accent: #8a1c2b;
-  --accent-ink: #6e1421;
-  --accent-soft: #f7ecee;
-  --serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --jm-sticky-top: 0px;
-
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-}
-.jm *, .jm *::before, .jm *::after { box-sizing: border-box; }
-.jm .wrap { max-width: 1060px; margin: 0 auto; padding: 0 28px; }
-
-@media (prefers-reduced-motion: no-preference) {
-  html { scroll-behavior: smooth; }
-}
-
-/* ---------- Base typography ---------- */
-.jm h1, .jm h2, .jm h3, .jm h4 {
-  font-family: var(--serif);
-  color: var(--ink);
-  line-height: 1.2;
-  margin: 0;
-}
-.jm p { margin: 0 0 1em; }
-.jm a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-color: rgba(138, 28, 43, .3);
-  text-underline-offset: 3px;
-  transition: color .15s ease, text-decoration-color .15s ease;
-}
-.jm a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
-.jm a:focus-visible, .jm summary:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-.jm .eyebrow {
-  margin: 0 0 10px;
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-/* ---------- Buttons ---------- */
-.jm a.button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
-  font-size: .92rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--ink);
-  background: var(--card);
-  border: 1px solid #d3cfc5;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color .15s ease, background-color .15s ease, transform .15s ease, box-shadow .15s ease;
-}
-.jm a.button:hover {
-  color: var(--ink);
-  border-color: var(--ink);
-  box-shadow: 0 2px 8px rgba(23, 26, 33, .08);
-  transform: translateY(-1px);
-}
-.jm a.button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.jm a.button.primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
-.jm a.button svg { flex: none; }
-.jm .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 26px; }
-.jm .actions a:not(.button) { font-size: .95rem; padding: 0 4px; }
-
-/* ---------- Hero ---------- */
-.jm .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: 64px;
-  align-items: center;
-  padding: 72px 0 60px;
-}
-.jm .status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 20px;
-  padding: 5px 13px;
-  font-size: .76rem;
-  font-weight: 600;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--accent-ink);
-  background: var(--accent-soft);
-  border-radius: 999px;
-}
-.jm .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-.jm .hero h1 {
-  font-size: clamp(2.4rem, 5vw, 3.5rem);
-  font-weight: 600;
-  letter-spacing: -.02em;
-  margin-bottom: 12px;
-}
-.jm .position { margin: 0 0 22px; font-size: 1.12rem; color: var(--ink-2); }
-.jm .position span { color: var(--muted); }
-.jm .intro { max-width: 60ch; font-size: 1.04rem; color: var(--ink-2); }
-
-.jm .fields { margin: 22px 0 0; }
-.jm .fields-label {
-  display: block;
-  margin-bottom: 9px;
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.jm .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
-.jm .chips li {
-  margin: 0;
-  padding: 5px 13px;
-  font-size: .88rem;
-  color: var(--ink-2);
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-}
-
-.jm .portrait { margin: 0; text-align: center; }
-.jm .avatar-circle {
-  display: block;
-  width: 240px;
-  height: 240px;
-  margin: 0 auto;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #fff;
-  box-shadow: 0 0 0 1px var(--line), 0 14px 34px rgba(23, 26, 33, .13);
-}
-.jm .portrait figcaption { margin-top: 18px; font-size: .9rem; line-height: 1.5; color: var(--muted); }
-.jm .profile-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 14px; }
-.jm .profile-links a {
-  padding: 4px 12px;
-  font-size: .82rem;
-  text-decoration: none;
-  color: var(--ink-2);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--card);
-}
-.jm .profile-links a:hover { color: var(--accent); border-color: var(--accent); }
-
-/* ---------- Sticky section nav ---------- */
-.jm .jm-nav {
-  position: sticky;
-  top: var(--jm-sticky-top);
-  z-index: 20;
-  background: rgba(250, 249, 246, .92);
-  -webkit-backdrop-filter: saturate(1.4) blur(10px);
-  backdrop-filter: saturate(1.4) blur(10px);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.jm .jm-nav .wrap { display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; }
-.jm .jm-nav .wrap::-webkit-scrollbar { display: none; }
-.jm .jm-nav a {
-  flex: none;
-  padding: 14px 12px;
-  font-size: .9rem;
-  font-weight: 500;
-  white-space: nowrap;
-  color: var(--ink-2);
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-}
-.jm .jm-nav a:hover { color: var(--ink); }
-.jm .jm-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
-.jm .jm-nav .nav-cv { margin-left: auto; color: var(--accent); }
-
-/* ---------- Sections ---------- */
-.jm .section {
-  padding: 64px 0;
-  border-top: 1px solid var(--line);
-  scroll-margin-top: calc(var(--jm-sticky-top) + 56px);
-}
-.jm .jm-nav + .section { border-top: 0; }
-.jm .section-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin-bottom: 30px; }
-.jm .section-head h2 { font-size: 1.8rem; font-weight: 600; letter-spacing: -.01em; }
-.jm .section-head span { font-size: .95rem; color: var(--muted); }
-
-/* ---------- Featured job market paper ---------- */
-.jm .featured {
-  padding: 34px 36px 30px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--accent);
-  border-radius: 10px;
-  box-shadow: 0 1px 2px rgba(23, 26, 33, .04), 0 8px 24px rgba(23, 26, 33, .05);
-}
-.jm .featured h3 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 600; letter-spacing: -.01em; margin-bottom: 14px; }
-.jm .featured > p { max-width: 68ch; color: var(--ink-2); }
-.jm .paper-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-
-/* ---------- Abstract / how-to disclosures ---------- */
-.jm .paper-abstract-dropdown, .jm .how-to {
-  margin-top: 16px;
-  background: #faf9f6;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-.jm .paper-abstract-dropdown[open], .jm .how-to[open] { background: var(--card); }
-.jm .abstract-toggle, .jm .how-to summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
-  font-size: .92rem;
-  font-weight: 500;
-  color: var(--ink);
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
-}
-.jm .abstract-toggle::-webkit-details-marker, .jm .how-to summary::-webkit-details-marker { display: none; }
-.jm .how-to summary::after {
-  content: "";
-  width: 8px; height: 8px;
-  border-right: 2px solid var(--muted);
-  border-bottom: 2px solid var(--muted);
-  transform: rotate(45deg);
-  margin: -4px 4px 0 0;
-  transition: transform .2s ease;
-}
-.jm .how-to[open] summary::after { transform: rotate(-135deg); margin-top: 2px; }
-.jm .chevron-icon { opacity: .65; transition: transform .2s ease; }
-.jm details[open] > summary .chevron-icon { transform: rotate(180deg); }
-.jm .abstract-content, .jm .how-to > :not(summary) { margin: 0; }
-.jm .abstract-content { padding: 14px 16px 6px; border-top: 1px solid var(--line); font-size: .95rem; line-height: 1.7; color: var(--ink-2); }
-.jm .how-to > p, .jm .how-to > h4 { padding: 0 16px; }
-.jm .how-to > p:first-of-type { padding-top: 14px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
-.jm .how-to > h4 { margin-top: 12px; font-size: 1rem; }
-.jm .how-to > p:last-child { padding-bottom: 12px; }
-
-/* ---------- Other research rows ---------- */
-.jm .research-row {
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 8px 32px;
-  padding: 28px 0;
-  border-top: 1px solid var(--line);
-}
-.jm .featured + .research-row { margin-top: 36px; }
-.jm .research-row .kind {
-  padding-top: 5px;
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.jm .research-content { min-width: 0; }
-.jm .research-title { margin-bottom: 8px; font-size: 1.2rem; font-weight: 600; }
-.jm .research-summary { max-width: 68ch; color: var(--ink-2); }
-.jm .research-links { margin: 14px 0 0; }
-
-/* ---------- Education ---------- */
-.jm .education-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
-.jm .education-item { padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
-.jm .education-item h3 { margin-bottom: 8px; font-size: 1.05rem; font-weight: 600; }
-.jm .education-item p { margin: 0; font-size: .92rem; line-height: 1.55; color: var(--muted); }
-
-/* ---------- Teaching ---------- */
-.jm .section > p { max-width: 70ch; color: var(--ink-2); }
-.jm .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 22px 0 0; padding: 0; list-style: none; counter-reset: step; }
-.jm .steps li {
-  counter-increment: step;
-  padding: 18px 18px 16px;
-  font-size: .92rem;
-  line-height: 1.45;
-  color: var(--ink-2);
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-}
-.jm .steps li::before {
-  content: counter(step);
-  display: block;
-  margin-bottom: 8px;
-  font-family: var(--serif);
-  font-size: 1.6rem;
-  line-height: 1;
-  color: var(--accent);
-}
-.jm .steps strong { display: block; margin-bottom: 2px; color: var(--ink); font-weight: 600; }
-
-/* ---------- INEGI callout ---------- */
-.jm #inegi .callout { max-width: none; padding: 26px 30px; background: var(--accent-soft); border-radius: 10px; }
-.jm #inegi .callout p { max-width: 70ch; color: var(--ink-2); }
-.jm #inegi .actions { margin-top: 4px; }
-
-/* ---------- Beyond economics ---------- */
-.jm .hobby-intro { margin-bottom: 28px; }
-.jm .hobby-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 28px; align-items: start; }
-.jm .hobby-block { padding: 26px 28px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
-.jm .hobby-block p { max-width: none; }
-.jm .hobby-title { margin-bottom: 12px; font-size: 1.25rem; font-weight: 600; }
-.jm .cities { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
-.jm .cities span { padding: 3px 11px; font-size: .84rem; color: var(--ink-2); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; }
-.jm .strava-embed-placeholder { min-height: 200px; }
-.jm .ride-caption { margin: 12px 0 0; font-size: .88rem; line-height: 1.55; color: var(--muted); }
-.jm .hobbies { display: grid; gap: 28px; }
-
-/* ---------- Contact ---------- */
-.jm .contact { padding-bottom: 80px; }
-.jm .contact > div {
-  padding: 40px 44px;
-  color: #f4f1ea;
-  background: var(--ink);
-  border-radius: 14px;
-}
-.jm .contact h2 { margin-bottom: 14px; font-size: 1.7rem; color: #fff; }
-.jm .contact p { max-width: none; margin: 0; color: #d9d5ca; line-height: 1.9; }
-.jm .contact a { color: #fff; text-decoration-color: rgba(255, 255, 255, .4); }
-.jm .contact a:hover { color: #fff; text-decoration-color: #fff; }
-
-/* ---------- Responsive ---------- */
-@media (max-width: 880px) {
-  .jm .hero { grid-template-columns: 1fr; gap: 36px; padding: 44px 0 40px; }
-  .jm .portrait { order: -1; text-align: left; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; }
-  .jm .avatar-circle { width: 112px; height: 112px; margin: 0; border-width: 3px; }
-  .jm .portrait figcaption { margin: 0; }
-  .jm .profile-links { justify-content: flex-start; flex-basis: 100%; margin-top: 8px; }
-  .jm .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .jm .hobby-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 640px) {
-  .jm .wrap { padding: 0 20px; }
-  .jm .section { padding: 48px 0; }
-  .jm .featured { padding: 26px 22px 22px; }
-  .jm .research-row { grid-template-columns: 1fr; padding: 22px 0; }
-  .jm .steps { grid-template-columns: 1fr; }
-  .jm .contact > div { padding: 30px 24px; }
-  .jm .hobby-block { padding: 22px 20px; }
-  .jm .jm-nav .nav-cv { display: none; }
-}
-@media print {
-  .jm .jm-nav { display: none; }
-}
-</style>
-
-<div class="jm">
-  <div class="wrap">
-
-    <!-- ===== Hero ===== -->
-    <section class="hero" aria-labelledby="name">
-      <div>
-        <p class="status">Job market candidate · 2026–27</p>
-
-        <h1 id="name">{{ $person.Title }}</h1>
-
-        <p class="position">
-          Ph.D. Candidate in Economics<br>
-          <span>Indiana University Bloomington</span>
-        </p>
-
-        <p class="intro">
-          I am an economics PhD student at Indiana University Bloomington, on the 2026-27 job market.
-          I study the effect of government policies, like environmental regulations, fossil fuel policies,
-          and labor market policies, on the behavior of firms and workers. I use quantitative and spatial
-          tools for my research. Prior to my PhD work, I was a labor economist at the Idaho Department of Labor.
-        </p>
-
-        <div class="fields">
-          <span class="fields-label">Research interests</span>
-          <ul class="chips">
-            <li>International Trade</li>
-            <li>Environment &amp; Energy</li>
-            <li>Quantitative &amp; Spatial Models</li>
-            <li>Labor</li>
-          </ul>
+  <!-- ===== Hero ===== -->
+  <div class="jm-hero" id="top" aria-labelledby="jm-name">
+    <div class="jm-wrap">
+      <div class="jm-hero-grid">
+        <div>
+          <p class="jm-status jm-rise" style="--i:0">Job market candidate · 2026–27</p>
+          <h1 id="jm-name" class="jm-name">{{ $person.Title }}</h1>
+          <p class="jm-position jm-rise" style="--i:3">Ph.D. Candidate in Economics<br><span>Indiana University Bloomington</span></p>
+          <p class="jm-intro jm-rise" style="--i:4">
+            I am an economics PhD student at Indiana University Bloomington, on the 2026-27 job market.
+            I study the effect of government policies, like environmental regulations, fossil fuel policies,
+            and labor market policies, on the behavior of firms and workers. I use quantitative and spatial
+            tools for my research. Prior to my PhD work, I was a labor economist at the Idaho Department of Labor.
+          </p>
+          <div class="jm-fields jm-rise" style="--i:5">
+            <span class="jm-label">Research interests</span>
+            <ul class="jm-chips"><li>International Trade</li><li>Environment &amp; Energy</li><li>Quantitative &amp; Spatial Models</li><li>Labor</li></ul>
+          </div>
+          <div class="jm-actions jm-rise" style="--i:6">
+            <a class="jm-btn jm-btn-primary" href="/uploads/resume.pdf"><svg class="jm-ic"><use href="#jm-i-download"/></svg>Curriculum vitae</a>
+            <a class="jm-btn" href="#job-market-paper">Job market paper</a>
+            <a class="jm-btn" href="#contact"><svg class="jm-ic"><use href="#jm-i-mail"/></svg>Email</a>
+          </div>
         </div>
 
-        <div class="actions">
-          <a class="button primary" href="/uploads/resume.pdf">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Curriculum vitae
-          </a>
-          <a class="button" href="#job-market-paper">Job market paper</a>
-          <a class="button" href="mailto:b s e o e l a a t i u d o t e d u">Email</a>
-        </div>
-      </div>
-
-      <figure class="portrait">
-        {{ $avatar := $person.Resources.GetMatch "avatar*" }}
-        {{ with $avatar }}
-          {{ $photo := .Fill "520x520 Center" }}
-          <img class="avatar-circle" src="{{ $photo.RelPermalink }}" alt="{{ $person.Title }}" width="240" height="240">
-        {{ end }}
-
-        <figcaption>
-          Department of Economics<br>
-          Bloomington, Indiana
-        </figcaption>
-
-        <div class="profile-links" aria-label="Academic and social profiles">
-          {{ range $person.Params.social }}
-            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+        <figure class="jm-portrait" id="jm-portrait">
+          {{ with $person.Resources.GetMatch "avatar*" }}
+            {{ $photo := .Fill "640x640 Center" }}
+            <button class="jm-avatar-btn" id="jm-avatar-btn" type="button" aria-label="Portrait of {{ $person.Title }}. Activate to replay the intro animation." title="Replay intro">
+              <span class="jm-avatar"><img src="{{ $photo.RelPermalink }}" width="300" height="300" alt="{{ $person.Title }}"></span>
+            </button>
           {{ end }}
-        </div>
-      </figure>
-    </section>
+          <figcaption>Department of Economics<br>Bloomington, Indiana</figcaption>
+          <div class="jm-profile-links" aria-label="Academic and social profiles">
+            {{ range $i, $s := $person.Params.social }}
+              {{ if in (slice "Twitter" "Google Scholar" "GitHub" "LinkedIn") $s.label }}
+              <a href="{{ $s.link }}" target="_blank" rel="noopener noreferrer" style="--i:{{ add 6 $i }}"><i class="{{ $s.icon_pack }} fa-{{ $s.icon }}" aria-hidden="true"></i>{{ if eq $s.label "Google Scholar" }}Scholar{{ else }}{{ $s.label }}{{ end }}</a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <div class="jm-wrap">
+      <div class="jm-facts jm-reveal" aria-label="At a glance">
+        <div class="jm-fact"><span class="jm-label">Current</span><strong>Ph.D. Candidate, Economics</strong><span>Indiana University Bloomington, 2022 – present</span></div>
+        <div class="jm-fact"><span class="jm-label">Fields</span><strong>International Trade</strong><span>Environment &amp; Energy · Labor · Spatial models</span></div>
+        <div class="jm-fact"><span class="jm-label">Job market paper</span><strong>Environmental regulation, firms, and trade</strong><span><a href="#job-market-paper">Mexico’s ProAire programs</a></span></div>
+        <div class="jm-fact"><span class="jm-label">Before the Ph.D.</span><strong>Labor economist</strong><span>Idaho Department of Labor</span></div>
+      </div>
+    </div>
   </div>
 
-  <!-- ===== Sticky section navigation ===== -->
-  <nav class="jm-nav" aria-label="Page sections">
-    <div class="wrap">
-      <a href="#research">Research</a>
-      <a href="#education">Education</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#inegi">INEGI data</a>
-      <a href="#beyond">Beyond economics</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cv" href="/uploads/resume.pdf">CV ↓</a>
-    </div>
-  </nav>
+  <!-- ===== Research ===== -->
+  <section class="jm-section" id="research" aria-labelledby="jm-research-h">
+    <div class="jm-wrap">
+      <div class="jm-section-head jm-reveal"><h2 id="jm-research-h">Research</h2><p>Trade, policy, and the spatial economy</p></div>
 
-  <div class="wrap">
-
-    <!-- ===== Research ===== -->
-    <section class="section" id="research">
-      <div class="section-head">
-        <h2>Research</h2>
-        <span>Trade, policy, and the spatial economy</span>
-      </div>
-
-      <article class="featured" id="job-market-paper">
-        <p class="eyebrow">Job market paper</p>
-        <h3>Environmental Regulation, Firms, and Trade:<br>Evidence from Mexico’s Air-Quality Programs</h3>
-        <p>
-          How does local environmental regulation affect firms and welfare? I study Mexico’s ProAire
-          programs using linked firm-level data and a quantitative spatial model that accounts for trade,
-          pollution transport, and worker sorting.
-        </p>
-
-        <div class="paper-links">
-          {{ with $paper.Params.url_pdf }}
-          <a class="button primary" href="{{ . }}" download>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Read full paper
-          </a>
-          {{ end }}
+      <article class="jm-jmp jm-reveal" id="job-market-paper">
+        <p class="jm-eyebrow">Job market paper</p>
+        <h3>{{ partial "jm/clean.html" $paper.Title }}</h3>
+        <p class="jm-lede">How does local environmental regulation affect firms and welfare? I study Mexico’s ProAire programs using linked firm-level data and a quantitative spatial model that accounts for trade, pollution transport, and worker sorting.</p>
+        {{ partial "jm/presentations.html" $paper.Params.presentations }}
+        <div class="jm-actions">
+          {{ with $paper.Params.url_pdf }}<a class="jm-btn jm-btn-primary" href="{{ . }}" target="_blank" rel="noopener noreferrer"><svg class="jm-ic"><use href="#jm-i-download"/></svg>Read full paper</a>{{ end }}
+          {{ if $paper.Params.abstract }}<button class="jm-toggle" type="button" data-jm-toggle aria-expanded="false" aria-controls="jm-jmp-abs">Abstract<svg class="jm-ic"><use href="#jm-i-chevron"/></svg></button>{{ end }}
         </div>
-
-        {{ with $paper.Params.abstract }}
-        <details class="paper-abstract-dropdown">
-          <summary class="abstract-toggle">
-            <span class="summary-text">Abstract</span>
-            <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="abstract-content"><p>{{ . }}</p></div>
-        </details>
-        {{ end }}
+        {{ with $paper.Params.abstract }}<div class="jm-collapse" id="jm-jmp-abs"><div><p class="jm-abstract">{{ partial "jm/clean.html" . }}</p></div></div>{{ end }}
       </article>
 
-      {{ with site.GetPage "/publication/journal-article" }}
-      <div class="research-row">
-        <div class="kind">Publication</div>
-        <div class="research-content">{{ partial "research-entry" . }}</div>
+      <div class="jm-home-research">
+        {{ range where $items "home" true }}{{ partial "jm/entry.html" (merge . (dict "uid" (printf "home-%s" .uid))) }}{{ end }}
       </div>
-      {{ end }}
+      <div class="jm-actions jm-reveal" style="margin-top:20px"><a class="jm-btn" href="{{ "/research/" | relURL }}">All research →</a></div>
+    </div>
+  </section>
 
-      {{ range (where (where site.RegularPages "Params.research_category" "work-in-progress") "Params.homepage_research" true).ByWeight }}
-      <div class="research-row">
-        <div class="kind">Work in progress</div>
-        <div class="research-content">
-          <h3 class="research-title">{{ .Title }}</h3>
-          <p class="research-summary">{{ .Params.summary }}</p>
-
-          {{ if .Params.url_pdf }}
-          <div class="research-links">
-            <a class="button" href="{{ .Params.url_pdf }}" download>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Read full paper
-            </a>
-          </div>
-          {{ end }}
-
-          {{ if .Params.abstract }}
-          <details class="paper-abstract-dropdown">
-            <summary class="abstract-toggle">
-              <span class="summary-text">Abstract</span>
-              <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </summary>
-            <div class="abstract-content"><p>{{ .Params.abstract }}</p></div>
-          </details>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-
-      <div class="actions"><a class="button" href="{{ "/research/" | relURL }}">All research →</a></div>
-    </section>
-
-    <!-- ===== Education ===== -->
-    <section class="section" id="education">
-      <div class="section-head"><h2>Education</h2></div>
-      <div class="education-grid">
-        {{ range $person.Params.education.courses }}
-        <article class="education-item">
-          <h3>{{ .course }}</h3>
-          <p>{{ .institution }}<br>{{ .year }}</p>
-        </article>
-        {{ end }}
-      </div>
-    </section>
-
-    <!-- ===== Teaching ===== -->
-    <section class="section" id="teaching">
-      <div class="section-head">
-        <h2>Teaching</h2>
-        <span>Indiana University Bloomington · Boise State University</span>
-      </div>
-
-      <p>
-        I have served as the primary instructor for an international economics course as well as a teaching
-        assistant in microeconomics, advanced microeconomic theory, and behavioral economics.
-      </p>
-      <p>
-        I strive to teach students how to think like economists by introducing a basic process to analyze
-        public policy questions. In particular, I guide students to:
-      </p>
-
-      <ol class="steps">
-        <li><strong>Articulate</strong>the economic question</li>
-        <li><strong>Understand</strong>the mechanisms</li>
-        <li><strong>Examine</strong>the evidence</li>
-        <li><strong>Discuss</strong>policy implications</li>
-      </ol>
-
-      <div class="actions">
-        <a class="button" href="{{ "/teaching/" | relURL }}">Teaching experience →</a>
+  <!-- ===== Teaching ===== -->
+  <section class="jm-section" id="teaching" aria-labelledby="jm-teaching-h">
+    <div class="jm-wrap">
+      <div class="jm-section-head jm-reveal"><h2 id="jm-teaching-h">Teaching</h2><p>Indiana University Bloomington · Boise State University</p></div>
+      <p class="jm-lead-text jm-reveal">I have served as the primary instructor for an international economics course as well as a teaching assistant in microeconomics, advanced microeconomic theory, and behavioral economics. I strive to teach students how to think like economists by introducing a basic process to analyze public policy questions. In particular, I guide students to a) articulate the economic question, b) understand the mechanisms, c) examine the evidence, and d) discuss policy implications.</p>
+      <div class="jm-actions jm-reveal">
+        <a class="jm-btn" href="{{ "/teaching/" | relURL }}">Teaching experience →</a>
         <a href="{{ "/teaching/econ-e303/" | relURL }}">ECON E-303 (visit course site) →</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== INEGI ===== -->
-    <section class="section" id="inegi">
-      <div class="section-head">
-        <h2>INEGI data access</h2>
-        <span>A resource for IU researchers</span>
+  <!-- ===== Education ===== -->
+  <section class="jm-section" id="education" aria-labelledby="jm-edu-h">
+    <div class="jm-wrap">
+      <div class="jm-section-head jm-reveal"><h2 id="jm-edu-h">Education &amp; background</h2></div>
+      <div class="jm-edu">
+        <ol class="jm-timeline jm-reveal">
+          {{ range $person.Params.education.courses }}
+          <li><span class="jm-yr">{{ replace (printf "%v" .year) " - " " – " }}</span><h3>{{ .course }}</h3><p>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .institution }}</a>{{ else }}{{ .institution }}{{ end }}</p></li>
+          {{ end }}
+        </ol>
+        <aside class="jm-side-card jm-reveal" style="--d:120ms">
+          <h3>Before the Ph.D.</h3>
+          <p>I worked as a labor economist at the Idaho Department of Labor, where I wrote reports on Idaho’s labor market and industries.</p>
+          <p><a href="{{ "/research/?type=report" | relURL }}">See policy reports →</a></p>
+        </aside>
       </div>
-      <div class="callout">
-        <p>
-          Graduate students and researchers with IU affiliation who are conducting research in Mexico can apply
-          to gain access to data provided by Mexico’s national statistical office, the
-          <strong>Instituto Nacional de Estadística y Geografía (INEGI)</strong>, using the IU–INEGI agreement,
-          pending approval.
-        </p>
-        <div class="actions">
-          <a class="button" href="{{ "/inegi/" | relURL }}">INEGI data access guide →</a>
+    </div>
+  </section>
+
+  <!-- ===== INEGI ===== -->
+  <section class="jm-section" id="inegi" aria-labelledby="jm-inegi-h">
+    <div class="jm-wrap">
+      <div class="jm-section-head jm-reveal"><h2 id="jm-inegi-h">INEGI data access</h2><p>A resource for IU researchers</p></div>
+      <div class="jm-callout jm-reveal">
+        <p>Graduate students and researchers with IU affiliation who are conducting research in Mexico can apply to gain access to data provided by Mexico’s national statistical office, the <strong>Instituto Nacional de Estadística y Geografía (INEGI)</strong>, using the IU–INEGI agreement, pending approval.</p>
+        <div class="jm-routes">
+          <div class="jm-route"><h3>Remote processing</h3><p>Send your code to INEGI. Staff run it on the restricted microdata and return approved statistical output after review.</p></div>
+          <div class="jm-route"><h3>Microdata laboratory</h3><p>Work with approved microdata on secure equipment, in person at an authorized laboratory, after registration and training.</p></div>
+        </div>
+        <div class="jm-actions" style="margin-top:20px">
+          <a class="jm-btn jm-btn-primary" href="{{ "/inegi/" | relURL }}">INEGI data access guide →</a>
           <a href="https://sc.inegi.org.mx/repositorioNormateca/Rod_19Jul22.pdf" target="_blank" rel="noopener noreferrer">Operating rules (Spanish PDF) ↗</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== Beyond economics ===== -->
-    <section class="section" id="beyond">
-      <div class="section-head">
-        <h2>Beyond economics</h2>
-        <span>A little of life outside research</span>
-      </div>
-
-      <p class="hobby-intro">
-        Away from research, I enjoy spending time with family, cycling, and playing soccer, tennis, and morabaraba.
-      </p>
-
-      <div class="hobby-grid">
-        <div class="hobby-block">
-          <h3 class="hobby-title">Cycling</h3>
-          <p>
-            My interest in maps and spatial patterns extends beyond my research. Cycling is one of my favorite
-            ways to experience a city and develop a feel for its geography, and my goal is to cycle in as many
-            cities as possible. So far, my rides have taken me to:
-          </p>
-
-          <p class="cities">{{ range site.Data.job_market.cycling_cities }}<span>{{ . }}</span>{{ end }}</p>
-
-          <div class="strava-embed-placeholder"
-               data-embed-type="activity"
-               data-embed-id="15063790954"
-               data-style="standard"
-               data-from-embed="false"
-               data-token="WAKyerqRgwe2HCXuHxx8teNYqcs4na82Fid73OCCbmA"></div>
-
-          <p class="ride-caption">
-            Minneapolis, Minnesota · 2023<br>
-            <a href="https://www.strava.com/activities/15063790954" target="_blank" rel="noopener noreferrer">View this ride on Strava ↗</a>
-          </p>
-
+  <!-- ===== Beyond economics ===== -->
+  <section class="jm-section" id="beyond" aria-labelledby="jm-beyond-h">
+    <div class="jm-wrap">
+      <div class="jm-section-head jm-reveal"><h2 id="jm-beyond-h">Beyond economics</h2><p>A little of life outside research</p></div>
+      <p class="jm-lead-text jm-reveal" style="margin-bottom:26px">Away from research, I enjoy spending time with family, cycling, and playing soccer, tennis, and morabaraba.</p>
+      <div class="jm-hobby-grid">
+        <div class="jm-hobby jm-reveal">
+          <h3>Cycling</h3>
+          <p>My interest in maps and spatial patterns extends beyond my research. Cycling is one of my favorite ways to experience a city and develop a feel for its geography, and my goal is to cycle in as many cities as possible. So far, my rides have taken me to:</p>
+          <p class="jm-count-line">{{ len $cities }} cities and counting</p>
+          <ul class="jm-cities">{{ range $i, $c := $cities }}<li data-i="{{ $i }}">{{ $c.name }}</li>{{ end }}</ul>
+          <div class="jm-nomap" id="jm-nomap"><canvas aria-hidden="true"></canvas></div>
+          <script type="application/json" id="jm-cities-data">{{ $cities | jsonify | safeJS }}</script>
+          <p class="jm-map-hint">Hover a pin or a city to match them up. The pulsing pin is the ride shown below.</p>
+          <div class="jm-strava-embed-placeholder" data-embed-type="activity" data-embed-id="15063790954" data-style="standard" data-from-embed="false" data-token="WAKyerqRgwe2HCXuHxx8teNYqcs4na82Fid73OCCbmA">
+            <div class="jm-strava-fallback">Ride map loads from Strava when online</div>
+          </div>
+          <p class="jm-caption">Minneapolis, Minnesota · 2023<br><a href="https://www.strava.com/activities/15063790954" target="_blank" rel="noopener noreferrer">View this ride on Strava ↗</a></p>
           <script src="https://strava-embeds.com/embed.js" defer></script>
         </div>
-
-        <div class="hobbies">
-          <article class="hobby hobby-block">
-            <h3 class="hobby-title">Morabaraba</h3>
-            <p>Morabaraba is a traditional strategy board game widely played in Lesotho and across Southern Africa.</p>
-            <p>
-              <a href="https://morabaraba-vert.vercel.app/" target="_blank" rel="noopener noreferrer">Play Morabaraba ↗</a>
-            </p>
-
-            <details class="how-to">
-              <summary>How to play</summary>
-              <p>
-                Instructions borrowed from
-                <a href="https://morabaraba-vert.vercel.app/" target="_blank" rel="noopener noreferrer">the linked Morabaraba game</a>.
-                These describe the rules used in that version.
-              </p>
-              {{ range site.Data.job_market.morabaraba_rules }}
-                <h4>{{ .title }}</h4>
-                <p>{{ .text | markdownify }}</p>
-              {{ end }}
-            </details>
-          </article>
+        <div class="jm-hobby jm-reveal" style="--d:120ms">
+          <h3>Morabaraba</h3>
+          <p>Morabaraba is a traditional strategy board game widely played in Lesotho and across Southern Africa.</p>
+          <p><a href="https://morabaraba-vert.vercel.app/" target="_blank" rel="noopener noreferrer">Play Morabaraba ↗</a></p>
+          <button class="jm-toggle" type="button" data-jm-toggle aria-expanded="false" aria-controls="jm-rules">How to play<svg class="jm-ic"><use href="#jm-i-chevron"/></svg></button>
+          <div class="jm-collapse" id="jm-rules"><div><div class="jm-rules">
+            <p style="font-size:13.8px;color:var(--jm-muted)">Instructions borrowed from <a href="https://morabaraba-vert.vercel.app/" target="_blank" rel="noopener noreferrer">the linked Morabaraba game</a>. These describe the rules used in that version.</p>
+            {{ range site.Data.job_market.morabaraba_rules }}<h4>{{ .title }}</h4><p>{{ .text | markdownify }}</p>{{ end }}
+          </div></div></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== Contact ===== -->
-    <section class="section contact" id="contact">
-      <div>
-        <h2>Get in touch</h2>
-        <p>
-          <span class="email-link" data-u="YnNlb2VsYQ==" data-d="aXUuZWR1"></span><br>
-          <span class="email-link" data-u="YnNlb2VsYQ==" data-d="b3V0bG9vay5jb20="></span><br>
-          Department of Economics · Indiana University Bloomington
-        </p>
+  <!-- ===== Contact ===== -->
+  <section class="jm-section" id="contact" aria-labelledby="jm-contact-h">
+    <div class="jm-wrap">
+      <div class="jm-contact-card jm-reveal">
+        <div>
+          <h2 id="jm-contact-h">Get in touch</h2>
+          <p>Department of Economics · Indiana University Bloomington</p>
+          <div class="jm-email-row"><span class="jm-email-link" data-u="{{ "bseoela" | base64Encode }}" data-d="{{ "iu.edu" | base64Encode }}"></span></div>
+          <div class="jm-email-row"><span class="jm-email-link" data-u="{{ "bseoela" | base64Encode }}" data-d="{{ "outlook.com" | base64Encode }}"></span></div>
+        </div>
+        <div class="jm-contact-links">
+          <a class="jm-btn" href="/uploads/resume.pdf"><svg class="jm-ic"><use href="#jm-i-download"/></svg>Download CV</a>
+          <a class="jm-btn jm-alt" href="https://scholar.google.com/citations?hl=en&user=TcYX2aAAAAAJ" target="_blank" rel="noopener noreferrer"><svg class="jm-ic"><use href="#jm-i-scholar"/></svg>Google Scholar</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </div>
 </div>
-
-<script>
-  /* Cryptographically robust Base64 email obfuscation with bot-trap protection */
-  document.querySelectorAll(".email-link").forEach(function (el) {
-    try {
-      var user = atob(el.dataset.u);
-      var domain = atob(el.dataset.d);
-      var email = user + "@" + domain;
-
-      var link = document.createElement("a");
-      link.href = "mailto:" + email;
-      link.textContent = email;
-      link.setAttribute("rel", "nofollow");
-      
-      // Prevent automated web scrapers from pulling DOM text easily
-      el.replaceWith(link);
-    } catch (e) {
-      // Fallback display if decoding fails
-      el.textContent = "Contact via Department Directory";
-    }
-  });
-
-  /* Highlight the current section in the sticky nav */
-  (function () {
-    var links = [].slice.call(document.querySelectorAll(".jm-nav a[href^='#']"));
-    if (!("IntersectionObserver" in window) || !links.length) return;
-    var byId = {};
-    links.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        links.forEach(function (l) { l.classList.remove("active"); l.removeAttribute("aria-current"); });
-        var a = byId[e.target.id];
-        if (a) { a.classList.add("active"); a.setAttribute("aria-current", "true"); }
-      });
-    }, { rootMargin: "-30% 0px -60% 0px" });
-    Object.keys(byId).forEach(function (id) {
-      var s = document.getElementById(id);
-      if (s) io.observe(s);
-    });
-  })();
-</script>

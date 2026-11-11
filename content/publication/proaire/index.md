@@ -17,6 +17,15 @@ abstract: "Air-quality policy often targets the areas of the highest pollution
   transport, and worker sorting, I find that ProAire has a small negative effect
   on output of 0.07 percent but improves welfare by 0.099 percent."
 draft: false
+presentations:
+  # Shown on the home page and the Research page. Remove this block (or leave it empty) to hide it.
+  # venue: required. year: optional. scheduled: true for upcoming talks (the year is then not shown).
+  - venue: RIDGE Forum
+    scheduled: true
+  - venue: BREAD Conference
+    year: 2026
+  - venue: IUB Microeconomics Seminar
+    year: 2024
 url_pdf: https://drive.google.com/file/d/1UnbYGiueFsIQ1bRk3kIVLbcW7b8K1XZf/view?usp=drive_link
 research_category: working-paper
 title: "Environmental Regulation, Firms, and Trade: Evidence from Mexico’s

@@ -1,0 +1,5 @@
+{{- /* Typographic clean-up for titles and abstracts: collapse whitespace, curly apostrophes, HTML-escape. Input: string. */ -}}
+{{- $s := . | replaceRE `\s+` " " -}}
+{{- $s = trim $s " " -}}
+{{- $s = $s | replaceRE `(\w)'(\w)` "${1}’${2}" -}}
+{{- $s | htmlEscape -}}

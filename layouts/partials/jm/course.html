@@ -1,0 +1,10 @@
+{{- /* One course row. Input: an item from data/teaching.yaml (code, title, terms "A (3.1/5); B", optional url). */ -}}
+<div class="jm-course">
+  <div><span class="jm-code">{{ .code | replaceRE ` ?\(visit course site\).*$` "" }}</span><h5>{{ .title }}</h5></div>
+  <div class="jm-terms">
+    {{- range split .terms ";" }}{{ $t := trim . " " }}{{ $m := findRESubmatch `^(.*?)\s*\((\d\.\d)/5\)$` $t }}
+    <span class="jm-term">{{ if $m }}{{ index (index $m 0) 1 }}<b>{{ index (index $m 0) 2 }}/5</b>{{ else }}{{ $t }}{{ end }}</span>
+    {{- end }}
+  </div>
+  {{- with .url }}<div class="jm-course-extra"><a class="jm-btn jm-btn-sm" href="{{ . | relURL }}">Course page →</a></div>{{ end }}
+</div>

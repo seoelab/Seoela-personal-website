@@ -1,1 +1,18 @@
-<div class="jm"><div class="table-scroll" tabindex="0" role="region" aria-label="Spring 2026 course schedule"><table class="schedule-table"><caption>ECON E-303 · Spring 2026 schedule</caption><thead><tr><th scope="col">Week</th><th scope="col">Dates</th><th scope="col">Topics, readings, and deadlines</th></tr></thead>{{ range site.Data.econ_e303.parts }}<tbody><tr class="part"><th colspan="3" scope="rowgroup">{{ .title }}</th></tr>{{ range .rows }}<tr><td>{{ .week }}</td><td>{{ .dates }}</td><td><strong>{{ .topic }}</strong>{{ with .readings }}<br>Required readings: {{ . }}{{ end }}{{ with .due }}<br><em>{{ . }}</em>{{ end }}</td></tr>{{ end }}</tbody>{{ end }}</table></div></div>
+{{- /* ECON E-303 schedule as collapsible parts. Data: data/econ_e303.yaml (parts[].title, parts[].rows[].week/dates/topic/readings/due) */ -}}
+{{ $cols := slice (dict "k" "week" "l" "Week") (dict "k" "dates" "l" "Dates") (dict "k" "topic" "l" "Topic") (dict "k" "readings" "l" "Readings") (dict "k" "due" "l" "Due") }}
+<div class="jm-sched-tools"><button class="jm-link-btn" id="jm-sched-toggle" type="button">Collapse all</button></div>
+<div id="jm-schedule">
+{{ range $i, $p := site.Data.econ_e303.parts }}
+  <div class="jm-part">
+    <button class="jm-part-head" type="button" data-jm-toggle aria-expanded="true" aria-controls="jm-part-{{ $i }}">{{ $p.title }}<small>{{ len $p.rows }} sessions</small><svg class="jm-ic"><use href="#jm-i-chevron"/></svg></button>
+    <div class="jm-collapse jm-open" id="jm-part-{{ $i }}"><div>
+      <table class="jm-sched"><caption class="jm-sr-only">{{ $p.title }}</caption>
+        <thead><tr>{{ range $cols }}<th scope="col">{{ .l }}</th>{{ end }}</tr></thead>
+        <tbody>
+        {{ range $p.rows }}{{ $r := . }}<tr{{ if findRE `(?i)no classes` .topic }} class="jm-off"{{ end }}>{{ range $cols }}<td data-label="{{ .l }}">{{ index $r .k }}</td>{{ end }}</tr>{{ end }}
+        </tbody>
+      </table>
+    </div></div>
+  </div>
+{{ end }}
+</div>
