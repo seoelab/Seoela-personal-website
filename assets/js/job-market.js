@@ -44,78 +44,20 @@
      Dots are the land mask; arcs are shipping routes. Motion is limited to the side margins
      so nothing moves behind text.
      ====================================================================== */
-var NODES = {
-  // Original Nodes
-  mexico_city: [-99.13, 19.43, 1],
-  manzanillo: [-104.32, 19.05],
-  veracruz: [-96.13, 19.19],
-  laredo: [-99.5, 27.5],
-  houston: [-95.37, 29.76],
-  bloomington: [-86.53, 39.17, 1],
-  rotterdam: [4.48, 51.92, 1],
-  shanghai: [121.47, 31.23, 1],
-  durban: [31.03, -29.86, 1],
-  los_angeles: [-118.24, 33.74, 1],
-  new_york: [-74.0, 40.68],
-  panama: [-79.52, 8.95, 1],
-  santos: [-46.3, -23.98, 1],
-  lagos: [3.39, 6.45, 1],
-  mombasa: [39.67, -4.05],
-  port_said: [32.3, 31.26],
-  dubai: [55.03, 25.0, 1],
-  mumbai: [72.84, 18.95],
-  singapore: [103.82, 1.27, 1],
-  tokyo: [139.7, 35.45, 1],
-  hamburg: [9.97, 53.54],
-  cape_town: [18.43, -33.92],
-  maseru: [27.48, -29.31],
-
-  // Additional Global Hubs (bringing total to 40)
-  shenzhen: [114.05, 22.54, 1],
-  busan: [129.07, 35.17, 1],
-  hong_kong: [114.16, 22.31, 1],
-  antwerp: [4.4, 51.22, 1],
-  london: [-0.12, 51.5, 1],
-  vancouver: [-123.12, 49.28, 1],
-  seattle: [-122.33, 47.6, 1],
-  buenos_aires: [-58.38, -34.6, 1],
-  sydney: [151.2, -33.86, 1],
-  melbourne: [144.96, -37.81, 1],
-  colombo: [79.86, 6.92, 1],
-  seoul: [126.97, 37.56, 1],
-  jakarta: [106.84, -6.2, 1],
-  algeciras: [-5.45, 36.13, 1],
-  tangier: [-5.8, 35.77, 1],
-  valparaiso: [-71.62, -33.04, 1],
-  frankfurt: [8.68, 50.11, 1]
-};
-
-var ROUTES = [
-  // Original Connections
-  ["manzanillo", "shanghai"], ["veracruz", "rotterdam"], ["laredo", "bloomington"], 
-  ["mexico_city", "houston"], ["durban", "rotterdam"], ["durban", "shanghai"], 
-  ["bloomington", "durban"], ["houston", "rotterdam"], ["los_angeles", "tokyo"], 
-  ["los_angeles", "shanghai"], ["manzanillo", "los_angeles"], ["veracruz", "new_york"], 
-  ["new_york", "hamburg"], ["panama", "rotterdam"], ["manzanillo", "panama"], 
-  ["santos", "rotterdam"], ["santos", "durban"], ["santos", "shanghai"], 
-  ["lagos", "rotterdam"], ["lagos", "santos"], ["mombasa", "mumbai"], 
-  ["port_said", "singapore"], ["dubai", "mumbai"], ["dubai", "rotterdam"], 
-  ["singapore", "shanghai"], ["singapore", "durban"], ["hamburg", "shanghai"], 
-  ["cape_town", "durban"], ["cape_town", "rotterdam"], ["maseru", "durban"], 
-  ["mexico_city", "new_york"],
-
-  // Expanded Global Routes
-  ["shanghai", "busan"], ["shenzhen", "singapore"], ["hong_kong", "los_angeles"],
-  ["qingdao", "seattle"], ["tianjin", "vancouver"], ["tokyo", "seattle"],
-  ["busan", "los_angeles"], ["singapore", "colombo"], ["colombo", "dubai"],
-  ["dubai", "rotterdam"], ["singapore", "jakarta"], ["hong_kong", "sydney"],
-  ["shanghai", "sydney"], ["new_york", "antwerp"], ["rotterdam", "antwerp"],
-  ["rotterdam", "london"], ["hamburg", "london"], ["new_york", "london"],
-  ["panama", "callao"], ["callao", "valparaiso"], ["buenos_aires", "santos"],
-  ["sydney", "melbourne"], ["singapore", "melbourne"], ["tangier", "rotterdam"],
-  ["algeciras", "rotterdam"], ["frankfurt", "shanghai"], ["seoul", "los_angeles"]
-];
-
+  var NODES = {
+    mexico_city: [-99.13, 19.43, 1], manzanillo: [-104.32, 19.05], veracruz: [-96.13, 19.19], laredo: [-99.5, 27.5], houston: [-95.37, 29.76],
+    bloomington: [-86.53, 39.17, 1], rotterdam: [4.48, 51.92, 1], shanghai: [121.47, 31.23, 1], durban: [31.03, -29.86, 1],
+    los_angeles: [-118.24, 33.74, 1], new_york: [-74.0, 40.68], panama: [-79.52, 8.95, 1], santos: [-46.3, -23.98, 1],
+    lagos: [3.39, 6.45, 1], mombasa: [39.67, -4.05], port_said: [32.3, 31.26], dubai: [55.03, 25.0, 1], mumbai: [72.84, 18.95],
+    singapore: [103.82, 1.27, 1], tokyo: [139.7, 35.45, 1], hamburg: [9.97, 53.54], cape_town: [18.43, -33.92], maseru: [27.48, -29.31]
+  };
+  var ROUTES = [["manzanillo", "shanghai"], ["veracruz", "rotterdam"], ["laredo", "bloomington"], ["mexico_city", "houston"],
+                ["durban", "rotterdam"], ["durban", "shanghai"], ["bloomington", "durban"], ["houston", "rotterdam"],
+                ["los_angeles", "tokyo"], ["los_angeles", "shanghai"], ["manzanillo", "los_angeles"], ["veracruz", "new_york"],
+                ["new_york", "hamburg"], ["panama", "rotterdam"], ["manzanillo", "panama"], ["santos", "rotterdam"], ["santos", "durban"],
+                ["santos", "shanghai"], ["lagos", "rotterdam"], ["lagos", "santos"], ["mombasa", "mumbai"], ["port_said", "singapore"],
+                ["dubai", "mumbai"], ["dubai", "rotterdam"], ["singapore", "shanghai"], ["singapore", "durban"], ["hamburg", "shanghai"],
+                ["cape_town", "durban"], ["cape_town", "rotterdam"], ["maseru", "durban"], ["mexico_city", "new_york"]];
   (function bgViz() {
     if (!MASKS || !MASKS.world) return;
     var canvas = el("canvas"); canvas.id = "jm-bg"; canvas.setAttribute("aria-hidden", "true"); body.insertBefore(canvas, body.firstChild);
