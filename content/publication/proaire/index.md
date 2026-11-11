@@ -24,8 +24,10 @@ presentations:
     scheduled: true
   - venue: BREAD Conference
     year: 2026
+  - venue: Hoosier Economics Conference
+    year: 2025
   - venue: IUB Microeconomics Seminar
-    year: 2024
+    year: 2025, 2026
 url_pdf: https://drive.google.com/file/d/1UnbYGiueFsIQ1bRk3kIVLbcW7b8K1XZf/view?usp=drive_link
 research_category: working-paper
 title: "Environmental Regulation, Firms, and Trade: Evidence from Mexico’s
