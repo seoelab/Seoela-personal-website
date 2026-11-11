@@ -66,7 +66,7 @@
       <article class="jm-jmp jm-reveal" id="job-market-paper">
         <p class="jm-eyebrow">Job market paper</p>
         <h3>{{ partial "jm/clean.html" $paper.Title }}</h3>
-        <p class="jm-lede">Local environmental regulation can have effects far beyond the places it targets. I study how Mexico’s ProAire programs reshape firm activity, trade, and welfare, combining linked firm-level data with a quantitative spatial model of trade, pollution transport, and worker sorting.</p>        {{ partial "jm/presentations.html" $paper.Params.presentations }}
+        <p class="jm-lede">Local environmental regulation can have effects far beyond the places it targets. I study how Mexico’s ProAire programs reshape firm activity, trade, and welfare, combining linked firm-level data with a quantitative spatial model of trade, pollution transport, and worker sorting.</p>    {{ partial "jm/awards.html" $paper.Params.awards }}     {{ partial "jm/presentations.html" $paper.Params.presentations }}
         <div class="jm-actions">
           {{ with $paper.Params.url_pdf }}<a class="jm-btn jm-btn-primary" href="{{ . }}" target="_blank" rel="noopener noreferrer"><svg class="jm-ic"><use href="#jm-i-download"/></svg>Read full paper</a>{{ end }}
           {{ if $paper.Params.abstract }}<button class="jm-toggle" type="button" data-jm-toggle aria-expanded="false" aria-controls="jm-jmp-abs">Abstract<svg class="jm-ic"><use href="#jm-i-chevron"/></svg></button>{{ end }}
