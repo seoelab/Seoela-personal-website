@@ -7,6 +7,9 @@ featured: true
 title: "Insourcing the Workforce: Labor-Market Adjustment to Mexico's Subcontracting Reform"
 abstract: "This paper examines how labor market outcomes, both in terms of the level and composition of labor demand and compensation, responded to Mexico's 2021 labor subcontracting reform. The reform outlawed most subcontracting services and forced client firms to directly employ the workers affected by the reform, unless they qualified as specialized, registered services."
 draft: false
+awards:
+  - title: Witney/LeMar Fellowship, Indiana University
+    date: Spring 2026
 summary: Draft in progress
 publication: Draft in progress
 job_market_wip: true
