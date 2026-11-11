@@ -17,6 +17,10 @@ abstract: "Air-quality policy often targets the areas of the highest pollution
   transport, and worker sorting, I find that ProAire has a small negative effect
   on output of 0.07 percent but improves welfare by 0.099 percent."
 draft: false
+awards:
+  - title: Best Graduate Student Paper
+    institution: Indiana University
+    date: Spring 2025
 presentations:
   # Shown on the home page and the Research page. Remove this block (or leave it empty) to hide it.
   # venue: required. year: optional. scheduled: true for upcoming talks (the year is then not shown).
