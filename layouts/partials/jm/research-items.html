@@ -3,19 +3,19 @@
 
 {{- range (where site.RegularPages "Params.research_category" "publication").ByWeight }}
   {{- $links := slice -}}{{- with .Params.url_pdf }}{{ $links = $links | append (dict "label" "Read paper ↗" "url" .) }}{{ end -}}
-  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "pub" "title" (partial "jm/clean.html" .Title) "meta" (partial "jm/clean.html" (.Params.publication | default "")) "status" (.Date.Format "2006") "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "presentations" .Params.presentations "featured" false "home" (.Params.homepage_research | default false)) -}}
+  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "pub" "title" (partial "jm/clean.html" .Title) "meta" (partial "jm/clean.html" (.Params.publication | default "")) "status" (.Date.Format "2006") "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "awards" .Params.awards "presentations" .Params.presentations "featured" false "home" (.Params.homepage_research | default false)) -}}
 {{- end }}
 
 {{- range (where site.RegularPages "Params.research_category" "working-paper").ByWeight }}
   {{- $links := slice -}}{{- with .Params.url_pdf }}{{ $links = $links | append (dict "label" "Read full paper" "url" .) }}{{ end -}}
-  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "wp" "title" (partial "jm/clean.html" .Title) "meta" "" "status" (.Date.Format "2006") "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "presentations" .Params.presentations "featured" true "home" false) -}}
+  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "wp" "title" (partial "jm/clean.html" .Title) "meta" "" "status" (.Date.Format "2006") "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "awards" .Params.awards "presentations" .Params.presentations "featured" true "home" false) -}}
 {{- end }}
 
 {{- range (where site.RegularPages "Params.research_category" "work-in-progress").ByWeight }}
   {{- $links := slice -}}{{- with .Params.url_pdf }}{{ $links = $links | append (dict "label" "Read paper ↗" "url" .) }}{{ end -}}
   {{- $meta := cond (in (.Params.authors | default slice) "Samia Islam") "With Samia Islam" "" -}}
   {{- $status := cond (eq .Params.summary "Draft in progress") "Draft in progress" "Work in progress" -}}
-  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "wip" "title" (partial "jm/clean.html" .Title) "meta" $meta "status" $status "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "presentations" .Params.presentations "featured" false "home" (.Params.homepage_research | default false)) -}}
+  {{- $items = $items | append (dict "uid" .File.ContentBaseName "type" "wip" "title" (partial "jm/clean.html" .Title) "meta" $meta "status" $status "abstract" (partial "jm/clean.html" (.Params.abstract | default "")) "links" $links "awards" .Params.awards "presentations" .Params.presentations "featured" false "home" (.Params.homepage_research | default false)) -}}
 {{- end }}
 
 {{- range (where site.RegularPages "Section" "project").ByDate.Reverse }}
