@@ -44,8 +44,8 @@
      Dots are the land mask; arcs are shipping routes. Motion is limited to the side margins
      so nothing moves behind text.
      ====================================================================== */
- var NODES = {
-  // Existing & Regional Hubs
+var NODES = {
+  // Original Nodes
   mexico_city: [-99.13, 19.43, 1],
   manzanillo: [-104.32, 19.05],
   veracruz: [-96.13, 19.19],
@@ -70,59 +70,24 @@
   cape_town: [18.43, -33.92],
   maseru: [27.48, -29.31],
 
-  // Asia & East Asia
+  // Additional Global Hubs (bringing total to 40)
   shenzhen: [114.05, 22.54, 1],
-  ningbo: [121.54, 29.86, 1],
   busan: [129.07, 35.17, 1],
   hong_kong: [114.16, 22.31, 1],
-  guangzhou: [113.26, 23.13, 1],
-  qingdao: [120.38, 36.06, 1],
-  tianjin: [117.2, 39.12, 1],
-  kaohsiung: [120.31, 22.62, 1],
-  seoul: [126.97, 37.56, 1],
-  beijing: [116.4, 39.9, 1],
-
-  // Southeast Asia & South Asia
-  port_klang: [101.4, 3.0, 1],
-  bangkok: [100.5, 13.75, 1],
-  jakarta: [106.84, -6.2, 1],
-  manila: [120.98, 14.6, 1],
-  ho_chi_minh: [106.63, 10.82, 1],
-  colombo: [79.86, 6.92, 1],
-  chittagong: [91.83, 22.33, 1],
-  chennai: [80.27, 13.08, 1],
-
-  // Middle East & Africa
-  jeddah: [39.17, 21.54, 1],
-  salalah: [54.09, 17.01, 1],
-  tangier: [-5.8, 35.77, 1],
-  alexandria: [29.91, 31.2, 1],
-  abidjan: [-4.03, 5.36, 1],
-
-  // Europe
   antwerp: [4.4, 51.22, 1],
-  algeciras: [-5.45, 36.13, 1],
-  felixstowe: [1.35, 51.96, 1],
-  le_havre: [0.1, 49.49, 1],
-  valencia: [-0.37, 39.47, 1],
-  piraeus: [23.64, 37.94, 1],
-  istanbul: [28.97, 41.0, 1],
   london: [-0.12, 51.5, 1],
-  frankfurt: [8.68, 50.11, 1],
-
-  // Americas
   vancouver: [-123.12, 49.28, 1],
   seattle: [-122.33, 47.6, 1],
-  savannah: [-81.09, 32.08, 1],
   buenos_aires: [-58.38, -34.6, 1],
-  valparaiso: [-71.62, -33.04, 1],
-  callao: [-77.15, -12.05, 1],
-  cartagena: [-75.51, 10.39, 1],
-
-  // Oceania
   sydney: [151.2, -33.86, 1],
   melbourne: [144.96, -37.81, 1],
-  auckland: [174.76, -36.84, 1]
+  colombo: [79.86, 6.92, 1],
+  seoul: [126.97, 37.56, 1],
+  jakarta: [106.84, -6.2, 1],
+  algeciras: [-5.45, 36.13, 1],
+  tangier: [-5.8, 35.77, 1],
+  valparaiso: [-71.62, -33.04, 1],
+  frankfurt: [8.68, 50.11, 1]
 };
 
 var ROUTES = [
@@ -139,41 +104,16 @@ var ROUTES = [
   ["cape_town", "durban"], ["cape_town", "rotterdam"], ["maseru", "durban"], 
   ["mexico_city", "new_york"],
 
-  // Trans-Pacific & Intra-Asia Routes
-  ["shanghai", "busan"], ["ningbo", "tokyo"], ["shenzhen", "singapore"],
-  ["hong_kong", "los_angeles"], ["qingdao", "seattle"], ["tianjin", "vancouver"],
-  ["kaohsiung", "singapore"], ["tokyo", "seattle"], ["busan", "los_angeles"],
-  ["guangzhou", "ho_chi_minh"], ["singapore", "port_klang"], ["singapore", "jakarta"],
-  ["singapore", "manila"], ["hong_kong", "sydney"], ["shanghai", "sydney"],
-
-  // Asia - Middle East - Europe (Suez Trunk Line)
-  ["shanghai", "singapore"], ["singapore", "colombo"], ["colombo", "dubai"],
-  ["dubai", "salalah"], ["salalah", "jeddah"], ["jeddah", "port_said"],
-  ["port_said", "piraeus"], ["piraeus", "rotterdam"], ["piraeus", "istanbul"],
-  ["port_said", "algeciras"], ["algeciras", "rotterdam"], ["rotterdam", "antwerp"],
-  ["rotterdam", "felixstowe"], ["rotterdam", "le_havre"], ["hamburg", "london"],
-
-  // Indian Ocean & South Asia Routes
-  ["mumbai", "colombo"], ["colombo", "singapore"], ["chittagong", "singapore"],
-  ["chennai", "colombo"], ["dubai", "chittagong"], ["mombasa", "colombo"],
-
-  // Trans-Atlantic Routes
-  ["new_york", "rotterdam"], ["new_york", "antwerp"], ["savannah", "rotterdam"],
-  ["houston", "le_havre"], ["veracruz", "algeciras"], ["tangier", "rotterdam"],
-  ["tangier", "new_york"], ["algeciras", "santos"],
-
-  // Latin America & Intra-Americas Routes
-  ["panama", "callao"], ["panama", "cartagena"], ["cartagena", "houston"],
-  ["callao", "valparaiso"], ["buenos_aires", "santos"], ["santos", "panama"],
-  ["valparaiso", "manzanillo"], ["manzanillo", "vancouver"], ["los_angeles", "panama"],
-
-  // African Coastal & Trans-Atlantic Connections
-  ["tangier", "lagos"], ["lagos", "abidjan"], ["abidjan", "santos"],
-  ["cape_town", "santos"], ["mombasa", "durban"], ["dubai", "durban"],
-
-  // Oceania Connections
-  ["sydney", "melbourne"], ["sydney", "auckland"], ["singapore", "melbourne"],
-  ["tokyo", "sydney"]
+  // Expanded Global Routes
+  ["shanghai", "busan"], ["shenzhen", "singapore"], ["hong_kong", "los_angeles"],
+  ["qingdao", "seattle"], ["tianjin", "vancouver"], ["tokyo", "seattle"],
+  ["busan", "los_angeles"], ["singapore", "colombo"], ["colombo", "dubai"],
+  ["dubai", "rotterdam"], ["singapore", "jakarta"], ["hong_kong", "sydney"],
+  ["shanghai", "sydney"], ["new_york", "antwerp"], ["rotterdam", "antwerp"],
+  ["rotterdam", "london"], ["hamburg", "london"], ["new_york", "london"],
+  ["panama", "callao"], ["callao", "valparaiso"], ["buenos_aires", "santos"],
+  ["sydney", "melbourne"], ["singapore", "melbourne"], ["tangier", "rotterdam"],
+  ["algeciras", "rotterdam"], ["frankfurt", "shanghai"], ["seoul", "los_angeles"]
 ];
 
   (function bgViz() {
