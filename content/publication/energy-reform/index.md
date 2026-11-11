@@ -7,6 +7,11 @@ authors:
 draft: false
 abstract: "This paper analyzes how the instrument choice affects the cost of abatement in the context of the reform of fuel subsidies into fuel excise and carbon taxes in Mexico. Natural gas is exempted from the carbon tax, which expands to the electricity sector with the availability of imported gas."
 featured: true
+presentations:
+  # Shown on the home page and the Research page. Remove this block (or leave it empty) to hide it.
+  # venue: required. year: optional. scheduled: true for upcoming talks (the year is then not shown).
+  - venue:  Tobias Center Research Symposium
+    scheduled: true
 image:
   filename: featured
   focal_point: Smart
