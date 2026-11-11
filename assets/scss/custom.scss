@@ -249,6 +249,16 @@ html.jm-js .jm-reveal.jm-in { opacity: 1; transform: none; }
 .jm-jmp .jm-lede { max-width: 68ch; font-size: 16.64px; color: var(--jm-ink-2); }
 .jm-jmp .jm-actions { margin-top: 22px; }
 
+/*    Awards                            */ 
+.jm-pres.jm-award { background: #fbf3dc; border-color: #e6d196; color: #5c4710; }
+.jm-pres.jm-award em { color: #8a6a0f; }
+.jm-pres.jm-award::before { content: "\2605"; font-size: 12px; color: #b8860b; }
+body.dark .jm-pres.jm-award { background: rgba(232, 190, 90, .12); border-color: rgba(232, 190, 90, .35); color: #ecd9a4; }
+body.dark .jm-pres.jm-award em { color: #e8c76a; }
+body.dark .jm-pres.jm-award::before { color: #e8c76a; }
+.jm-awarded { margin-top: 14px; }
+.jm-awarded + .jm-presented { margin-top: 10px; }
+
 /* Presentations: only rendered for papers that have them */
 .jm-presented { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 16px 0 0; }
 .jm-presented-label { margin-right: 2px; font-size: 11.52px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--jm-muted); }
