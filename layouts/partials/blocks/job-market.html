@@ -23,7 +23,7 @@
             I examine how policy changes affect production, labor markets and welfare across locations. Before embarking on my Ph.D. journey, I was a labor economist at the Idaho Department of Labor. I am a U.S. citizen and originally from Lesotho.
           <br><br>
 
-            <strong>I am on the 2026–2027 academic job market.</strong>
+            <strong>I am on the 2026–2027 job market.</strong>
           </p>
           <div class="jm-fields jm-rise" style="--i:5">
             <span class="jm-label">Research interests</span>
@@ -72,7 +72,8 @@
           {{ if $paper.Params.abstract }}<button class="jm-toggle" type="button" data-jm-toggle aria-expanded="false" aria-controls="jm-jmp-abs">Abstract<svg class="jm-ic"><use href="#jm-i-chevron"/></svg></button>{{ end }}
         </div>
         {{ with $paper.Params.abstract }}<div class="jm-collapse" id="jm-jmp-abs"><div><p class="jm-abstract">{{ partial "jm/clean.html" . }}</p></div></div>{{ end }}
-      </article>
+      </article>          <br><br>
+
 
       <div class="jm-home-research">
         {{ range where $items "home" true }}{{ partial "jm/entry.html" (merge . (dict "uid" (printf "home-%s" .uid))) }}{{ end }}
