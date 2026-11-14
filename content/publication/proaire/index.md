@@ -12,10 +12,10 @@ abstract: "Air-quality policy often targets the areas of the highest pollution
   extensive and intensive export margins: with no change in export entries, a
   2.8 percentage points increase in export exits, and a 9.5 percent decrease in
   export sales for the surviving exporters. Among the surviving importers,
-  import volume increased by 18 percent. In a quantitative spatial model of
-  heterogeneous firms, pollution-intensive production, trade, atmospheric
-  transport, and worker sorting, I find that ProAire has a small negative effect
-  on output of 0.07 percent but improves welfare by 0.099 percent."
+  import volume increased by 18 percent. Using a quantitative spatial model of
+  heterogeneous firms, pollution-intensive production, trade, atmospheric transport, 
+  and worker sorting, I find that ProAire has a small negative effect on output of 0.05 
+  percent but improves welfare by 0.126 percent."
 draft: false
 awards:
   - title: Best Graduate Student Paper
