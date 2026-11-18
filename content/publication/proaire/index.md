@@ -24,6 +24,8 @@ awards:
 presentations:
   # Shown on the home page and the Research page. Remove this block (or leave it empty) to hide it.
   # venue: required. year: optional. scheduled: true for upcoming talks (the year is then not shown).
+  - venue: Public Choice Society Conference
+    scheduled: true
   - venue: RIDGE Forum
     scheduled: true
   - venue: BREAD Conference
