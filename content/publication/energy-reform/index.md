@@ -1,5 +1,5 @@
 ---
-title: 'Consequences of Fossil-Fuel Reforms: Firm Adjustment and the Cost of an Exempt Substitute'
+title: 'Consequences of Fossil-Fuel Reforms: Energy Prices, Pollution, and Firm Adjustment'
 publication_types:
 - '0'
 authors:
